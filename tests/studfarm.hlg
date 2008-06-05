@@ -1,0 +1,402 @@
+Wed Apr 23 12:52:47 2008
+
+
+Moral links:
+
+    Marrying Henry and Irene
+    Marrying Eric and Gwenn
+    Marrying Ann and Brian
+    Marrying Ann and K
+    Marrying Fred and Dorothy
+    Marrying Cecily and Brian
+    Marrying L and Ann
+
+
+Triangulating prime component with 3 members:
+    Brian, Eric, Cecily
+This component is a clique of cost 8
+
+Triangulating prime component with 3 members:
+    John, Irene, Henry
+This component is a clique of cost 12
+
+Triangulating prime component with 3 members:
+    Ann, Fred, L
+This component is a clique of cost 8
+
+Triangulating prime component with 8 members:
+    Gwenn, Irene, Dorothy, Henry, Brian, Eric, Ann, Fred
+
+    Using minimum fill-in weight heuristic for triangulation:
+
+	Eliminating Fred
+	Creating fill-in between Henry and Ann
+	Eliminating Dorothy
+	Creating fill-in between Henry and Brian
+	Eliminating Gwenn
+	Creating fill-in between Irene and Ann
+	Creating fill-in between Eric and Ann
+	Eliminating Irene
+	Creating fill-in between Henry and Eric
+	Eliminating Henry
+	Eliminating Brian
+	Eliminating Eric
+	Eliminating Ann
+
+Found triangulation of prime component of cost 80
+
+Triangulating prime component with 3 members:
+    K, Gwenn, Ann
+This component is a clique of cost 8
+
+
+Total cost of triangulation for all prime components is 116
+
+
+Elimination sequence:
+
+    John
+    K
+    L
+    Fred
+    Dorothy
+    Gwenn
+    Irene
+    Henry
+    Ann
+    Cecily
+    Brian
+    Eric
+
+
+Cliques:
+
+Clique 9, 3 members, table size = 8:
+    Eric, Brian, Cecily
+
+Clique 8, 4 members, table size = 16:
+    Eric, Brian, Ann, Henry
+
+Clique 7, 4 members, table size = 16:
+    Eric, Ann, Henry, Irene
+
+Clique 6, 4 members, table size = 16:
+    Eric, Ann, Irene, Gwenn
+
+Clique 5, 4 members, table size = 16:
+    Brian, Ann, Henry, Dorothy
+
+Clique 4, 4 members, table size = 16:
+    Ann, Henry, Dorothy, Fred
+
+Clique 3, 3 members, table size = 8:
+    Ann, Fred, L
+
+Clique 2, 3 members, table size = 8:
+    Ann, Gwenn, K
+
+Clique 1, 3 members, table size = 12:
+    Henry, Irene, John
+
+Total clique table size: 116
+
+
+The junction forest:
+
+Creating junction tree with clique 9 as root ...
+
+Cliques 8 and 9 linked, separator has 2 members and table size = 4:
+    Eric, Brian
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 8:
+    Eric, Ann, Henry
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 8:
+    Eric, Ann, Irene
+
+Cliques 5 and 8 linked, separator has 3 members and table size = 8:
+    Brian, Ann, Henry
+
+Cliques 4 and 5 linked, separator has 3 members and table size = 8:
+    Ann, Henry, Dorothy
+
+Cliques 3 and 4 linked, separator has 2 members and table size = 4:
+    Ann, Fred
+
+Cliques 2 and 6 linked, separator has 2 members and table size = 4:
+    Ann, Gwenn
+
+Cliques 1 and 7 linked, separator has 2 members and table size = 4:
+    Henry, Irene
+
+
+Assignment of potentials to cliques:
+
+    Node K assigned to clique 2
+    Node John assigned to clique 1
+    Node Gwenn assigned to clique 2
+    Node Irene assigned to clique 6
+    Node Dorothy assigned to clique 5
+    Node Henry assigned to clique 4
+    Node Brian assigned to clique 9
+    Node Eric assigned to clique 9
+    Node Ann assigned to clique 3
+    Node Fred assigned to clique 3
+    Node Cecily assigned to clique 9
+    Node L assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+
+Beliefs for chance nodes:
+
+    K:
+	Carrier    0.010000
+	Pure       0.990000
+
+    John:
+	Sick       0.000426
+	Carrier    0.008675
+	Pure       0.990899
+
+    Gwenn:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Irene:
+	Carrier    0.009934
+	Pure       0.990066
+
+    Dorothy:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Henry:
+	Carrier    0.009120
+	Pure       0.990880
+
+    Brian:
+	Carrier    0.010000
+	Pure       0.990000
+
+    Eric:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Ann:
+	Carrier    0.010000
+	Pure       0.990000
+
+    Fred:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Cecily:
+	Carrier    0.010000
+	Pure       0.990000
+
+    L:
+	Carrier    0.010000
+	Pure       0.990000
+Wed Apr 23 12:58:10 2008
+
+
+Moral links:
+
+    Marrying Henry and Irene
+    Marrying Eric and Gwenn
+    Marrying Ann and Brian
+    Marrying Ann and K
+    Marrying Fred and Dorothy
+    Marrying Cecily and Brian
+    Marrying L and Ann
+
+
+Triangulating prime component with 3 members:
+    Brian, Eric, Cecily
+This component is a clique of cost 8
+
+Triangulating prime component with 3 members:
+    John, Irene, Henry
+This component is a clique of cost 12
+
+Triangulating prime component with 3 members:
+    Ann, Fred, L
+This component is a clique of cost 8
+
+Triangulating prime component with 8 members:
+    Gwenn, Irene, Dorothy, Henry, Brian, Eric, Ann, Fred
+
+    Using minimum fill-in weight heuristic for triangulation:
+
+	Eliminating Fred
+	Creating fill-in between Henry and Ann
+	Eliminating Dorothy
+	Creating fill-in between Henry and Brian
+	Eliminating Gwenn
+	Creating fill-in between Irene and Ann
+	Creating fill-in between Eric and Ann
+	Eliminating Irene
+	Creating fill-in between Henry and Eric
+	Eliminating Henry
+	Eliminating Brian
+	Eliminating Eric
+	Eliminating Ann
+
+Found triangulation of prime component of cost 80
+
+Triangulating prime component with 3 members:
+    K, Gwenn, Ann
+This component is a clique of cost 8
+
+
+Total cost of triangulation for all prime components is 116
+
+
+Elimination sequence:
+
+    John
+    K
+    L
+    Fred
+    Dorothy
+    Gwenn
+    Irene
+    Henry
+    Ann
+    Cecily
+    Brian
+    Eric
+
+
+Cliques:
+
+Clique 9, 3 members, table size = 8:
+    Eric, Brian, Cecily
+
+Clique 8, 4 members, table size = 16:
+    Eric, Brian, Ann, Henry
+
+Clique 7, 4 members, table size = 16:
+    Eric, Ann, Henry, Irene
+
+Clique 6, 4 members, table size = 16:
+    Eric, Ann, Irene, Gwenn
+
+Clique 5, 4 members, table size = 16:
+    Brian, Ann, Henry, Dorothy
+
+Clique 4, 4 members, table size = 16:
+    Ann, Henry, Dorothy, Fred
+
+Clique 3, 3 members, table size = 8:
+    Ann, Fred, L
+
+Clique 2, 3 members, table size = 8:
+    Ann, Gwenn, K
+
+Clique 1, 3 members, table size = 12:
+    Henry, Irene, John
+
+Total clique table size: 116
+
+
+The junction forest:
+
+Creating junction tree with clique 9 as root ...
+
+Cliques 8 and 9 linked, separator has 2 members and table size = 4:
+    Eric, Brian
+
+Cliques 7 and 8 linked, separator has 3 members and table size = 8:
+    Eric, Ann, Henry
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 8:
+    Eric, Ann, Irene
+
+Cliques 5 and 8 linked, separator has 3 members and table size = 8:
+    Brian, Ann, Henry
+
+Cliques 4 and 5 linked, separator has 3 members and table size = 8:
+    Ann, Henry, Dorothy
+
+Cliques 3 and 4 linked, separator has 2 members and table size = 4:
+    Ann, Fred
+
+Cliques 2 and 6 linked, separator has 2 members and table size = 4:
+    Ann, Gwenn
+
+Cliques 1 and 7 linked, separator has 2 members and table size = 4:
+    Henry, Irene
+
+
+Assignment of potentials to cliques:
+
+    Node K assigned to clique 2
+    Node John assigned to clique 1
+    Node Gwenn assigned to clique 2
+    Node Irene assigned to clique 6
+    Node Dorothy assigned to clique 5
+    Node Henry assigned to clique 4
+    Node Brian assigned to clique 9
+    Node Eric assigned to clique 9
+    Node Ann assigned to clique 3
+    Node Fred assigned to clique 3
+    Node Cecily assigned to clique 9
+    Node L assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+
+Beliefs for chance nodes:
+
+    K:
+	Carrier    0.010000
+	Pure       0.990000
+
+    John:
+	Sick       0.000426
+	Carrier    0.008675
+	Pure       0.990899
+
+    Gwenn:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Irene:
+	Carrier    0.009934
+	Pure       0.990066
+
+    Dorothy:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Henry:
+	Carrier    0.009120
+	Pure       0.990880
+
+    Brian:
+	Carrier    0.010000
+	Pure       0.990000
+
+    Eric:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Ann:
+	Carrier    0.010000
+	Pure       0.990000
+
+    Fred:
+	Carrier    0.009967
+	Pure       0.990033
+
+    Cecily:
+	Carrier    0.010000
+	Pure       0.990000
+
+    L:
+	Carrier    0.010000
+	Pure       0.990000

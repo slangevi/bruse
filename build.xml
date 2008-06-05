@@ -1,0 +1,32 @@
+<project name="bruse" default="run">
+	<property name="optimize" value="on" />
+	
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="bin"/>
+	  <javac srcdir="src" destdir="bin" optimize="${optimize}">
+			<classpath>
+		      <fileset dir="lib">
+		         <include name="**/*.jar" />
+		      </fileset>
+		   </classpath>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+		<mkdir dir="release"/>
+		<jar destfile="release/bruse.jar" basedir="bin">
+	  	<manifest>
+	    	<attribute name="Main-Class" value="sc.bruse.test.SoftEvidencePerformanceTest"/>
+	   	</manifest>
+			<zipgroupfileset dir="lib" includes="*.jar"/>
+		</jar>
+	</target>
+
+	<target name="run">
+		<java jar="release/bruse.jar" fork="true"/>
+	</target>
+</project>
