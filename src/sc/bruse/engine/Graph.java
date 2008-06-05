@@ -2,7 +2,7 @@ package sc.bruse.engine;
 
 import java.util.*;
 
-import sc.bruse.api.BruseNode;
+import sc.bruse.network.BruseNode;
 
 public class Graph {
 	

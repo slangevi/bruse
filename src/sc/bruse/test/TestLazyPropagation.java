@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import sc.bruse.api.*;
 import sc.bruse.engine.BookKeepingMgr;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
+import sc.bruse.network.*;
 
 public class TestLazyPropagation {
 	double epsilon = 0.00001;

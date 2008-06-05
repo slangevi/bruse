@@ -5,10 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import sc.bruse.api.BruseNetwork;
-import sc.bruse.api.BruseNetworkFactory;
 import sc.bruse.engine.MoralGraph;
 import sc.bruse.engine.MoralGraphNode;
+import sc.bruse.network.BruseNetwork;
+import sc.bruse.network.BruseNetworkFactory;
 
 public class TestMoralGraph {
 	BruseNetwork m_network;

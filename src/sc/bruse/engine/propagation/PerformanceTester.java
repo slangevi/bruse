@@ -1,7 +1,7 @@
 package sc.bruse.engine.propagation;
 
-import sc.bruse.api.BruseNetwork;
-import sc.bruse.api.BruseNetworkFactory;
+import sc.bruse.network.BruseNetwork;
+import sc.bruse.network.BruseNetworkFactory;
 
 public class PerformanceTester {
 

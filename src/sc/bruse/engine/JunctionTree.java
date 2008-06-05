@@ -1,7 +1,8 @@
 package sc.bruse.engine;
 
 import java.util.*;
-import sc.bruse.api.*;
+
+import sc.bruse.network.*;
 
 //TODO: Should this be a subclass of Graph?
 public class JunctionTree {

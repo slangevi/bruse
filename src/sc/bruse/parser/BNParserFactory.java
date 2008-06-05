@@ -1,6 +1,6 @@
 package sc.bruse.parser;
 
-import sc.bruse.api.*;
+import sc.bruse.network.*;
 
 public class BNParserFactory {
 

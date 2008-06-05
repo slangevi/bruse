@@ -1,4 +1,4 @@
-package sc.bruse.api;
+package sc.bruse.network;
 
 /***
  * This class represents the value of a particular state of a node. 

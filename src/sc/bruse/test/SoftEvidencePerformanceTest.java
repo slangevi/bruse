@@ -4,15 +4,15 @@ import java.text.DecimalFormat;
 import java.util.*;
 
 import java.lang.management.*;
-import sc.bruse.api.BruseEvidence;
-import sc.bruse.api.BruseNetwork;
-import sc.bruse.api.BruseNetworkFactory;
-import sc.bruse.api.BruseNode;
-import sc.bruse.api.BruseNodeState;
-import sc.bruse.api.BruseSoftEvidenceState;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
 import sc.bruse.engine.BookKeepingMgr;
+import sc.bruse.network.BruseEvidence;
+import sc.bruse.network.BruseNetwork;
+import sc.bruse.network.BruseNetworkFactory;
+import sc.bruse.network.BruseNode;
+import sc.bruse.network.BruseNodeState;
+import sc.bruse.network.BruseSoftEvidenceState;
 
 public class SoftEvidencePerformanceTest {
 

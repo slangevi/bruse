@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import sc.bruse.api.BruseNetwork;
-import sc.bruse.api.BruseNetworkFactory;
 import sc.bruse.engine.Graph;
 import sc.bruse.engine.GraphNode;
 import sc.bruse.engine.MaxSpanTree;
+import sc.bruse.network.BruseNetwork;
+import sc.bruse.network.BruseNetworkFactory;
 
 public class TestMaxSpanTree {
 	Graph m_graph;

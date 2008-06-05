@@ -1,4 +1,4 @@
-package sc.bruse.api;
+package sc.bruse.network;
 
 import sc.bruse.engine.BookKeepingMgr;
 import sc.bruse.engine.MoralGraphNode;

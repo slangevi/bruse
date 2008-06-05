@@ -1,10 +1,7 @@
-package sc.bruse.engine.propagation.hugin;
+package sc.bruse.engine.propagation.junctiontree;
 
 import java.util.*;
 
-import sc.bruse.api.BruseEvidence;
-import sc.bruse.api.BruseNode;
-import sc.bruse.api.BruseTable;
 import sc.bruse.engine.BookKeepingMgr;
 import sc.bruse.engine.Clique;
 import sc.bruse.engine.IPFP;
@@ -12,6 +9,9 @@ import sc.bruse.engine.StateIterator;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
+import sc.bruse.network.BruseEvidence;
+import sc.bruse.network.BruseNode;
+import sc.bruse.network.BruseTable;
 
 public class WrapperPropagationEngine extends HuginPropagationEngine {
 

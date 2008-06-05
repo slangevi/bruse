@@ -1,57 +1,30 @@
 package sc.bruse.engine.bigclique;
 
-import sc.bruse.api.BruseEvidence;
-import sc.bruse.api.BruseNode;
-import sc.bruse.engine.*;
+import java.util.ArrayList;
 
-import java.util.*;
+import sc.bruse.engine.*;
+import sc.bruse.network.*;
 
 public class BigCliqueFactory extends CliqueFactory {
-	
-	static public ArrayList<Clique> createCliques(MoralGraph graph, ArrayList<BruseEvidence> softEvidence) {
-		// create a list of cliques from the moral graph but also create a Big Clique from the soft evidence
-		// order the list of cliques so that the first clique is the Big Clique
-		Clique bigClique = null, clique = null;
-		ArrayList<BruseNode[]> families = new ArrayList<BruseNode[]>();
-		ArrayList<Clique> cliques = new ArrayList<Clique>();
-		ArrayList<GraphNode> neighbors = null;
-		MoralGraphNode node = null, neighbor = null;
-		BruseNode family[];
+
+	static public ArrayList<Clique> createCliques(BruseNetwork network, ArrayList<BruseEvidence> softEvidence) {
+		// Create a moral graph for bruse network
+		MoralGraph moralGraph = new MoralGraph(network);
 		
-		MoralGraph workingGraph = (MoralGraph)graph.clone();
+		connectSENodes(moralGraph, softEvidence);
 		
-		//TODO this is duplicate code from CliqueFactory
-		// see if we can use helper routines to minimize code duplication
-		while (workingGraph.size() > 0) {
-			node = Triangulation.findSimplicialNode(workingGraph);
-			family = new BruseNode[node.getNeighbors().size()+1];//.clear();
-			neighbors = node.getNeighbors();
-			
-			// add the simplicial node to the family
-			family[0] = node.getBruseNode();
-			//family.add(node.getBruseNode());
-			
-			// add the simplicial nodes neighbors to the family
-			for (int i=0; i < neighbors.size(); i++) {
-				neighbor = (MoralGraphNode)neighbors.get(i);
-				family[i+1] = neighbor.getBruseNode();
-			}
-			
-			// save family
-			families.add(family);
-			
-			// if the family of the simplicial node includes 
-			// all the remaining nodes then we are done
-			if (workingGraph.size() == family.length) break;
-				
-			// remove simplicial node from working Graph
-			removeNode(workingGraph, node);
-		}
+		// Triangulate and generate cliques
+		ArrayList<Clique> cliques = triangulate(moralGraph);
 		
-		// remove the subset cliques and return the maximal cliques
-		cliques = getMaxCliques(families);
+		// remove subset cliques
+		cliques = getMaxCliques(cliques);
 		
-		//TODO do this more efficiently
+		setCliqueStats(cliques);
+		
+		//dumpSize(cliques);
+		
+		Clique clique = null, bigClique = null;
+		// TODO do this more efficiently
 		// find the big clique and set as first clique in list
 		for (int i=0; i < cliques.size(); i++) {
 			clique = cliques.get(i);
@@ -68,28 +41,10 @@ public class BigCliqueFactory extends CliqueFactory {
 		cliques.add(0, bigClique);
 		
 		// assign potentials to cliques
-		assignPotentials(graph, cliques);
+		assignPotentials(network, cliques);
 		
-		// the clique list should be ordered so the first element is the big clique if it exists
+		// return cliques
 		return cliques;
-	}
-	
-	private static boolean isSENode(BruseNode node, ArrayList<BruseEvidence> softEvidence) {
-		for (int i=0; i < softEvidence.size(); i++) {
-			if (softEvidence.get(i).getNodeName().compareToIgnoreCase(node.getName()) == 0) {
-				return true;
-			}
-		}
-		return false;
-	}
-	
-	private static boolean isSENode(GraphNode node, ArrayList<BruseEvidence> softEvidence) {
-		for (int i=0; i < softEvidence.size(); i++) {
-			if (softEvidence.get(i).getNodeName().compareToIgnoreCase(node.getName()) == 0) {
-				return true;
-			}
-		}
-		return false;
 	}
 	
 	public static void connectSENodes(MoralGraph graph, ArrayList<BruseEvidence> softEvidence) {
@@ -108,5 +63,4 @@ public class BigCliqueFactory extends CliqueFactory {
 			}
 		}
 	}
-	
 }

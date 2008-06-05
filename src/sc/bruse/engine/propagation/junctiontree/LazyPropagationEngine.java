@@ -1,12 +1,13 @@
-package sc.bruse.engine.propagation.hugin;
+package sc.bruse.engine.propagation.junctiontree;
 
-import sc.bruse.api.BruseAPIException;
-import sc.bruse.api.BruseEvidence;
-import sc.bruse.api.BruseNode;
-import sc.bruse.api.BruseTable;
 import sc.bruse.engine.*;
 import sc.bruse.engine.bigclique.*;
 import sc.bruse.engine.propagation.IPropagationEngine;
+import sc.bruse.network.BruseAPIException;
+import sc.bruse.network.BruseEvidence;
+import sc.bruse.network.BruseNode;
+import sc.bruse.network.BruseTable;
+
 import java.util.*;
 
 public class LazyPropagationEngine extends HuginPropagationEngine {
@@ -40,7 +41,7 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		// gen cliques using the big clique 
 		m_cliques = BigCliqueFactory.createCliques(moralGraph, m_sEvidence);*/
-		m_cliques = BigCliqueFactory2.createCliques(m_network, m_sEvidence);
+		m_cliques = BigCliqueFactory.createCliques(m_network, m_sEvidence);
 		long EndTime = System.currentTimeMillis();
 		//EndTime = System.currentTimeMillis();
 		BookKeepingMgr.TimeCreateCliques = (EndTime - StartTime);
@@ -211,7 +212,7 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		if (reqQuery.size() > 0) {
 			// Create a dseparation analyzer - it can calculate dconnection
-			DseparationAnalyzer dsepAnalyzer = new DseparationAnalyzer(m_network);
+			DSeparationAnalyzer dsepAnalyzer = new DSeparationAnalyzer(m_network);
 		
 			// create list of all evidence
 			ArrayList<String> evidence = new ArrayList<String>();

@@ -1,7 +1,8 @@
 package sc.bruse.engine.propagation;
 
 import java.util.*;
-import sc.bruse.api.*;
+
+import sc.bruse.network.*;
 
 /***
  * The propagation engine interface.

@@ -6,10 +6,10 @@ import java.text.DecimalFormat;
 
 import org.junit.Before;
 import org.junit.Test;
-import sc.bruse.api.*;
 import sc.bruse.engine.*;
 import sc.bruse.engine.propagation.*;
 import sc.bruse.engine.propagation.PropagationEngineFactory.PropagationType;
+import sc.bruse.network.*;
 
 import java.util.*;
 

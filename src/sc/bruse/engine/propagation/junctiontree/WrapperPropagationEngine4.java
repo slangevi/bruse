@@ -1,29 +1,32 @@
-package sc.bruse.engine.propagation.hugin;
+package sc.bruse.engine.propagation.junctiontree;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import sc.bruse.api.BruseEvidence;
-import sc.bruse.api.BruseNode;
-import sc.bruse.api.BruseTable;
 import sc.bruse.engine.*;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
+import sc.bruse.network.BruseEvidence;
+import sc.bruse.network.BruseNode;
+import sc.bruse.network.BruseTable;
 
-public class WrapperPropagationEngine3 extends HuginPropagationEngine {
-
+public class WrapperPropagationEngine4 extends HuginPropagationEngine {
 	private ArrayList<BruseEvidence> m_softEvidence;
 	private double m_prevEntropy[];
 	
-	public WrapperPropagationEngine3() {
+	public WrapperPropagationEngine4() {
 		super();
 		m_softEvidence = new ArrayList<BruseEvidence>();
 	}
 	
 	public void init() {
+		// Ensure all soft evidence nodes are put in one clique so we can calculate their joint
+		// This relies on the Big Clique implementation for the HuginPropagationEngine
+		m_sEvidence.addAll(m_softEvidence);
 		super.init();
+		m_sEvidence.clear();  // Remove the soft evidence so the HuginPropagationEngine does not use Big Clique algo
 	}
 	
 	private void removeNode(BruseNode node) {
@@ -48,10 +51,10 @@ public class WrapperPropagationEngine3 extends HuginPropagationEngine {
 			// create the domain for the table
 			ArrayList<BruseNode> domain = new ArrayList<BruseNode>();
 			
-			// add each soft evidence node as a parent
-			for (int j=0; j < m_softEvidence.size(); j++) {
+			// add each soft evidence node as a parent			
+			for (int j=0; j < seTable.getVariables().length; j++) {
 				BruseEvidence ev = m_softEvidence.get(j);
-				BruseNode parent = m_network.getNode(ev.getNodeName());
+				BruseNode parent = seTable.getVariables()[j];
 				vnode.addParent(parent);
 				parent.addChild(vnode);
 				domain.add(parent);
@@ -95,50 +98,16 @@ public class WrapperPropagationEngine3 extends HuginPropagationEngine {
 	
 	private BruseTable getJointTable() {
 		BruseTable joint = null;
-		// Find a clique containing a SE node, it will contain the Joint(SE) since we did not marginalize any SE
-		
-		// TODO should also check separators
-		for (int i=0; i < m_cliques.size(); i++) {
-			Clique clique = m_cliques.get(i);
 			
-			for (int j=0; j < m_softEvidence.size(); j++) {
-				if (clique.containsNode(m_softEvidence.get(j).getNodeName())) {
-					joint = clique.getTable().getMarginal(getSoftEvidenceNames());
-				}
-			}
-		}
+		joint = m_cliques.get(0).getTable();
+		joint = joint.getMarginal(getSoftEvidenceNames());
 		
 		return joint;
-	}
-	
-	private void addSEtoSeparators() {
-		ArrayList<JunctionSeparator> seps = m_junctionTree.getSeparators();
-		
-		if (m_softEvidence.size() == 0) return;
-		
-		try {
-			for (int i=0; i < seps.size(); i++) {
-				JunctionSeparator sep = seps.get(i);
-				for (int j=0; j < m_softEvidence.size(); j++) {
-					String se = m_softEvidence.get(j).getNodeName();
-					if (!sep.containsVariable(se)) {
-						sep.getVariables().add(m_network.getNode(se));
-					}
-				}
-			}
-		}
-		catch (Exception e) {
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
 	}
 
 	@Override
 	public void propagate() {
 		long StartTime = System.currentTimeMillis();
-		
-		// Prevent marginalizations of SE vars during propagation so we can readily calculate Joint(SE)
-		addSEtoSeparators();
 		
 		// Propagate normally on hard evidence
 		super.propagate();
@@ -149,7 +118,6 @@ public class WrapperPropagationEngine3 extends HuginPropagationEngine {
 		// calculate the P(S) where S is the soft evidence
 		BruseTable margtable = getJointTable();
 			
-		//BruseTable.dumpTable(margtable, false);
 		BruseEvidence finding = null;
 		BruseTable softFinding = null;
 		ArrayList<BruseTable> evidence = new ArrayList<BruseTable>();
@@ -175,18 +143,13 @@ public class WrapperPropagationEngine3 extends HuginPropagationEngine {
 			// create virtual evidence node
 			BruseNode vnode = createVirtualNode(setable);
 			
-			// Add the vnode as a potential to a clique that contains an se node		
-			for (int i=0; i < m_cliques.size(); i++) {
-				Clique c = m_cliques.get(i);
-				
-				if (c.containsNode(m_softEvidence.get(0).getNodeName())) {
-					c.resetPotentials();
-					c.addNode(vnode); //test
-					c.addPotential(vnode.getTable());
-					c.setInitPotentials();
-					break;
-				}
-			}
+			// Add the vnode as a potential to a clique that contains an se node	
+			Clique c = m_cliques.get(0);
+			c.resetPotentials();
+			c.addNode(vnode); //test
+			c.addPotential(vnode.getTable());
+			c.setInitPotentials();
+			c.rebuildTable();
 			
 			// Add hard evidence for the virtual node
 			BruseEvidence ev = new BruseEvidence(vnode);

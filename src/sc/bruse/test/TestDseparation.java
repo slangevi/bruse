@@ -3,8 +3,9 @@ package sc.bruse.test;
 import org.junit.*;
 import static org.junit.Assert.*;
 
-import sc.bruse.api.*;
 import sc.bruse.engine.*;
+import sc.bruse.network.*;
+
 import java.util.*;
 
 public class TestDseparation {
@@ -17,7 +18,7 @@ public class TestDseparation {
 	public void testDseparation() {
 		try {
 			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
-			DseparationAnalyzer dsep = new DseparationAnalyzer(network);
+			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
 			query.add("Irene");
@@ -47,7 +48,7 @@ public class TestDseparation {
 	public void testDseparation2() {
 		try {
 			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
-			DseparationAnalyzer dsep = new DseparationAnalyzer(network);
+			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
 			query.add("K");
@@ -73,7 +74,7 @@ public class TestDseparation {
 	public void testDseparation3() {
 		try {
 			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
-			DseparationAnalyzer dsep = new DseparationAnalyzer(network);
+			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
 			query.add("K");
@@ -102,7 +103,7 @@ public class TestDseparation {
 	public void testDseparation4() {
 		try {
 			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
-			DseparationAnalyzer dsep = new DseparationAnalyzer(network);
+			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
 			query.add("John");
@@ -138,7 +139,7 @@ public class TestDseparation {
 	public void testDseparation5() {
 		try {
 			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
-			DseparationAnalyzer dsep = new DseparationAnalyzer(network);
+			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
 			query.add("John");

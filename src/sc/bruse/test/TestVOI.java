@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import sc.bruse.api.BruseEvidence;
-import sc.bruse.api.BruseNetwork;
-import sc.bruse.api.BruseNetworkFactory;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
+import sc.bruse.network.BruseEvidence;
+import sc.bruse.network.BruseNetwork;
+import sc.bruse.network.BruseNetworkFactory;
 
 public class TestVOI {
 

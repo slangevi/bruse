@@ -1,6 +1,7 @@
 package sc.bruse.engine;
 
-import sc.bruse.api.*;
+import sc.bruse.network.*;
+
 import java.util.*;
 
 public class Triangulation {

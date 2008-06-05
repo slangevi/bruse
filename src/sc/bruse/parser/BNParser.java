@@ -3,7 +3,7 @@ package sc.bruse.parser;
 import java.util.Collection;
 import java.util.Hashtable;
 
-import sc.bruse.api.BruseAPIException;
+import sc.bruse.network.BruseAPIException;
 
 public abstract class BNParser {
 	protected String m_filename;

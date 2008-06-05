@@ -1,11 +1,11 @@
-package sc.bruse.engine.propagation.hugin;
+package sc.bruse.engine.propagation.junctiontree;
 
 import java.util.*;
 
-import sc.bruse.api.*;
 import sc.bruse.engine.*;
 import sc.bruse.engine.bigclique.*;
 import sc.bruse.engine.propagation.*;
+import sc.bruse.network.*;
 
 /***
  * Lazy Hugin Propagation
@@ -52,7 +52,7 @@ public class HuginPropagationEngine extends PropagationEngine {
 		
 		System.out.println("Triangulation size: " + sum);*/
 		
-		m_cliques = BigCliqueFactory2.createCliques(m_network, m_sEvidence);
+		m_cliques = BigCliqueFactory.createCliques(m_network, m_sEvidence);
 		
 		//EndTime = System.currentTimeMillis();
 		long EndTime = System.currentTimeMillis();

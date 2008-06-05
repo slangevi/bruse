@@ -2,7 +2,7 @@ package sc.bruse.engine;
 
 import java.util.*;
 
-import sc.bruse.api.*;
+import sc.bruse.network.*;
 
 public class Clique {
 

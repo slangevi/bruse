@@ -2,8 +2,8 @@ package sc.bruse.engine.propagation;
 
 import java.util.ArrayList;
 
-import sc.bruse.api.*;
 import sc.bruse.engine.Entropy;
+import sc.bruse.network.*;
 
 /***
  * The propagation engine abstract class.  

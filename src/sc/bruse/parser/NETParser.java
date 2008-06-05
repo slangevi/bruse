@@ -2,7 +2,8 @@ package sc.bruse.parser;
 
 import java.io.*;
 import java.util.*;
-import sc.bruse.api.*;
+
+import sc.bruse.network.*;
 
 public class NETParser extends BNParser {
 
