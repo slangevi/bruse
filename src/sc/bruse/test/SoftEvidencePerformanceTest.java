@@ -20,7 +20,7 @@ public class SoftEvidencePerformanceTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String file = "tests/alarm.net";  //test61.net"; //studfarm.net"; //alarm.net"; //"tests/diabetes.net";
+		String file = "tests/test61.net";  //test61.net"; //studfarm.net"; //alarm.net"; //"tests/diabetes.net";
 		int numhev = 0;
 		int numsev = 1;
 		int numtests = 1;
@@ -94,7 +94,7 @@ public class SoftEvidencePerformanceTest {
 				System.out.println("Test Wrapper:");
 				TestWrapperLazy(network, hevidence, sevidence, debug);
 				//dumpNetwork(network);
-				BookKeepingMgr.dumpBookKeepingTab();
+				BookKeepingMgr.dumpBookKeeping();
 				BookKeepingMgr.reset();
 				
 				// force garbage collection
@@ -104,7 +104,7 @@ public class SoftEvidencePerformanceTest {
 				System.out.println("Test Wrapper 2:");
 				TestWrapperLazy2(network, hevidence, sevidence, debug);
 				//dumpNetwork(network);
-				BookKeepingMgr.dumpBookKeepingTab();
+				BookKeepingMgr.dumpBookKeeping();
 				BookKeepingMgr.reset();
 			}
 		}
