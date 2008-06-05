@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+
+<!-- DTD for the XMLBIF 0.3 format -->
+<!DOCTYPE BIF [
+	<!ELEMENT BIF ( NETWORK )*>
+		<!ATTLIST BIF VERSION CDATA #REQUIRED>
+	<!ELEMENT NETWORK ( NAME, ( PROPERTY | VARIABLE | DEFINITION )* )>
+	<!ELEMENT NAME (#PCDATA)>
+	<!ELEMENT VARIABLE ( NAME, ( OUTCOME | PROPERTY )* ) >
+		<!ATTLIST VARIABLE TYPE (nature|decision|utility) "nature">
+	<!ELEMENT OUTCOME (#PCDATA)>
+	<!ELEMENT DEFINITION ( FOR | GIVEN | TABLE | PROPERTY )* >
+	<!ELEMENT FOR (#PCDATA)>
+	<!ELEMENT GIVEN (#PCDATA)>
+	<!ELEMENT TABLE (#PCDATA)>
+	<!ELEMENT PROPERTY (#PCDATA)>
+]>
+
+<BIF VERSION="0.3">
+	<NETWORK>
+	<NAME>bayesiannetwork</NAME>
+		<!-- Variables -->
+		<VARIABLE TYPE="nature">
+			<NAME>K</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (562, 84)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>John</NAME>
+			<OUTCOME>Sick</OUTCOME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (300, 475)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Gwenn</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (497, 213)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Irene</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (432, 344)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Dorothy</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (235, 213)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Henry</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (170, 344)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Brian</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (300, 84)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Eric</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (367, 213)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Ann</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (170, 84)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Fred</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (105, 213)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>Cecily</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (432, 84)</PROPERTY>
+		</VARIABLE>
+		<VARIABLE TYPE="nature">
+			<NAME>L</NAME>
+			<OUTCOME>Carrier</OUTCOME>
+			<OUTCOME>Pure</OUTCOME>
+			<PROPERTY>position = (40, 84)</PROPERTY>
+		</VARIABLE>
+		<!-- Probability Distributions -->
+		<DEFINITION>
+			<FOR>K</FOR>
+			<TABLE>0.01 0.99 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>John</FOR>
+			<GIVEN>Henry</GIVEN>
+			<GIVEN>Irene</GIVEN>
+			<TABLE>0.25 0.0 0.0 0.0 0.5 0.5 0.5 0.0 0.25 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Gwenn</FOR>
+			<GIVEN>Ann</GIVEN>
+			<GIVEN>K</GIVEN>
+			<TABLE>0.666667 0.5 0.5 0.0 0.333333 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Irene</FOR>
+			<GIVEN>Eric</GIVEN>
+			<GIVEN>Gwenn</GIVEN>
+			<TABLE>0.666667 0.5 0.5 0.0 0.333333 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Dorothy</FOR>
+			<GIVEN>Ann</GIVEN>
+			<GIVEN>Brian</GIVEN>
+			<TABLE>0.666667 0.5 0.5 0.0 0.333333 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Henry</FOR>
+			<GIVEN>Fred</GIVEN>
+			<GIVEN>Dorothy</GIVEN>
+			<TABLE>0.666667 0.5 0.5 0.0 0.333333 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Brian</FOR>
+			<TABLE>0.01 0.99 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Eric</FOR>
+			<GIVEN>Brian</GIVEN>
+			<GIVEN>Cecily</GIVEN>
+			<TABLE>0.666667 0.5 0.5 0.0 0.333333 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Ann</FOR>
+			<TABLE>0.01 0.99 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Fred</FOR>
+			<GIVEN>L</GIVEN>
+			<GIVEN>Ann</GIVEN>
+			<TABLE>0.666667 0.5 0.5 0.0 0.333333 0.5 0.5 1.0 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>Cecily</FOR>
+			<TABLE>0.01 0.99 </TABLE>
+		</DEFINITION>
+		<DEFINITION>
+			<FOR>L</FOR>
+			<TABLE>0.01 0.99 </TABLE>
+		</DEFINITION>
+	</NETWORK>
+</BIF>
