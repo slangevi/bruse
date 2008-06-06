@@ -230,6 +230,8 @@ public class BruseTable {
 		int num = m_variables.length;
 		String name = null;
 		
+		//if (offset == 1) return 0;
+		
 		for (int i=0; i < m_variables.length; i++) {
 			name = m_variables[i].getName();
 			offset = m_offsets[i];
