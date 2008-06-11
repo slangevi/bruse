@@ -29,7 +29,7 @@ import sc.bruse.network.*;
 import java.util.*;
 
 public class IPFP {
-	private static double IPFP_DELTA = 0.00001;	// convergence stopping condition for IPFP
+	private static double IPFP_DELTA = 0.0001;	// convergence stopping condition for IPFP
 	
 	public static BruseTable absorb(BruseTable table, ArrayList<BruseTable> evidence) throws BruseAPIException {
 		String varName = null;
@@ -55,9 +55,9 @@ public class IPFP {
 			// check if IPFP has converged by checking if the prev table 
 			// and the cur table are within IPFP_DELTA of each other
 		
-			if (converged(curTable, evidence)) return curTable;
+			//if (converged(curTable, evidence)) return curTable;
 			
-			/* TEMP REMOVED
+			/* TEMP REMOVED */
 			
 			curEntropy = getCrossEntropy(curTable, prevTable);
 			
@@ -72,7 +72,7 @@ public class IPFP {
 			// If entropy measure is within IPFP_DELTA threshold then we have converged
 			if (diff <= IPFP_DELTA) return curTable;
 			
-			*/
+			
 			
 			// update previous table
 			prevTable = curTable;

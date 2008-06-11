@@ -32,6 +32,8 @@ public class StateIterator {
 
 	private BruseNode m_nodes[];
 	private Map<String, Integer> m_curState; // TODO use array to keep track of current state
+	private int m_curStateNum;
+	private int m_numStates;
 	private boolean m_finished;
 	
 	public StateIterator(BruseNode nodes[]) {
@@ -42,17 +44,22 @@ public class StateIterator {
 	
 	private void initCurrentState() {
 		m_curState = new HashMap<String, Integer>();
+		m_numStates = 1;
 		
 		for (int i=0; i < m_nodes.length; i++) {
 			BruseNode node = m_nodes[i];
 			m_curState.put(node.getName(), new Integer(0));
+			m_numStates *= node.getStates().size();
 		}
+		m_curState.put(m_nodes[m_nodes.length-1].getName(), new Integer(-1));
 		
+		m_curStateNum = 1;
 		m_finished = false;
 	}
 	
 	public void moveFirstState() {
 		m_finished = false;
+		m_curStateNum = 1;
 		initCurrentState();
 	}
 	
@@ -70,7 +77,8 @@ public class StateIterator {
 		//HACK quick hack to get around problem when table has empty domain
 		if (m_nodes.length == 0) m_finished = true;
 		
-		for (int i=0; i < m_nodes.length; i++) {
+		for (int i = m_nodes.length - 1; i >= 0; i--) {
+		//for (int i=0; i < m_nodes.length; i++) {
 			node = m_nodes[i];
 			varName = node.getName(); //getVariableName(i);
 			stateSize = node.getStates().size(); //getVariableStateSize(i);
@@ -79,6 +87,9 @@ public class StateIterator {
 			if (stateNum < stateSize - 1) {
 				stateNum++;
 				m_curState.put(varName, new Integer(stateNum));
+				
+				if (m_curStateNum == m_numStates) m_finished = true;
+				
 				//setCurVariableStateNum(varName, stateNum);
 				break;
 			}
@@ -86,10 +97,13 @@ public class StateIterator {
 				m_curState.put(varName, new Integer(0));
 				//setCurVariableStateNum(varName, 0);
 				
-				if (i == m_nodes.length - 1) m_finished = true;
+				//if (m_curStateNum == m_numStates) m_finished = true;
+				//if (i == m_nodes.length - 1) m_finished = true;
+				//if ( (i == 0) && (stateNum == stateSize - 1)) m_finished = true;
 			}
 		}
 		
+		m_curStateNum++;
 		return m_curState;
 	}
 	

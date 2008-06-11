@@ -231,10 +231,10 @@ public class HuginPropagationEngine extends PropagationEngine {
 			
 				// multiply this nodes table by the innerMsg of separator with neighbor
 				BruseTable msg = node.getSeparator(neighbor).getInnerMsg();
-				node.getClique().getTable().absorb(msg);
-				/*BruseTable nodeTable = node.getClique().getTable();
+				//node.getClique().getTable().absorb(msg);
+				BruseTable nodeTable = node.getClique().getTable();
 				nodeTable = nodeTable.multiplyBy(msg);
-				node.getClique().setTable(nodeTable);*/
+				node.getClique().setTable(nodeTable);
 			}
 		}
 		
@@ -285,8 +285,8 @@ public class HuginPropagationEngine extends PropagationEngine {
 			msg = separator.getOuterMsg().divideBy(separator.getInnerMsg());
 			//WARNING: Althought this is more efficient it destroys outer message and is dangerous
 			//msg = separator.getOuterMsg().div(separator.getInnerMsg());
-			nodeTable.absorb(msg);
-			//node.getClique().setTable(nodeTable.multiplyBy(msg));
+			//nodeTable.absorb(msg);
+			node.getClique().setTable(nodeTable.multiplyBy(msg));
 		}
 		
 		for (int i=0; i < node.getNeighbors().size(); i++) {
@@ -380,8 +380,8 @@ public class HuginPropagationEngine extends PropagationEngine {
 				
 				if (clique.containsNode(finding.getNodeName())) {
 					BruseTable ev = finding.getTable(m_network);
-					//clique.setTable(clique.getTable().multiplyBy(ev));
-					clique.getTable().absorb(ev);
+					clique.setTable(clique.getTable().multiplyBy(ev));
+					//clique.getTable().absorb(ev);
 					break;
 				}
 			}

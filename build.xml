@@ -25,8 +25,12 @@
 			<zipgroupfileset dir="lib" includes="*.jar"/>
 		</jar>
 	</target>
+	
+	<target name="profile">
+		<java jar="release/bruse.jar" fork="true" jvmargs="-agentlib:hprof=cpu=times"/>
+	</target>
 
 	<target name="run">
-		<java jar="release/bruse.jar" fork="true"/>
+		<java jar="release/bruse.jar" fork="true" maxmemory="1024m"/>
 	</target>
 </project>

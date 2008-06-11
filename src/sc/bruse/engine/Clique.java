@@ -138,8 +138,8 @@ public class Clique {
 		
 		// multiply the clique table by each potential
 		for (int i=0; i < m_potentials.size(); i++) {
-			m_table.absorb(m_potentials.get(i));
-			//m_table = m_table.multiplyBy(m_potentials.get(i));
+			//m_table.absorb(m_potentials.get(i));
+			m_table = m_table.multiplyBy(m_potentials.get(i));
 		}
 	}
 	
