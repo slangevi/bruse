@@ -55,6 +55,14 @@ public class PerformanceImprovementTests {
 			
 			long EndTime = System.currentTimeMillis();
 			System.out.println((EndTime-StartTime));
+			
+			StartTime = System.currentTimeMillis();
+			
+			BruseTable t2 = t1.getMarginal("n1");
+			
+			EndTime = System.currentTimeMillis();
+			System.out.println((EndTime-StartTime));
+			
 		}
 		catch (Exception e) {
 			System.err.println(e.getMessage());

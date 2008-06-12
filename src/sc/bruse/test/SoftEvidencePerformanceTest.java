@@ -20,9 +20,9 @@ public class SoftEvidencePerformanceTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String file = "tests/test61.net";  //test61.net"; //studfarm.net"; //alarm.net"; //"tests/diabetes.net";
+		String file = "tests/alarm.net";  //test61.net"; //studfarm.net"; //alarm.net"; //"tests/diabetes.net";
 		int numhev = 0;
-		int numsev = 1;
+		int numsev = 0;
 		int numtests = 1;
 		boolean debug = false;
 
@@ -80,7 +80,7 @@ public class SoftEvidencePerformanceTest {
 				//TestWrapperHugin();
 		
 				// temporarily disabled
-				/*
+				
 				System.out.println("Test Lazy:");
 				TestBigCliqueLazy(network, hevidence, sevidence, debug);
 				//dumpNetwork(network);
@@ -89,7 +89,7 @@ public class SoftEvidencePerformanceTest {
 				
 				// force garbage collection
 				System.gc();
-				java.lang.Thread.sleep(10);*/
+				java.lang.Thread.sleep(10);
 		
 				System.out.println("Test Wrapper:");
 				TestWrapperLazy(network, hevidence, sevidence, debug);

@@ -40,7 +40,6 @@ public class BruseTable {
 	
 	private int 							m_offsets[];
 	private Map<String, BruseNode> 			m_index;    // TODO switch the variable list to use ordered hash so we don't have two duplicate collections
-	private Map<String, Integer>			m_offsetcache;
 	private BruseNode						m_variables[];
 	private double 							m_values[];
 	private PotentialType					m_type = PotentialType.Conditional;  // default to conditional
@@ -57,9 +56,6 @@ public class BruseTable {
 		// create the index
 		m_index = new HashMap<String, BruseNode>();
 		
-		// special cache to increase performance of table lookups when doing mults, divs
-		m_offsetcache = new HashMap<String, Integer>();
-		
 		// create a bruse table for a single node
 		addVariable(node);
 		
@@ -75,9 +71,6 @@ public class BruseTable {
 	public BruseTable(ArrayList<BruseNode> nodes) {
 		// create the index
 		m_index = new HashMap<String, BruseNode>();
-		
-		// special cache to increase performance of table lookups when doing mults, divs
-		m_offsetcache = new HashMap<String, Integer>();
 		
 		// create a bruse table for the nodes
 		addVariables(nodes);
@@ -173,7 +166,6 @@ public class BruseTable {
 	
 		for (int i = num - 1; i >= 0; i--) {
 			BruseNode node = m_variables[i];
-			String name = node.getName();
 			int numStates = node.getStates().size();
 			m_offsets[i] = offset;
 			offset *= numStates;
@@ -229,122 +221,8 @@ public class BruseTable {
 		m_values[index] = value;
 	}
 	
-	private Integer cacheHighOrderOffset(String key, Map<String, Integer> state) {
-		int offset = 0;
-		String name = "";
-		
-		for (int i=0; i < m_variables.length - 2; i++) {
-			name = m_variables[i].getName();
-			offset += m_offsets[i] * state.get(name);
-		}
-		
-		m_offsetcache.put(key, offset);
-		
-		return offset;
-	}
-	
-	private int getHighOrderOffset(Map<String, Integer> state) {
-		Integer offset;
-		String name = "";
-		StringBuilder str = new StringBuilder();
-		String key = "";
-		
-		for (int i=0; i < m_variables.length - 2; i++) {
-			name = m_variables[i].getName();
-			str.append(name + state.get(name));
-		}
-		key = str.toString();
-		offset = m_offsetcache.get(key);
-		
-		if (offset == null) {
-			offset = cacheHighOrderOffset(key, state);
-		}
-		
-		return offset;
-	}
-	
-	private int getLowOrderOffset(Map<String, Integer> state) {
-		int offset = 0;
-		String name = "";
-		
-		for (int i=m_variables.length - 2; i < m_variables.length; i++) {
-			name = m_variables[i].getName();
-			offset += m_offsets[i] * state.get(name);
-		}
-		
-		return offset;
-	}
-	
-	private String getOffsetCacheKey(Map<String, Integer> state) {
-		StringBuilder str = new StringBuilder();
-		String name = "";
-		
-		for (int i=0; i < m_variables.length; i++) {
-			name = m_variables[i].getName();
-			str.append(name);
-			str.append(state.get(name));
-		}
-		
-		return str.toString();
-	}
-	
-	private Integer cacheOffset(String key, Map<String, Integer> state) {
-		int offset = 0;
-		String name = "";
-		
-		if (m_offsetcache.size() > 1000) {
-			m_offsetcache.clear();
-		}
-		for (int i=0; i < m_variables.length; i++) {
-			name = m_variables[i].getName();
-			offset += m_offsets[i] * state.get(name);
-		}
-		
-		m_offsetcache.put(key, offset);
-		
-		return offset;
-	}
-	
 	public int getColWidth() {
 		return m_offsets[m_variables.length-1];
-	}
-	
-	// Return a column
-	public double[] getTuple(int tuple) {
-		int idx = 0;
-		int start = tuple*this.getColWidth();
-		int end = start + this.getColWidth();
-		double val[] = new double[this.getColWidth()];
-		
-		for (int i=start; i < end; i++) {
-			val[idx++] = m_values[i];
-		}
-		
-		return val;
-	}
-	
-	public int numTuples() {
-		return m_values.length / this.getColWidth();
-	}
-	
-	private int getIndex2(Map<String, Integer> state) {
-		String key = getOffsetCacheKey(state);
-		
-		Integer offset = m_offsetcache.get(key);
-		
-		if (offset == null) {
-			offset = cacheOffset(key, state);
-		}
-	
-		return offset;
-	}
-	
-	private int find(String name) {
-		for (int i=0; i < 10; i++) {
-			if (name == "");
-		}
-		
-		return 1;
 	}
 	
 	public int getOffset(int i) {
@@ -354,50 +232,16 @@ public class BruseTable {
 	}
 	
 	public int getIndex(Map<String, Integer> state) {
-		long s1 = System.currentTimeMillis();
 		// compute the index in the values array
 		int index = 0;
 		int offset = 1;
-		int num = m_variables.length;
 		String name = null;
-		
-		// TODO this
-		// check if high order offset is in indexcache
-		// if it is, then calculate low order index and combine to calculate effective index
-		// return index
-		
-		// else not in indexcache, calculate high order index and cache
-		// calculate low order index and combine to calculate effective index
-		// return index
 		
 		for (int i=0; i < m_variables.length; i++) {
 			name = m_variables[i].getName();
 			offset = m_offsets[i];
 			index += offset * state.get(name);
 		}
-		
-		/*
-		for (int i = num - 1; i >= 0; i--) {
-			name = m_variables.get(i).getName();
-			index += offset * state.get(name);
-			offset = offset * m_variables.get(i).getStates().size();
-		}*/
-		
-		/*int index = 0;
-		Integer offset = null;
-		String name = null;
-		
-		for (int i=0; i < m_variables.size(); i++) {
-			name = m_variables.get(i).getName();
-			offset = (Integer)m_offsets.get(name);
-			// ignore variables that are not in this table rather than raising an error
-			if (offset != null) {
-				index += offset.intValue() * state.get(name);
-			}
-		}*/
-		
-		long e1 = System.currentTimeMillis();
-		BookKeepingMgr.TMP += (e1 - s1);
 		
 		return index;
 	}
@@ -407,24 +251,11 @@ public class BruseTable {
 		Map<String, Integer> state = null;
 		double value = 0;
 		
-		// improve performance
-		//
-		// getIndex is expensive
-		// State iterator is expensive
-		//
-		// switch to using array for states [node, int]
-		//   filter out states where node does not exist
+		// TODO Should this routine be removed?
 		
-		/*
-		BruseTable tmp = new BruseTable(this.getVariables());
-		tmp.makeUnit();
-		tmp = tmp.multiplyBy(table);
-		double vals[] = tmp.getTableValues();
-		for (int i=0; i < m_values.length; i++) {
-			m_values[i] *= vals[i];
-		}*/
+		// TODO improve performance (like multiply)
 
-		//TODO verify that table is a subset of this table
+		// TODO verify that table is a subset of this table
 		
 		StateIterator it = new StateIterator(this.getVariables());
 		
@@ -451,6 +282,8 @@ public class BruseTable {
 		double value = 0;
 
 		//TODO verify that table is a subset of this table
+		
+		//TODO make this more efficient (like multiply)
 		
 		StateIterator it = new StateIterator(this.getVariables());
 		
@@ -529,65 +362,15 @@ public class BruseTable {
 		// set the resulting table as a joint table type
 		result.setType(PotentialType.Joint);
 		
-		return result;
-	}
-	
-	public BruseTable multiplyBy3(BruseTable table) {
-		BruseTable result = new BruseTable(mergeTableVariables(table));
-		int numTuples = this.numTuples();
-		double tuple[];
-		
-		// First take advantage that the resulting table is ordered same as this table but has extra variables
-		// each value in values array is duplicated in resulting table (product of number of states of extra variables)
-		
-		// idea:  for each tuple returned, put it in correct place in result table
-		// for each tuple, for each tuple cell, for each possible position put value in results
-		
-		int offset = 1;
-		BruseNode vars[] = result.getVariables();
-		for (int i=vars.length-1; i >= 0; i--) {
-			if (vars[i] != m_variables[m_variables.length-1]) {
-				offset *= vars[i].getStates().size();
-			}
-			else {
-				break;
-			}
-		}
-		
-		double vals[] = result.getTableValues();
-		for (int i=0; i < numTuples; i++) {
-			tuple = this.getTuple(i);
-			
-			for (int j=0; j < tuple.length; j++) {
-				for (int k=0; k < offset; k++) {
-					vals[(i*tuple.length+j)*offset + k] = tuple[j];
-				}
-			}
-		}
-		
-		StateIterator it = new StateIterator(result.getVariables());
-		Map<String, Integer> state = null;
-		double value = 0;
-		
-		while (it.hasMoreStates()) {
-			state = it.nextState();
-			int idx = result.getIndex(state);
-			vals[idx] *= table.getValue(state);
-		}
-		
-		// set the resulting table as a joint table type
-		result.setType(PotentialType.Joint);
+		BookKeepingMgr.NumTableMults += result.getTableValues().length;
+		BookKeepingMgr.NumTableAbsoptions++;
 		
 		return result;
 	}
 	
-	/***
-	 * Multiply this BruseTable by the given BruseTable
-	 * 
-	 * @param table is the BruseTable to multiply by
-	 * @return the resulting table
-	 */
-	public BruseTable multiplyBy2(BruseTable table) {
+
+	/* Old method of multiplying - too slow
+	public BruseTable multiplyBy(BruseTable table) {
 		// multiply this table by param table and return result
 		Map<String, Integer> state = null;
 		double value = 0;
@@ -609,11 +392,10 @@ public class BruseTable {
 		BookKeepingMgr.NumTableMults += result.getTableValues().length;
 		BookKeepingMgr.NumTableAbsoptions++;
 		return result;
-	}
+	}*/
 	
 	private ArrayList<BruseNode> mergeTableVariables(BruseTable table) {
 		// First add this tables variables
-		BruseNode variable = null;
 		ArrayList<BruseNode> variables = new ArrayList<BruseNode>();
 		
 		// Add all the variables for this table
@@ -652,6 +434,10 @@ public class BruseTable {
 		Map<String, Integer> state = null;
 		double denom = 0;
 		double value = 0;
+		
+		//TODO Rewrite to be more efficient (like multiply)
+		
+		//TODO log number of divisions
 		
 		BruseTable result = new BruseTable(mergeTableVariables(table));
 		
@@ -707,6 +493,12 @@ public class BruseTable {
 		return getMarginal(varNames);
 	}
 	
+	/***
+	 * Get the marginal probability table for the provided variables (nodes)
+	 * 
+	 * @param varNames is the list of names of the variables to marginalize on
+	 * @return the resulting marginal table
+	 */
 	public BruseTable getMarginal(ArrayList<String> varNames) {
 		BruseNode node = null;
 		BruseTable result = null;
@@ -741,64 +533,15 @@ public class BruseTable {
 				node = vars.get(j);
 				idx += (i/offsets[j] % node.getStates().size()) * result.getOffset(j);
 			}
+			BookKeepingMgr.NumTableAdds++;
 			result.getTableValues()[idx] += m_values[i];
 		}
 		
 		// set the resulting table to the same type as this table
 		result.setType(m_type);  // Is this correct??
 		
-		return result;
-	}
-	
-	/***
-	 * Get the marginal probability table for the provided variables (nodes)
-	 * 
-	 * @param varNames is the list of names of the variables to marganilize on
-	 * @return the resulting marginal table
-	 */
-	public BruseTable getMarginal2(ArrayList<String> varNames) {
-		// returns a table marginalized on varNames 
-		double value = 0;
-		double marginal = 0;
-		BruseNode node = null;
-		BruseTable result = null;
-		Map<String, Integer> state = null;
-		
-		ArrayList<BruseNode> vars = new ArrayList<BruseNode>();
-		
-		// create a list of variables based on marginal varNames applicable to this table
-		for (int i=0; i < m_variables.length; i++) {
-			node = m_variables[i];
-			
-			if (varNames.contains(node.getName())) {
-				vars.add(node);
-			}
-		}
-		
-		// if the marginal is the same domain of this table then
-		// there is nothing to do, return a clone of this table.
-		if (m_variables.length == vars.size()) return this.clone();
-		
-		result = new BruseTable(vars);
-		
-		// iterate through all the states of this table
-		StateIterator it = new StateIterator(m_variables);
-		
-		while (it.hasMoreStates()) {
-			state = it.nextState();
-			
-			value = getValue(state);
-			marginal = result.getValue(state) + value;
-
-			BookKeepingMgr.NumTableAdds++;
-			result.setValue(state, marginal);
-		}
-		
-		// set the resulting table to the same type as this table
-		result.setType(m_type);
-	
 		BookKeepingMgr.NumTableMarginals++;
-		return result;		
+		return result;
 	}
 	
 	/***
