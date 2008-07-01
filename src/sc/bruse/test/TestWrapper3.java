@@ -14,7 +14,6 @@ import org.junit.Test;
 import sc.bruse.engine.*;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
-import sc.bruse.engine.propagation.junctiontree.*;
 import sc.bruse.network.*;
 
 public class TestWrapper3 {

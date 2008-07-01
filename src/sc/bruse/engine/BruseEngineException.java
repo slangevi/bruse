@@ -25,14 +25,14 @@ package sc.bruse.engine;
  */
 
 /***
- * The main engine exception class
+ * This class is a general exception thrown for the BRUSE.
  * 
  * @author langevin
  */
 public class BruseEngineException extends Exception {
 	
 	/***
-	 * BruseEngineException construction
+	 * BruseEngineException default constructor
 	 *
 	 */
 	public BruseEngineException() {

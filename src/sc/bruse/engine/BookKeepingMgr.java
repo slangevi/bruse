@@ -24,6 +24,13 @@ package sc.bruse.engine;
  *
  */
 
+/**
+ * BookKeepingMgr manages runtime statistics for the BRUSE reasoning engine such as: 
+ * Number of table multiplications, number of table additions, size of triangulation, inference time.
+ * 
+ * @author scott
+ *
+ */
 public class BookKeepingMgr {
 
 	public static int NumTableAbsoptions = 0;
@@ -43,8 +50,9 @@ public class BookKeepingMgr {
 	public static long TimePropagation = 0;
 	public static long TMP = 0;
 	
-	//TODO add bookkeeping for triangulation size, largest clique, number of cliques, etc
-	
+	/***
+	 * This method resets all statistics gathered.
+	 */
 	public static void reset() {
 		NumTableAbsoptions = 0;
 		NumTableMults = 0;
@@ -64,6 +72,9 @@ public class BookKeepingMgr {
 		TMP = 0;
 	}
 	
+	/***
+	 * This method formats and prints out current statistics gathered.
+	 */
 	public static void dumpBookKeeping() {
 		System.out.println("************************************************");
 		System.out.println("* Number of Table Absorptions: " + NumTableAbsoptions);
@@ -85,6 +96,9 @@ public class BookKeepingMgr {
 		System.out.println("************************************************");
 	}
 	
+	/***
+	 * This method formats (tab delimits) and prints out current statistics gathered.
+	 */
 	public static void dumpBookKeepingTab() {
 		System.out.println(IPFPTableSize + "\t" + NumIPFPIterations + "\t" + NumTableMults + "\t" + NumTableAdds + "\t\t" + TimePropagation);
 	}

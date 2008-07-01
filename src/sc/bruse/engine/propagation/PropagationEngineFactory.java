@@ -26,7 +26,12 @@ package sc.bruse.engine.propagation;
 
 import sc.bruse.engine.*;
 // Import all the propagation engine packages
-import sc.bruse.engine.propagation.junctiontree.*;
+import sc.bruse.engine.propagation.hugin.HuginPropagationEngine;
+import sc.bruse.engine.propagation.lazy.LazyPropagationEngine;
+import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine;
+import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine2;
+import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine3;
+import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine4;
 
 /***
  * Creates a propagation engine using the specified propagation type

@@ -20,9 +20,9 @@ public class SoftEvidencePerformanceTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String file = "tests/alarm.net";  //test61.net"; //studfarm.net"; //alarm.net"; //"tests/diabetes.net";
+		String file = "tests/test71.net";  //test61.net"; //studfarm.net"; //alarm.net"; //"tests/diabetes.net";
 		int numhev = 0;
-		int numsev = 0;
+		int numsev = 10;
 		int numtests = 1;
 		boolean debug = false;
 
