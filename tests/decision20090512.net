@@ -1,0 +1,4051 @@
+net
+{
+    node_size = (80 40);
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "Arial";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+}
+
+node Active_17
+{
+    label = "";
+    position = (1279 1069);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_17 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_17:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_16
+{
+    label = "";
+    position = (1213 1073);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_16 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_16:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_15
+{
+    label = "";
+    position = (1144 1074);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_15 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_15:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_14
+{
+    label = "";
+    position = (1077 1077);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_14 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_14:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_13
+{
+    label = "";
+    position = (1001 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_13 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0]";
+    HR_Group = "0";
+}
+
+node Active_12
+{
+    label = "";
+    position = (938 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_12 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_12:0]";
+    HR_Group = "0";
+}
+
+node Active_11
+{
+    label = "";
+    position = (880 1077);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_11 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_11:0]";
+    HR_Group = "0";
+}
+
+node Active_10
+{
+    label = "";
+    position = (809 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_10 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_10:0]";
+    HR_Group = "0";
+}
+
+node Active_9
+{
+    label = "";
+    position = (746 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_9 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_9:0]";
+    HR_Group = "0";
+}
+
+node Active_8
+{
+    label = "";
+    position = (681 1077);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_8 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_8:0]";
+    HR_Group = "0";
+}
+
+node Active_7
+{
+    label = "";
+    position = (587 1079);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_7 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_7:0]";
+    HR_Group = "0";
+}
+
+node Active_6
+{
+    label = "";
+    position = (504 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_6:0]";
+    HR_Group = "0";
+}
+
+node Active_4
+{
+    label = "";
+    position = (330 1079);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_4 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0]";
+    HR_Group = "0";
+}
+
+node Active_5
+{
+    label = "";
+    position = (416 1079);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_5 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_5:0]";
+    HR_Group = "0";
+}
+
+node Active_3
+{
+    label = "";
+    position = (242 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_3 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_2
+{
+    label = "";
+    position = (150 1078);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_2 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0]";
+    HR_Group = "0";
+}
+
+node Active_1
+{
+    label = "";
+    position = (64 1080);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_1 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Nu_17
+{
+    label = "";
+    position = (1230 471);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_16 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][S_15:0][S_16:0][M_16:0]";
+    HR_Group = "0";
+}
+
+node Decision
+{
+    label = "";
+    position = (1233 20);
+    states = ("SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_State_6 = "Integrated";
+    HR_State_0 = "One based on the OASIS SOA Reference Model and Reference Architecture: Simple market";
+    HR_State_1 = "One based on the OASIS SOA Reference Model and Reference Architecture: Choreographed";
+    HR_State_2 = "One based on the OASIS SOA Reference Model and Reference Architecture: Orchestrated";
+    HR_State_3 = "Non-SOA distributed: b.\tPeer-to-peer";
+    HR_State_4 = "Non-SOA distributed: Hierarchical";
+    HR_State_5 = "Integrated";
+    HR_Desc = "for a candidate information system, which specific architecture would be best among the following?";
+    HR_LinkMode = "[Nu_1:0]";
+    HR_Group = "0";
+}
+
+node M_16
+{
+    label = "";
+    position = (1233 106);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_Decision = "0";
+    HR_State_85 = "";
+    HR_State_84 = "";
+    HR_State_83 = "";
+    HR_State_82 = "";
+    HR_State_81 = "";
+    HR_State_80 = "";
+    HR_State_79 = "";
+    HR_State_78 = "";
+    HR_State_77 = "";
+    HR_State_76 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_State_61 = "";
+    HR_State_62 = "";
+    HR_State_63 = "";
+    HR_State_64 = "";
+    HR_State_65 = "";
+    HR_State_66 = "";
+    HR_State_67 = "";
+    HR_State_68 = "";
+    HR_State_69 = "";
+    HR_State_70 = "";
+    HR_State_71 = "";
+    HR_State_72 = "";
+    HR_State_73 = "";
+    HR_State_74 = "";
+    HR_State_75 = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0]";
+    HR_Group = "0";
+}
+
+node Decision_17
+{
+    label = "";
+    position = (1229 771);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_17 = "0";
+    HR_State_6 = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_16:0][Nu_16_1:0][Nu_17:0]";
+    HR_Group = "0";
+}
+
+node Federation
+{
+    label = "";
+    position = (1305 843);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_17 = "0";
+    HR_LinkMode = "[Decision_16_1:0][Decision_17:0]";
+    HR_Group = "0";
+    HR_Desc = "Is Federation needed?";
+    HR_State_1 = "Not needed.";
+    HR_State_0 = "Yes";
+}
+
+node Network_Size
+{
+    label = "";
+    position = (1167 842);
+    states = ("Very_Large" "Large" "Median" "Small");
+    HR_LinkMode_Decision_17 = "0";
+    HR_LinkMode_Federation = "0";
+    HR_LinkMode = "[Federation:0][Decision_16_1:0][Decision_17:0]";
+    HR_State_3 = "Small";
+    HR_State_2 = "Median";
+    HR_Group = "0";
+    HR_Desc = "What is the total size of the network?";
+    HR_State_1 = "Large";
+    HR_State_0 = "Very large";
+}
+
+node M_15
+{
+    label = "";
+    position = (1162 136);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_16 = "0";
+    HR_State_80 = "";
+    HR_State_79 = "";
+    HR_State_78 = "";
+    HR_State_77 = "";
+    HR_State_76 = "";
+    HR_State_75 = "";
+    HR_State_74 = "";
+    HR_State_73 = "";
+    HR_State_72 = "";
+    HR_State_71 = "";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0][S_15_1:0][S_16:0][M_16:0]";
+    HR_Group = "0";
+}
+
+node Nu_16
+{
+    label = "";
+    position = (1163 511);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_15 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][S_15:0][M_15:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Decision_16
+{
+    label = "";
+    position = (1162 612);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_16 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_16:0]";
+    HR_Group = "0";
+}
+
+node Implication
+{
+    label = "";
+    position = (1160 717);
+    states = ("SecureEnough" "NotSecureEnough");
+    HR_LinkMode_Decision_16 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "Others";
+    HR_Desc = "What are the security implications and the ramifications of distributed or centralized authentication and authorization?";
+    HR_State_1 = "Not Secure Enough";
+    HR_State_0 = "Secure enough";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_2:0][Decision_15:0][Decision_16:0]";
+    HR_Group = "0";
+}
+
+node M_14
+{
+    label = "";
+    position = (1073 161);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_15 = "0";
+    HR_State_75 = "";
+    HR_State_74 = "";
+    HR_State_73 = "";
+    HR_State_72 = "";
+    HR_State_71 = "";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu_1:0][Decision:0][S_15:0][M_15:0]";
+}
+
+node M_13
+{
+    label = "";
+    position = (978 183);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_14 = "0";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][S_14:0][M_14:0]";
+}
+
+node M_12
+{
+    label = "";
+    position = (889 208);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_13 = "0";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_13:0][S_13:0][M_13:0]";
+}
+
+node M_11
+{
+    label = "";
+    position = (805 228);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_12 = "0";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_12:0][S_12:0][M_12:0]";
+}
+
+node M_10
+{
+    label = "";
+    position = (726 250);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_11 = "0";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_11:0][S_11:0][M_11:0]";
+}
+
+node M_9
+{
+    label = "";
+    position = (643 277);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_10 = "0";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_10:0][S_10:0][M_10:0]";
+}
+
+node M_8
+{
+    label = "";
+    position = (566 302);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_9 = "0";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_9:0][S_9:0][M_9:0]";
+}
+
+node M_7
+{
+    label = "";
+    position = (492 331);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_8 = "0";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_8:0][S_8:0][M_8:0]";
+}
+
+node M_6
+{
+    label = "";
+    position = (416 363);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_7 = "0";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0]";
+}
+
+node M_5
+{
+    label = "";
+    position = (343 394);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_6 = "0";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_6:0][S_6:0][M_6:0]";
+}
+
+node M_4
+{
+    label = "";
+    position = (274 425);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_5 = "0";
+    HR_Desc = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0]";
+}
+
+node M_3
+{
+    label = "";
+    position = (206 458);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_4 = "0";
+    HR_Desc = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_3_1:0][NuS_4:0][S_4:0][M_4:0]";
+}
+
+node M_2
+{
+    label = "";
+    position = (144 497);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_3 = "0";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][NuS_2_1:0][NuS_3:0][S_3:0][M_3:0]";
+}
+
+node M_1
+{
+    label = "";
+    position = (92 540);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_2 = "0";
+    HR_Desc = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[NuS_1_1:0][NuS_2:0][S_2:0][M_2:0]";
+}
+
+node Nu_15
+{
+    label = "";
+    position = (1115 559);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_14 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][M_14:0]";
+}
+
+node Nu_14
+{
+    label = "";
+    position = (1068 611);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_13 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_13:0][S_13:0][M_13:0]";
+}
+
+node Nu_13
+{
+    label = "";
+    position = (1015 561);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_12 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_12:0][S_12:0][M_12:0]";
+}
+
+node Nu_12
+{
+    label = "";
+    position = (965 610);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_11 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_11:0][S_11:0][M_11:0]";
+}
+
+node Nu_11
+{
+    label = "";
+    position = (878 570);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_10 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_10:0][S_10:0][M_10:0]";
+}
+
+node Nu_10
+{
+    label = "";
+    position = (796 502);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_9 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_9:0][S_9:0][M_9:0]";
+}
+
+node Nu_9
+{
+    label = "";
+    position = (732 547);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_8 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_8:0][S_8:0][M_8:0]";
+}
+
+node Nu_8
+{
+    label = "";
+    position = (669 599);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_7 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_7:0][S_7:0][M_7:0]";
+}
+
+node Nu_7
+{
+    label = "";
+    position = (604 650);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_6 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_6:0][S_6:0][M_6:0]";
+}
+
+node Nu_6
+{
+    label = "";
+    position = (478 588);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_5 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0]";
+}
+
+node Nu_5
+{
+    label = "";
+    position = (381 520);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_4 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_4:0][M_4:0]";
+}
+
+node Nu_4
+{
+    label = "";
+    position = (302 561);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_3 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][NuS_3:0][S_3:0][M_3:0]";
+}
+
+node Nu_3
+{
+    label = "";
+    position = (226 597);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_2 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1_1:0][NuS_2:0][S_2:0][M_2:0]";
+}
+
+node Nu_2
+{
+    label = "";
+    position = (141 599);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][S_1:0][M_1:0]";
+}
+
+node Nu_1
+{
+    label = "";
+    position = (56 601);
+    states = ("" "" "" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4 5 6);
+    HR_LinkMode_M_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][S_1:0][M_1:0]";
+}
+
+node Domain_Complexity
+{
+    label = "";
+    position = (1113 775);
+    states = ("High" "Median" "Low");
+    HR_LinkMode_Decision_15 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "High";
+    HR_State_1 = "Median";
+    HR_Desc = "How complex is the domain? ";
+    HR_State_2 = "Low";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_2:0][Decision_15:0]";
+    HR_Group = "0";
+}
+
+node Decision_15
+{
+    label = "";
+    position = (1114 652);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_15 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_Group = "0";
+}
+
+node Deployment_Time
+{
+    label = "";
+    position = (1067 838);
+    states = ("Immediately" "Later");
+    HR_LinkMode_Decision_14 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Immediately";
+    HR_State_1 = "Later";
+    HR_Desc = "How quickly is the SOA deployment needed?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_1:0][Decision_14:0]";
+    HR_Group = "0";
+}
+
+node Decision_14
+{
+    label = "";
+    position = (1068 715);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_14 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_14:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_Group = "0";
+}
+
+node Sufficient_Trust
+{
+    label = "";
+    position = (1014 774);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_13 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Can sufficient trust be established?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_13:0]";
+    HR_Group = "0";
+}
+
+node Decision_13
+{
+    label = "";
+    position = (1014 652);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_13 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_13:0]";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Independent_Consumers
+{
+    label = "";
+    position = (963 835);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_12 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Are the potential consumers of a service independent?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_12:0]";
+    HR_Group = "0";
+}
+
+node Decision_12
+{
+    label = "";
+    position = (964 712);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_12 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_2:0][Nu_12:0]";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Resource_Allocation_Change_Rate
+{
+    label = "";
+    position = (915 775);
+    states = ("Ok" "TooFast");
+    HR_LinkMode_Decision_11 = "0";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_11:0]";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Can the resource allocation be, or is likely to be, changed before the service is complete?";
+    HR_State_1 = "Too fast";
+    HR_State_0 = "Ok";
+    HR_LinkControlPoints = "";
+    HR_Group = "0";
+}
+
+node Decision_11
+{
+    label = "";
+    position = (878 656);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_11 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_11:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Appropriate_For_Contract
+{
+    label = "";
+    position = (826 776);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_11 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Is the candidate application appropriate for contracts and service-level agreements?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_11:0]";
+    HR_Group = "0";
+}
+
+node Decision_10
+{
+    label = "";
+    position = (794 590);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_10 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_10:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_Group = "0";
+}
+
+node Affordable
+{
+    label = "";
+    position = (793 713);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_10 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Can the consumers of the service afford it? Basically, is there a good business plan for the propose system?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_10:0]";
+    HR_Group = "0";
+}
+
+node Timeliness
+{
+    label = "";
+    position = (732 755);
+    states = ("InTime" "Late");
+    HR_LinkMode_Decision_9 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Timeliness for QoS.  How old is the information? How quickly does it change?";
+    HR_State_1 = "Late";
+    HR_State_0 = "In time";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0]";
+    HR_Group = "0";
+}
+
+node Decision_9
+{
+    label = "";
+    position = (733 632);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_9 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_9:0]";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Decision_8
+{
+    label = "";
+    position = (669 679);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_8 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_8:0][Nu_8_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Accuracy
+{
+    label = "";
+    position = (668 802);
+    states = ("Sufficient" "Insufficient");
+    HR_LinkMode_Decision_8 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Sufficient";
+    HR_State_1 = "Insufficient";
+    HR_Desc = "Precision and accuracy of services for QoS.  Are they good enough to be used?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_8:0]";
+    HR_Group = "0";
+}
+
+node Reliability
+{
+    label = "";
+    position = (602 845);
+    states = ("High" "Median" "Low");
+    HR_LinkMode_Decision_7 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "Low";
+    HR_Desc = "What is the required reliability level? (Availability and support for QoS.)";
+    HR_State_1 = "Median";
+    HR_State_0 = "High";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_7:0]";
+    HR_Group = "0";
+}
+
+node Decision_7
+{
+    label = "";
+    position = (603 722);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_7 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_7:0]";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Decision_6
+{
+    label = "";
+    position = (477 665);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_6 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_6:0]";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Duplication
+{
+    label = "";
+    position = (554 761);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6 = "0";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Can customers duplicate the service to get better response or higher QoS?";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_5_1_1:0][Decision_6_4:0][Decision_6_1:0][Decision_6:0]";
+    HR_Group = "0";
+}
+
+node Often
+{
+    label = "";
+    position = (524 831);
+    states = ("Every_Second" "Every_Minute" "Every_Hour" "Every_Day" "Every_Month" "DuringCrises");
+    HR_LinkMode_Decision_6 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision_5_1:0][Decision_6_3:0][Decision_6_1:0][Decision_6:0]";
+    HR_State_5 = "Only during crises";
+    HR_State_0 = "A few times every second";
+    HR_State_1 = "A few times every minute";
+    HR_State_2 = "A few times every hour";
+    HR_State_3 = "A few times every day";
+    HR_State_4 = "A few times every month";
+    HR_Desc = "How often will the customers access the service?";
+    HR_Group = "0";
+}
+
+node Repaid
+{
+    label = "";
+    position = (435 830);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6 = "0";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_5_1:0][Decision_6_2:0][Decision_6_1:0][Decision_6:0]";
+    HR_Desc = "Will documentation and advertisement effort be repaid?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_Group = "0";
+}
+
+node Customer_Consumer_Base
+{
+    label = "";
+    position = (404 760);
+    states = ("Ones" "Tens" "Hundreds" "Thousands" "More");
+    HR_LinkMode_Decision_6 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision_5_2:0][Decision_6_1:0][Decision_6:0]";
+    HR_Group = "0";
+    HR_Desc = "large is the customer/consumer base? ";
+    HR_State_4 = "More";
+    HR_State_3 = "Thousands";
+    HR_State_2 = "Hundreds";
+    HR_State_1 = "Tens";
+    HR_State_0 = "Ones";
+}
+
+node Decision_5
+{
+    label = "";
+    position = (381 591);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_5 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_4_1:0][Nu_5:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Translation_Load
+{
+    label = "";
+    position = (380 714);
+    states = ("Less" "Median" "More");
+    HR_LinkMode_Decision_5 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Less";
+    HR_State_1 = "Median";
+    HR_Desc = "How much translation and/or mediation of the messages must be done to/from XML and to/from the syntax and semantics of the participants in the SOA?  Between the structures at the end-points?";
+    HR_State_2 = "More";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0]";
+    HR_Group = "0";
+}
+
+node Bandwidth
+{
+    label = "";
+    position = (343 855);
+    states = ("DialUp" "ISP" "T1" "T3" "Larger");
+    HR_LinkMode_Transmission_Time = "0";
+    HR_State_4 = "Larger";
+    HR_State_3 = "T3";
+    HR_LinkMode = "[Transmission_Time:0][Transmission_Time_1:0]";
+    HR_Group = "0";
+    HR_Desc = "What is the bandwidth?";
+    HR_State_2 = "T1";
+    HR_State_1 = "ISP";
+    HR_State_0 = "Dial up";
+}
+
+node Message_Size
+{
+    label = "";
+    position = (259 855);
+    states = ("LessThan_1K" "AFew_KBs" "AFew_MBs" "Larger");
+    HR_LinkMode_Transmission_Time = "0";
+    HR_LinkMode = "[Transmission_Time:0][Transmission_Time_1:0]";
+    HR_Group = "0";
+    HR_Desc = "What are the sizes of the request and response, or publish and subscribe, messages? ";
+    HR_State_3 = "Larger";
+    HR_State_2 = "A few MBs";
+    HR_State_1 = "A few KBs";
+    HR_State_0 = "Less than 1 KBs";
+}
+
+node Decision_4
+{
+    label = "";
+    position = (303 634);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_4 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_4:0][Nu_2_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Transmission_Time
+{
+    label = "";
+    position = (302 754);
+    states = ("LessThan_1_Second" "AFew_Seconds" "AFew_Minutes" "Longer");
+    HR_LinkMode_Decision_4 = "0";
+    HR_State_0 = "Less than 1 second";
+    HR_State_1 = "A few seconds";
+    HR_Desc = "What will be the transmission times of the messages?";
+    HR_State_2 = "A few minutes";
+    HR_State_3 = "Longer";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_3
+{
+    label = "";
+    position = (227 670);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_3 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_2_1:0][Nu_3:0]";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Response_Time
+{
+    label = "";
+    position = (226 793);
+    states = ("LessThan_10_Milliseconds" "LessThan_1_Second" "AFew_Seconds" "Not_Important");
+    HR_LinkMode_Decision_3 = "0";
+    HR_State_3 = "Not important";
+    HR_State_2 = "A few seconds";
+    HR_Desc = "What is the required response time?";
+    HR_State_1 = "Less than 1 second";
+    HR_State_0 = "Less than 10 milliseconds";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0]";
+    HR_Group = "0";
+}
+
+node Cross_Boundaries
+{
+    label = "";
+    position = (140 791);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_2 = "0";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Does the system cross enterprise or ownership boundaries? Does it extend outside a single area of control, e.g., echelon? For example, parts of the system might be on land, while other parts are at sea.";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_2
+{
+    label = "";
+    position = (141 668);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_2 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_2:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Decision_1
+{
+    label = "";
+    position = (55 668);
+    states = ("Nothing" "SOA_SimpleMarket" "SOA_Choreographed" "SOA_Orchestrated" "NotSOA_Peer-to-peer" "NotSOA_Hierarchical" "Integrated");
+    HR_LinkMode_Nu_1 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_1:0]";
+    HR_Group = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+}
+
+node Distributed
+{
+    label = "";
+    position = (53 794);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision_1:0][Decision_1_1:0]";
+    HR_Group = "0";
+    HR_Desc = "Is the candidate system (producers and consumers) distributed?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+}
+
+potential (Active_17)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_16)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_15)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_14)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_13)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_12)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_11)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_10)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_9)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_8)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_7)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_6)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_4)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_5)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_3)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_2)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_1)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Nu_17 | Decision_17)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_17=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_17=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_17=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_17=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_17=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_17=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_17=Integrated
+}
+
+potential (Decision | M_16)
+{
+    data
+     = (( 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  M_16=0
+	( 1 0 0 0 0 0 )	%  M_16=1
+	( 0 1 0 0 0 0 )	%  M_16=2
+	( 0 0 1 0 0 0 )	%  M_16=3
+	( 0 0 0 1 0 0 )	%  M_16=4
+	( 0 0 0 0 1 0 )	%  M_16=5
+	( 0 0 0 0 0 1 ));	%  M_16=6
+}
+
+potential (M_16 | Nu_17 M_15)
+{
+    model_nodes = ();
+    model_data = ( max (M_15, Nu_17) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_17=0  M_15=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_17=0  M_15=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_17=0  M_15=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_17=0  M_15=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=0  M_15=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=0  M_15=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_17=0  M_15=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_17=1  M_15=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_17=1  M_15=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_17=1  M_15=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_17=1  M_15=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=1  M_15=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=1  M_15=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_17=1  M_15=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_17=2  M_15=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_17=2  M_15=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_17=2  M_15=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_17=2  M_15=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=2  M_15=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=2  M_15=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_17=2  M_15=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_17=3  M_15=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_17=3  M_15=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_17=3  M_15=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_17=3  M_15=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=3  M_15=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=3  M_15=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_17=3  M_15=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_17=4  M_15=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=4  M_15=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=4  M_15=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=4  M_15=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_17=4  M_15=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=4  M_15=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_17=4  M_15=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_17=5  M_15=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=5  M_15=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=5  M_15=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=5  M_15=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=5  M_15=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_17=5  M_15=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_17=5  M_15=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_17=6  M_15=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_17=6  M_15=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_17=6  M_15=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_17=6  M_15=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_17=6  M_15=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_17=6  M_15=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_17=6  M_15=6
+}
+
+potential (Decision_17 | Active_17 Federation Network_Size)
+{
+    data
+     = (((( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_17=Yes  Federation=Yes  Network_Size=Very_Large
+	  ( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_17=Yes  Federation=Yes  Network_Size=Large
+	  ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_17=Yes  Federation=Yes  Network_Size=Median
+	  ( 0 0.3 0.2 0.2 0.1 0.1 0.1 ))	%  Active_17=Yes  Federation=Yes  Network_Size=Small
+	 (( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_17=Yes  Federation=No  Network_Size=Very_Large
+	  ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_17=Yes  Federation=No  Network_Size=Large
+	  ( 0 0.25 0.2 0.2 0.15 0.15 0.05 )	%  Active_17=Yes  Federation=No  Network_Size=Median
+	  ( 0 0.35 0.2 0.2 0.1 0.1 0.05 )))	%  Active_17=Yes  Federation=No  Network_Size=Small
+	((( 1 0 0 0 0 0 0 )	%  Active_17=No  Federation=Yes  Network_Size=Very_Large
+	  ( 1 0 0 0 0 0 0 )	%  Active_17=No  Federation=Yes  Network_Size=Large
+	  ( 1 0 0 0 0 0 0 )	%  Active_17=No  Federation=Yes  Network_Size=Median
+	  ( 1 0 0 0 0 0 0 ))	%  Active_17=No  Federation=Yes  Network_Size=Small
+	 (( 1 0 0 0 0 0 0 )	%  Active_17=No  Federation=No  Network_Size=Very_Large
+	  ( 1 0 0 0 0 0 0 )	%  Active_17=No  Federation=No  Network_Size=Large
+	  ( 1 0 0 0 0 0 0 )	%  Active_17=No  Federation=No  Network_Size=Median
+	  ( 1 0 0 0 0 0 0 ))));	%  Active_17=No  Federation=No  Network_Size=Small
+}
+
+potential (Federation | Network_Size)
+{
+    data
+     = (( 1 0 )	%  Network_Size=Very_Large
+	( 0.9 0.1 )	%  Network_Size=Large
+	( 0.5 0.5 )	%  Network_Size=Median
+	( 0 1 ));	%  Network_Size=Small
+}
+
+potential (Network_Size)
+{
+    data = ( 0.25 0.25 0.25 0.25 );
+}
+
+potential (M_15 | Nu_16 M_14)
+{
+    model_nodes = ();
+    model_data = ( max (M_14, Nu_16) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_16=0  M_14=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_16=0  M_14=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_16=0  M_14=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_16=0  M_14=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=0  M_14=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=0  M_14=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_16=0  M_14=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_16=1  M_14=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_16=1  M_14=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_16=1  M_14=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_16=1  M_14=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=1  M_14=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=1  M_14=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_16=1  M_14=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_16=2  M_14=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_16=2  M_14=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_16=2  M_14=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_16=2  M_14=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=2  M_14=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=2  M_14=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_16=2  M_14=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_16=3  M_14=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_16=3  M_14=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_16=3  M_14=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_16=3  M_14=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=3  M_14=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=3  M_14=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_16=3  M_14=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_16=4  M_14=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=4  M_14=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=4  M_14=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=4  M_14=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_16=4  M_14=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=4  M_14=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_16=4  M_14=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_16=5  M_14=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=5  M_14=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=5  M_14=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=5  M_14=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=5  M_14=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_16=5  M_14=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_16=5  M_14=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_16=6  M_14=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_16=6  M_14=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_16=6  M_14=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_16=6  M_14=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_16=6  M_14=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_16=6  M_14=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_16=6  M_14=6
+}
+
+potential (Nu_16 | Decision_16)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_16=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_16=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_16=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_16=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_16=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_16=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_16=Integrated
+}
+
+potential (Decision_16 | Active_16 Implication)
+{
+    data
+     = ((( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_16=Yes  Implication=SecureEnough
+	 ( 0 0.25 0.25 0.25 0.1 0.1 0.05 ))	%  Active_16=Yes  Implication=NotSecureEnough
+	(( 1 0 0 0 0 0 0 )	%  Active_16=No  Implication=SecureEnough
+	 ( 1 0 0 0 0 0 0 )));	%  Active_16=No  Implication=NotSecureEnough
+}
+
+potential (Implication)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (M_14 | Nu_15 M_13)
+{
+    model_nodes = ();
+    model_data = ( max (M_13, Nu_15) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_15=0  M_13=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_15=0  M_13=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_15=0  M_13=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_15=0  M_13=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=0  M_13=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=0  M_13=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_15=0  M_13=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_15=1  M_13=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_15=1  M_13=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_15=1  M_13=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_15=1  M_13=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=1  M_13=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=1  M_13=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_15=1  M_13=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_15=2  M_13=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_15=2  M_13=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_15=2  M_13=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_15=2  M_13=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=2  M_13=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=2  M_13=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_15=2  M_13=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_15=3  M_13=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_15=3  M_13=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_15=3  M_13=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_15=3  M_13=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=3  M_13=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=3  M_13=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_15=3  M_13=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_15=4  M_13=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=4  M_13=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=4  M_13=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=4  M_13=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_15=4  M_13=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=4  M_13=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_15=4  M_13=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_15=5  M_13=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=5  M_13=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=5  M_13=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=5  M_13=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=5  M_13=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_15=5  M_13=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_15=5  M_13=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_15=6  M_13=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_15=6  M_13=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_15=6  M_13=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_15=6  M_13=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_15=6  M_13=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_15=6  M_13=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_15=6  M_13=6
+}
+
+potential (M_13 | Nu_14 M_12)
+{
+    model_nodes = ();
+    model_data = ( max (M_12, Nu_14) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_14=0  M_12=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_14=0  M_12=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_14=0  M_12=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_14=0  M_12=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=0  M_12=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=0  M_12=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_14=0  M_12=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_14=1  M_12=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_14=1  M_12=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_14=1  M_12=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_14=1  M_12=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=1  M_12=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=1  M_12=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_14=1  M_12=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_14=2  M_12=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_14=2  M_12=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_14=2  M_12=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_14=2  M_12=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=2  M_12=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=2  M_12=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_14=2  M_12=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_14=3  M_12=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_14=3  M_12=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_14=3  M_12=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_14=3  M_12=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=3  M_12=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=3  M_12=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_14=3  M_12=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_14=4  M_12=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=4  M_12=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=4  M_12=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=4  M_12=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_14=4  M_12=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=4  M_12=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_14=4  M_12=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_14=5  M_12=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=5  M_12=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=5  M_12=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=5  M_12=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=5  M_12=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_14=5  M_12=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_14=5  M_12=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_14=6  M_12=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_14=6  M_12=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_14=6  M_12=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_14=6  M_12=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_14=6  M_12=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_14=6  M_12=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_14=6  M_12=6
+}
+
+potential (M_12 | Nu_13 M_11)
+{
+    model_nodes = ();
+    model_data = ( max (M_11, Nu_13) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_13=0  M_11=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_13=0  M_11=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_13=0  M_11=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_13=0  M_11=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=0  M_11=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=0  M_11=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_13=0  M_11=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_13=1  M_11=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_13=1  M_11=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_13=1  M_11=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_13=1  M_11=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=1  M_11=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=1  M_11=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_13=1  M_11=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_13=2  M_11=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_13=2  M_11=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_13=2  M_11=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_13=2  M_11=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=2  M_11=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=2  M_11=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_13=2  M_11=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_13=3  M_11=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_13=3  M_11=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_13=3  M_11=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_13=3  M_11=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=3  M_11=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=3  M_11=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_13=3  M_11=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_13=4  M_11=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=4  M_11=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=4  M_11=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=4  M_11=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_13=4  M_11=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=4  M_11=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_13=4  M_11=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_13=5  M_11=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=5  M_11=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=5  M_11=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=5  M_11=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=5  M_11=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_13=5  M_11=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_13=5  M_11=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_13=6  M_11=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_13=6  M_11=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_13=6  M_11=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_13=6  M_11=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_13=6  M_11=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_13=6  M_11=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_13=6  M_11=6
+}
+
+potential (M_11 | Nu_12 M_10)
+{
+    model_nodes = ();
+    model_data = ( max (M_10, Nu_12) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_12=0  M_10=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_12=0  M_10=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_12=0  M_10=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_12=0  M_10=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=0  M_10=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=0  M_10=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_12=0  M_10=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_12=1  M_10=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_12=1  M_10=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_12=1  M_10=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_12=1  M_10=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=1  M_10=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=1  M_10=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_12=1  M_10=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_12=2  M_10=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_12=2  M_10=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_12=2  M_10=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_12=2  M_10=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=2  M_10=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=2  M_10=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_12=2  M_10=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_12=3  M_10=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_12=3  M_10=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_12=3  M_10=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_12=3  M_10=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=3  M_10=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=3  M_10=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_12=3  M_10=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_12=4  M_10=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=4  M_10=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=4  M_10=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=4  M_10=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_12=4  M_10=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=4  M_10=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_12=4  M_10=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_12=5  M_10=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=5  M_10=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=5  M_10=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=5  M_10=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=5  M_10=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_12=5  M_10=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_12=5  M_10=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_12=6  M_10=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_12=6  M_10=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_12=6  M_10=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_12=6  M_10=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_12=6  M_10=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_12=6  M_10=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_12=6  M_10=6
+}
+
+potential (M_10 | Nu_11 M_9)
+{
+    model_nodes = ();
+    model_data = ( max (M_9, Nu_11) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_11=0  M_9=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_11=0  M_9=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_11=0  M_9=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_11=0  M_9=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=0  M_9=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=0  M_9=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_11=0  M_9=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_11=1  M_9=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_11=1  M_9=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_11=1  M_9=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_11=1  M_9=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=1  M_9=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=1  M_9=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_11=1  M_9=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_11=2  M_9=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_11=2  M_9=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_11=2  M_9=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_11=2  M_9=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=2  M_9=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=2  M_9=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_11=2  M_9=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_11=3  M_9=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_11=3  M_9=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_11=3  M_9=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_11=3  M_9=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=3  M_9=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=3  M_9=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_11=3  M_9=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_11=4  M_9=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=4  M_9=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=4  M_9=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=4  M_9=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_11=4  M_9=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=4  M_9=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_11=4  M_9=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_11=5  M_9=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=5  M_9=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=5  M_9=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=5  M_9=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=5  M_9=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_11=5  M_9=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_11=5  M_9=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_11=6  M_9=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_11=6  M_9=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_11=6  M_9=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_11=6  M_9=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_11=6  M_9=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_11=6  M_9=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_11=6  M_9=6
+}
+
+potential (M_9 | Nu_10 M_8)
+{
+    model_nodes = ();
+    model_data = ( max (M_8, Nu_10) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_10=0  M_8=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_10=0  M_8=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_10=0  M_8=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_10=0  M_8=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=0  M_8=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=0  M_8=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_10=0  M_8=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_10=1  M_8=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_10=1  M_8=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_10=1  M_8=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_10=1  M_8=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=1  M_8=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=1  M_8=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_10=1  M_8=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_10=2  M_8=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_10=2  M_8=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_10=2  M_8=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_10=2  M_8=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=2  M_8=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=2  M_8=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_10=2  M_8=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_10=3  M_8=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_10=3  M_8=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_10=3  M_8=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_10=3  M_8=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=3  M_8=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=3  M_8=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_10=3  M_8=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_10=4  M_8=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=4  M_8=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=4  M_8=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=4  M_8=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_10=4  M_8=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=4  M_8=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_10=4  M_8=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_10=5  M_8=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=5  M_8=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=5  M_8=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=5  M_8=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=5  M_8=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_10=5  M_8=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_10=5  M_8=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_10=6  M_8=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_10=6  M_8=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_10=6  M_8=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_10=6  M_8=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_10=6  M_8=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_10=6  M_8=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_10=6  M_8=6
+}
+
+potential (M_8 | Nu_9 M_7)
+{
+    model_nodes = ();
+    model_data = ( max (M_7, Nu_9) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_9=0  M_7=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_9=0  M_7=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_9=0  M_7=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_9=0  M_7=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=0  M_7=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=0  M_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_9=0  M_7=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_9=1  M_7=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_9=1  M_7=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_9=1  M_7=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_9=1  M_7=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=1  M_7=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=1  M_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_9=1  M_7=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_9=2  M_7=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_9=2  M_7=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_9=2  M_7=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_9=2  M_7=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=2  M_7=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=2  M_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_9=2  M_7=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_9=3  M_7=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_9=3  M_7=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_9=3  M_7=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_9=3  M_7=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=3  M_7=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=3  M_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_9=3  M_7=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_9=4  M_7=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=4  M_7=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=4  M_7=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=4  M_7=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_9=4  M_7=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=4  M_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_9=4  M_7=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_9=5  M_7=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=5  M_7=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=5  M_7=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=5  M_7=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=5  M_7=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_9=5  M_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_9=5  M_7=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_9=6  M_7=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_9=6  M_7=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_9=6  M_7=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_9=6  M_7=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_9=6  M_7=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_9=6  M_7=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_9=6  M_7=6
+}
+
+potential (M_7 | Nu_8 M_6)
+{
+    model_nodes = ();
+    model_data = ( max (M_6, Nu_8) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_8=0  M_6=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_8=0  M_6=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_8=0  M_6=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_8=0  M_6=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=0  M_6=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=0  M_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_8=0  M_6=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_8=1  M_6=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_8=1  M_6=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_8=1  M_6=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_8=1  M_6=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=1  M_6=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=1  M_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_8=1  M_6=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_8=2  M_6=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_8=2  M_6=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_8=2  M_6=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_8=2  M_6=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=2  M_6=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=2  M_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_8=2  M_6=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_8=3  M_6=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_8=3  M_6=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_8=3  M_6=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_8=3  M_6=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=3  M_6=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=3  M_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_8=3  M_6=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_8=4  M_6=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=4  M_6=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=4  M_6=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=4  M_6=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_8=4  M_6=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=4  M_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_8=4  M_6=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_8=5  M_6=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=5  M_6=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=5  M_6=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=5  M_6=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=5  M_6=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_8=5  M_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_8=5  M_6=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_8=6  M_6=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_8=6  M_6=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_8=6  M_6=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_8=6  M_6=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_8=6  M_6=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_8=6  M_6=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_8=6  M_6=6
+}
+
+potential (M_6 | M_5 Nu_7)
+{
+    model_nodes = ();
+    model_data = ( max (M_5, Nu_7) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  M_5=0  Nu_7=0
+	 ( 0 1 0 0 0 0 0 )	%  M_5=0  Nu_7=1
+	 ( 0 0 1 0 0 0 0 )	%  M_5=0  Nu_7=2
+	 ( 0 0 0 1 0 0 0 )	%  M_5=0  Nu_7=3
+	 ( 0 0 0 0 1 0 0 )	%  M_5=0  Nu_7=4
+	 ( 0 0 0 0 0 1 0 )	%  M_5=0  Nu_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_5=0  Nu_7=6
+	(( 0 1 0 0 0 0 0 )	%  M_5=1  Nu_7=0
+	 ( 0 1 0 0 0 0 0 )	%  M_5=1  Nu_7=1
+	 ( 0 0 1 0 0 0 0 )	%  M_5=1  Nu_7=2
+	 ( 0 0 0 1 0 0 0 )	%  M_5=1  Nu_7=3
+	 ( 0 0 0 0 1 0 0 )	%  M_5=1  Nu_7=4
+	 ( 0 0 0 0 0 1 0 )	%  M_5=1  Nu_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_5=1  Nu_7=6
+	(( 0 0 1 0 0 0 0 )	%  M_5=2  Nu_7=0
+	 ( 0 0 1 0 0 0 0 )	%  M_5=2  Nu_7=1
+	 ( 0 0 1 0 0 0 0 )	%  M_5=2  Nu_7=2
+	 ( 0 0 0 1 0 0 0 )	%  M_5=2  Nu_7=3
+	 ( 0 0 0 0 1 0 0 )	%  M_5=2  Nu_7=4
+	 ( 0 0 0 0 0 1 0 )	%  M_5=2  Nu_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_5=2  Nu_7=6
+	(( 0 0 0 1 0 0 0 )	%  M_5=3  Nu_7=0
+	 ( 0 0 0 1 0 0 0 )	%  M_5=3  Nu_7=1
+	 ( 0 0 0 1 0 0 0 )	%  M_5=3  Nu_7=2
+	 ( 0 0 0 1 0 0 0 )	%  M_5=3  Nu_7=3
+	 ( 0 0 0 0 1 0 0 )	%  M_5=3  Nu_7=4
+	 ( 0 0 0 0 0 1 0 )	%  M_5=3  Nu_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_5=3  Nu_7=6
+	(( 0 0 0 0 1 0 0 )	%  M_5=4  Nu_7=0
+	 ( 0 0 0 0 1 0 0 )	%  M_5=4  Nu_7=1
+	 ( 0 0 0 0 1 0 0 )	%  M_5=4  Nu_7=2
+	 ( 0 0 0 0 1 0 0 )	%  M_5=4  Nu_7=3
+	 ( 0 0 0 0 1 0 0 )	%  M_5=4  Nu_7=4
+	 ( 0 0 0 0 0 1 0 )	%  M_5=4  Nu_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_5=4  Nu_7=6
+	(( 0 0 0 0 0 1 0 )	%  M_5=5  Nu_7=0
+	 ( 0 0 0 0 0 1 0 )	%  M_5=5  Nu_7=1
+	 ( 0 0 0 0 0 1 0 )	%  M_5=5  Nu_7=2
+	 ( 0 0 0 0 0 1 0 )	%  M_5=5  Nu_7=3
+	 ( 0 0 0 0 0 1 0 )	%  M_5=5  Nu_7=4
+	 ( 0 0 0 0 0 1 0 )	%  M_5=5  Nu_7=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_5=5  Nu_7=6
+	(( 0 0 0 0 0 0 1 )	%  M_5=6  Nu_7=0
+	 ( 0 0 0 0 0 0 1 )	%  M_5=6  Nu_7=1
+	 ( 0 0 0 0 0 0 1 )	%  M_5=6  Nu_7=2
+	 ( 0 0 0 0 0 0 1 )	%  M_5=6  Nu_7=3
+	 ( 0 0 0 0 0 0 1 )	%  M_5=6  Nu_7=4
+	 ( 0 0 0 0 0 0 1 )	%  M_5=6  Nu_7=5
+	 ( 0 0 0 0 0 0 1 )));	%  M_5=6  Nu_7=6
+}
+
+potential (M_5 | M_4 Nu_6)
+{
+    model_nodes = ();
+    model_data = ( max (M_4, Nu_6) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  M_4=0  Nu_6=0
+	 ( 0 1 0 0 0 0 0 )	%  M_4=0  Nu_6=1
+	 ( 0 0 1 0 0 0 0 )	%  M_4=0  Nu_6=2
+	 ( 0 0 0 1 0 0 0 )	%  M_4=0  Nu_6=3
+	 ( 0 0 0 0 1 0 0 )	%  M_4=0  Nu_6=4
+	 ( 0 0 0 0 0 1 0 )	%  M_4=0  Nu_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_4=0  Nu_6=6
+	(( 0 1 0 0 0 0 0 )	%  M_4=1  Nu_6=0
+	 ( 0 1 0 0 0 0 0 )	%  M_4=1  Nu_6=1
+	 ( 0 0 1 0 0 0 0 )	%  M_4=1  Nu_6=2
+	 ( 0 0 0 1 0 0 0 )	%  M_4=1  Nu_6=3
+	 ( 0 0 0 0 1 0 0 )	%  M_4=1  Nu_6=4
+	 ( 0 0 0 0 0 1 0 )	%  M_4=1  Nu_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_4=1  Nu_6=6
+	(( 0 0 1 0 0 0 0 )	%  M_4=2  Nu_6=0
+	 ( 0 0 1 0 0 0 0 )	%  M_4=2  Nu_6=1
+	 ( 0 0 1 0 0 0 0 )	%  M_4=2  Nu_6=2
+	 ( 0 0 0 1 0 0 0 )	%  M_4=2  Nu_6=3
+	 ( 0 0 0 0 1 0 0 )	%  M_4=2  Nu_6=4
+	 ( 0 0 0 0 0 1 0 )	%  M_4=2  Nu_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_4=2  Nu_6=6
+	(( 0 0 0 1 0 0 0 )	%  M_4=3  Nu_6=0
+	 ( 0 0 0 1 0 0 0 )	%  M_4=3  Nu_6=1
+	 ( 0 0 0 1 0 0 0 )	%  M_4=3  Nu_6=2
+	 ( 0 0 0 1 0 0 0 )	%  M_4=3  Nu_6=3
+	 ( 0 0 0 0 1 0 0 )	%  M_4=3  Nu_6=4
+	 ( 0 0 0 0 0 1 0 )	%  M_4=3  Nu_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_4=3  Nu_6=6
+	(( 0 0 0 0 1 0 0 )	%  M_4=4  Nu_6=0
+	 ( 0 0 0 0 1 0 0 )	%  M_4=4  Nu_6=1
+	 ( 0 0 0 0 1 0 0 )	%  M_4=4  Nu_6=2
+	 ( 0 0 0 0 1 0 0 )	%  M_4=4  Nu_6=3
+	 ( 0 0 0 0 1 0 0 )	%  M_4=4  Nu_6=4
+	 ( 0 0 0 0 0 1 0 )	%  M_4=4  Nu_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_4=4  Nu_6=6
+	(( 0 0 0 0 0 1 0 )	%  M_4=5  Nu_6=0
+	 ( 0 0 0 0 0 1 0 )	%  M_4=5  Nu_6=1
+	 ( 0 0 0 0 0 1 0 )	%  M_4=5  Nu_6=2
+	 ( 0 0 0 0 0 1 0 )	%  M_4=5  Nu_6=3
+	 ( 0 0 0 0 0 1 0 )	%  M_4=5  Nu_6=4
+	 ( 0 0 0 0 0 1 0 )	%  M_4=5  Nu_6=5
+	 ( 0 0 0 0 0 0 1 ))	%  M_4=5  Nu_6=6
+	(( 0 0 0 0 0 0 1 )	%  M_4=6  Nu_6=0
+	 ( 0 0 0 0 0 0 1 )	%  M_4=6  Nu_6=1
+	 ( 0 0 0 0 0 0 1 )	%  M_4=6  Nu_6=2
+	 ( 0 0 0 0 0 0 1 )	%  M_4=6  Nu_6=3
+	 ( 0 0 0 0 0 0 1 )	%  M_4=6  Nu_6=4
+	 ( 0 0 0 0 0 0 1 )	%  M_4=6  Nu_6=5
+	 ( 0 0 0 0 0 0 1 )));	%  M_4=6  Nu_6=6
+}
+
+potential (M_4 | Nu_5 M_3)
+{
+    model_nodes = ();
+    model_data = ( max (M_3, Nu_5) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_5=0  M_3=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_5=0  M_3=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_5=0  M_3=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_5=0  M_3=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=0  M_3=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=0  M_3=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_5=0  M_3=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_5=1  M_3=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_5=1  M_3=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_5=1  M_3=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_5=1  M_3=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=1  M_3=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=1  M_3=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_5=1  M_3=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_5=2  M_3=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_5=2  M_3=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_5=2  M_3=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_5=2  M_3=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=2  M_3=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=2  M_3=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_5=2  M_3=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_5=3  M_3=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_5=3  M_3=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_5=3  M_3=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_5=3  M_3=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=3  M_3=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=3  M_3=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_5=3  M_3=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_5=4  M_3=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=4  M_3=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=4  M_3=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=4  M_3=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_5=4  M_3=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=4  M_3=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_5=4  M_3=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_5=5  M_3=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=5  M_3=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=5  M_3=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=5  M_3=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=5  M_3=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_5=5  M_3=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_5=5  M_3=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_5=6  M_3=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_5=6  M_3=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_5=6  M_3=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_5=6  M_3=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_5=6  M_3=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_5=6  M_3=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_5=6  M_3=6
+}
+
+potential (M_3 | Nu_4 M_2)
+{
+    model_nodes = ();
+    model_data = ( max (M_2, Nu_4) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_4=0  M_2=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_4=0  M_2=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_4=0  M_2=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_4=0  M_2=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=0  M_2=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=0  M_2=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_4=0  M_2=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_4=1  M_2=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_4=1  M_2=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_4=1  M_2=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_4=1  M_2=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=1  M_2=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=1  M_2=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_4=1  M_2=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_4=2  M_2=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_4=2  M_2=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_4=2  M_2=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_4=2  M_2=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=2  M_2=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=2  M_2=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_4=2  M_2=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_4=3  M_2=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_4=3  M_2=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_4=3  M_2=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_4=3  M_2=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=3  M_2=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=3  M_2=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_4=3  M_2=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_4=4  M_2=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=4  M_2=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=4  M_2=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=4  M_2=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_4=4  M_2=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=4  M_2=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_4=4  M_2=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_4=5  M_2=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=5  M_2=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=5  M_2=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=5  M_2=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=5  M_2=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_4=5  M_2=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_4=5  M_2=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_4=6  M_2=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_4=6  M_2=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_4=6  M_2=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_4=6  M_2=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_4=6  M_2=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_4=6  M_2=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_4=6  M_2=6
+}
+
+potential (M_2 | Nu_3 M_1)
+{
+    model_nodes = ();
+    model_data = ( max (M_1, Nu_3) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_3=0  M_1=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_3=0  M_1=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_3=0  M_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_3=0  M_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=0  M_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=0  M_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_3=0  M_1=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_3=1  M_1=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_3=1  M_1=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_3=1  M_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_3=1  M_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=1  M_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=1  M_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_3=1  M_1=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_3=2  M_1=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_3=2  M_1=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_3=2  M_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_3=2  M_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=2  M_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=2  M_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_3=2  M_1=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_3=3  M_1=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_3=3  M_1=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_3=3  M_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_3=3  M_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=3  M_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=3  M_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_3=3  M_1=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_3=4  M_1=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=4  M_1=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=4  M_1=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=4  M_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_3=4  M_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=4  M_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_3=4  M_1=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_3=5  M_1=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=5  M_1=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=5  M_1=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=5  M_1=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=5  M_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_3=5  M_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_3=5  M_1=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_3=6  M_1=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_3=6  M_1=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_3=6  M_1=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_3=6  M_1=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_3=6  M_1=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_3=6  M_1=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_3=6  M_1=6
+}
+
+potential (M_1 | Nu_2 Nu_1)
+{
+    model_nodes = ();
+    model_data = ( max (Nu_1, Nu_2) );
+    data
+     = ((( 1 0 0 0 0 0 0 )	%  Nu_2=0  Nu_1=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_2=0  Nu_1=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_2=0  Nu_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_2=0  Nu_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=0  Nu_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=0  Nu_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_2=0  Nu_1=6
+	(( 0 1 0 0 0 0 0 )	%  Nu_2=1  Nu_1=0
+	 ( 0 1 0 0 0 0 0 )	%  Nu_2=1  Nu_1=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_2=1  Nu_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_2=1  Nu_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=1  Nu_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=1  Nu_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_2=1  Nu_1=6
+	(( 0 0 1 0 0 0 0 )	%  Nu_2=2  Nu_1=0
+	 ( 0 0 1 0 0 0 0 )	%  Nu_2=2  Nu_1=1
+	 ( 0 0 1 0 0 0 0 )	%  Nu_2=2  Nu_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_2=2  Nu_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=2  Nu_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=2  Nu_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_2=2  Nu_1=6
+	(( 0 0 0 1 0 0 0 )	%  Nu_2=3  Nu_1=0
+	 ( 0 0 0 1 0 0 0 )	%  Nu_2=3  Nu_1=1
+	 ( 0 0 0 1 0 0 0 )	%  Nu_2=3  Nu_1=2
+	 ( 0 0 0 1 0 0 0 )	%  Nu_2=3  Nu_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=3  Nu_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=3  Nu_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_2=3  Nu_1=6
+	(( 0 0 0 0 1 0 0 )	%  Nu_2=4  Nu_1=0
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=4  Nu_1=1
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=4  Nu_1=2
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=4  Nu_1=3
+	 ( 0 0 0 0 1 0 0 )	%  Nu_2=4  Nu_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=4  Nu_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_2=4  Nu_1=6
+	(( 0 0 0 0 0 1 0 )	%  Nu_2=5  Nu_1=0
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=5  Nu_1=1
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=5  Nu_1=2
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=5  Nu_1=3
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=5  Nu_1=4
+	 ( 0 0 0 0 0 1 0 )	%  Nu_2=5  Nu_1=5
+	 ( 0 0 0 0 0 0 1 ))	%  Nu_2=5  Nu_1=6
+	(( 0 0 0 0 0 0 1 )	%  Nu_2=6  Nu_1=0
+	 ( 0 0 0 0 0 0 1 )	%  Nu_2=6  Nu_1=1
+	 ( 0 0 0 0 0 0 1 )	%  Nu_2=6  Nu_1=2
+	 ( 0 0 0 0 0 0 1 )	%  Nu_2=6  Nu_1=3
+	 ( 0 0 0 0 0 0 1 )	%  Nu_2=6  Nu_1=4
+	 ( 0 0 0 0 0 0 1 )	%  Nu_2=6  Nu_1=5
+	 ( 0 0 0 0 0 0 1 )));	%  Nu_2=6  Nu_1=6
+}
+
+potential (Nu_15 | Decision_15)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_15=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_15=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_15=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_15=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_15=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_15=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_15=Integrated
+}
+
+potential (Nu_14 | Decision_14)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_14=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_14=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_14=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_14=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_14=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_14=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_14=Integrated
+}
+
+potential (Nu_13 | Decision_13)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_13=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_13=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_13=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_13=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_13=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_13=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_13=Integrated
+}
+
+potential (Nu_12 | Decision_12)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_12=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_12=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_12=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_12=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_12=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_12=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_12=Integrated
+}
+
+potential (Nu_11 | Decision_11)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_11=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_11=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_11=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_11=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_11=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_11=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_11=Integrated
+}
+
+potential (Nu_10 | Decision_10)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_10=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_10=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_10=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_10=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_10=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_10=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_10=Integrated
+}
+
+potential (Nu_9 | Decision_9)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_9=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_9=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_9=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_9=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_9=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_9=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_9=Integrated
+}
+
+potential (Nu_8 | Decision_8)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_8=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_8=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_8=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_8=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_8=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_8=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_8=Integrated
+}
+
+potential (Nu_7 | Decision_7)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_7=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_7=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_7=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_7=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_7=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_7=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_7=Integrated
+}
+
+potential (Nu_6 | Decision_6)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_6=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_6=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_6=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_6=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_6=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_6=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_6=Integrated
+}
+
+potential (Nu_5 | Decision_5)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_5=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_5=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_5=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_5=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_5=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_5=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_5=Integrated
+}
+
+potential (Nu_4 | Decision_4)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_4=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_4=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_4=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_4=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_4=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_4=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_4=Integrated
+}
+
+potential (Nu_3 | Decision_3)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_3=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_3=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_3=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_3=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_3=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_3=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_3=Integrated
+}
+
+potential (Nu_2 | Decision_2)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_2=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_2=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_2=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_2=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_2=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_2=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_2=Integrated
+}
+
+potential (Nu_1 | Decision_1)
+{
+    data
+     = (( 1 0 0 0 0 0 0 )	%  Decision_1=Nothing
+	( 0 1 0 0 0 0 0 )	%  Decision_1=SOA_SimpleMarket
+	( 0 0 1 0 0 0 0 )	%  Decision_1=SOA_Choreographed
+	( 0 0 0 1 0 0 0 )	%  Decision_1=SOA_Orchestrated
+	( 0 0 0 0 1 0 0 )	%  Decision_1=NotSOA_Peer-to-peer
+	( 0 0 0 0 0 1 0 )	%  Decision_1=NotSOA_Hierarchical
+	( 0 0 0 0 0 0 1 ));	%  Decision_1=Integrated
+}
+
+potential (Domain_Complexity)
+{
+    data = ( 0.333333 0.333333 0.333333 );
+}
+
+potential (Decision_15 | Active_15 Domain_Complexity)
+{
+    data
+     = ((( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_15=Yes  Domain_Complexity=High
+	 ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_15=Yes  Domain_Complexity=Median
+	 ( 0 0.25 0.2 0.2 0.15 0.15 0.05 ))	%  Active_15=Yes  Domain_Complexity=Low
+	(( 1 0 0 0 0 0 0 )	%  Active_15=No  Domain_Complexity=High
+	 ( 1 0 0 0 0 0 0 )	%  Active_15=No  Domain_Complexity=Median
+	 ( 1 0 0 0 0 0 0 )));	%  Active_15=No  Domain_Complexity=Low
+}
+
+potential (Deployment_Time)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_14 | Active_14 Deployment_Time)
+{
+    data
+     = ((( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_14=Yes  Deployment_Time=Immediately
+	 ( 0 0.25 0.2 0.2 0.15 0.15 0.05 ))	%  Active_14=Yes  Deployment_Time=Later
+	(( 1 0 0 0 0 0 0 )	%  Active_14=No  Deployment_Time=Immediately
+	 ( 1 0 0 0 0 0 0 )));	%  Active_14=No  Deployment_Time=Later
+}
+
+potential (Sufficient_Trust)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_13 | Active_13 Sufficient_Trust)
+{
+    data
+     = ((( 0 0.2 0.2 0.2 0.15 0.15 0.1 )	%  Active_13=Yes  Sufficient_Trust=Yes
+	 ( 0 0.05 0.05 0.05 0.25 0.25 0.35 ))	%  Active_13=Yes  Sufficient_Trust=No
+	(( 1 0 0 0 0 0 0 )	%  Active_13=No  Sufficient_Trust=Yes
+	 ( 1 0 0 0 0 0 0 )));	%  Active_13=No  Sufficient_Trust=No
+}
+
+potential (Independent_Consumers)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_12 | Active_12 Independent_Consumers)
+{
+    data
+     = ((( 0 0.3 0.3 0.3 0.04 0.04 0.02 )	%  Active_12=Yes  Independent_Consumers=Yes
+	 ( 0 0.05 0.05 0.05 0.225 0.225 0.4 ))	%  Active_12=Yes  Independent_Consumers=No
+	(( 1 0 0 0 0 0 0 )	%  Active_12=No  Independent_Consumers=Yes
+	 ( 1 0 0 0 0 0 0 )));	%  Active_12=No  Independent_Consumers=No
+}
+
+potential (Resource_Allocation_Change_Rate)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_11 | Active_11 Resource_Allocation_Change_Rate Appropriate_For_Contract)
+{
+    data
+     = (((( 0 0.333333 0.333333 0.333333 0 0 0 )	%  Active_11=Yes  Resource_Allocation_Change_Rate=Ok  Appropriate_For_Contract=Yes
+	  ( 0 0.05 0.05 0.05 0.2 0.3 0.35 ))	%  Active_11=Yes  Resource_Allocation_Change_Rate=Ok  Appropriate_For_Contract=No
+	 (( 0 0.05 0.05 0.05 0.2 0.3 0.35 )	%  Active_11=Yes  Resource_Allocation_Change_Rate=TooFast  Appropriate_For_Contract=Yes
+	  ( 0 0 0 0 0.333333 0.333333 0.333333 )))	%  Active_11=Yes  Resource_Allocation_Change_Rate=TooFast  Appropriate_For_Contract=No
+	((( 1 0 0 0 0 0 0 )	%  Active_11=No  Resource_Allocation_Change_Rate=Ok  Appropriate_For_Contract=Yes
+	  ( 1 0 0 0 0 0 0 ))	%  Active_11=No  Resource_Allocation_Change_Rate=Ok  Appropriate_For_Contract=No
+	 (( 1 0 0 0 0 0 0 )	%  Active_11=No  Resource_Allocation_Change_Rate=TooFast  Appropriate_For_Contract=Yes
+	  ( 1 0 0 0 0 0 0 ))));	%  Active_11=No  Resource_Allocation_Change_Rate=TooFast  Appropriate_For_Contract=No
+}
+
+potential (Appropriate_For_Contract)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_10 | Active_10 Affordable)
+{
+    data
+     = ((( 0 0.4 0.3 0.3 0 0 0 )	%  Active_10=Yes  Affordable=Yes
+	 ( 0 0.1 0.1 0.1 0.2 0.2 0.3 ))	%  Active_10=Yes  Affordable=No
+	(( 1 0 0 0 0 0 0 )	%  Active_10=No  Affordable=Yes
+	 ( 1 0 0 0 0 0 0 )));	%  Active_10=No  Affordable=No
+}
+
+potential (Affordable)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Timeliness)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_9 | Active_9 Timeliness)
+{
+    data
+     = ((( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_9=Yes  Timeliness=InTime
+	 ( 0 0.3 0.2 0.2 0.1 0.1 0.1 ))	%  Active_9=Yes  Timeliness=Late
+	(( 1 0 0 0 0 0 0 )	%  Active_9=No  Timeliness=InTime
+	 ( 1 0 0 0 0 0 0 )));	%  Active_9=No  Timeliness=Late
+}
+
+potential (Decision_8 | Active_8 Accuracy)
+{
+    data
+     = ((( 0 0.3 0.3 0.25 0.05 0.05 0.05 )	%  Active_8=Yes  Accuracy=Sufficient
+	 ( 0 0 0 0.2 0.3 0.5 0 ))	%  Active_8=Yes  Accuracy=Insufficient
+	(( 1 0 0 0 0 0 0 )	%  Active_8=No  Accuracy=Sufficient
+	 ( 1 0 0 0 0 0 0 )));	%  Active_8=No  Accuracy=Insufficient
+}
+
+potential (Accuracy)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Reliability)
+{
+    data = ( 0.333333 0.333333 0.333333 );
+}
+
+potential (Decision_7 | Active_7 Reliability)
+{
+    data
+     = ((( 0 0.05 0.05 0.05 0.175 0.175 0.5 )	%  Active_7=Yes  Reliability=High
+	 ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_7=Yes  Reliability=Median
+	 ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_7=Yes  Reliability=Low
+	(( 1 0 0 0 0 0 0 )	%  Active_7=No  Reliability=High
+	 ( 1 0 0 0 0 0 0 )	%  Active_7=No  Reliability=Median
+	 ( 1 0 0 0 0 0 0 )));	%  Active_7=No  Reliability=Low
+}
+
+potential (Decision_6 | Active_6 Duplication Often Repaid Customer_Consumer_Base)
+{
+    data
+     = (((((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))))	%  Active_6=Yes  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=More
+	 (((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))	%  Active_6=Yes  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=More
+	  ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )))))	%  Active_6=Yes  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=More
+	((((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=Yes  Often=Every_Second  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=Yes  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=Yes  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=Yes  Often=Every_Day  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=Yes  Often=Every_Month  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))))	%  Active_6=No  Duplication=Yes  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=More
+	 (((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=No  Often=Every_Second  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=No  Often=Every_Minute  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=No  Often=Every_Hour  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=No  Often=Every_Day  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 )))	%  Active_6=No  Duplication=No  Often=Every_Month  Repaid=No  Customer_Consumer_Base=More
+	  ((( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=Yes  Customer_Consumer_Base=More
+	   (( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Ones
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Tens
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Hundreds
+	    ( 1 0 0 0 0 0 0 )	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=Thousands
+	    ( 1 0 0 0 0 0 0 ))))));	%  Active_6=No  Duplication=No  Often=DuringCrises  Repaid=No  Customer_Consumer_Base=More
+}
+
+potential (Duplication)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Often)
+{
+    data = ( 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 );
+}
+
+potential (Repaid)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Customer_Consumer_Base)
+{
+    data = ( 0.2 0.2 0.2 0.2 0.2 );
+}
+
+potential (Decision_5 | Active_5 Translation_Load)
+{
+    data
+     = ((( 0 0.25 0.25 0.2 0.1 0.1 0.1 )	%  Active_5=Yes  Translation_Load=Less
+	 ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_5=Yes  Translation_Load=Median
+	 ( 0 0.05 0.05 0.05 0.25 0.25 0.35 ))	%  Active_5=Yes  Translation_Load=More
+	(( 1 0 0 0 0 0 0 )	%  Active_5=No  Translation_Load=Less
+	 ( 1 0 0 0 0 0 0 )	%  Active_5=No  Translation_Load=Median
+	 ( 1 0 0 0 0 0 0 )));	%  Active_5=No  Translation_Load=More
+}
+
+potential (Translation_Load)
+{
+    data = ( 0.333333 0.333333 0.333333 );
+}
+
+potential (Bandwidth)
+{
+    data = ( 0.2 0.2 0.2 0.2 0.2 );
+}
+
+potential (Message_Size)
+{
+    data = ( 0.25 0.25 0.25 0.25 );
+}
+
+potential (Decision_4 | Active_4 Transmission_Time)
+{
+    data
+     = ((( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 )	%  Active_4=Yes  Transmission_Time=LessThan_1_Second
+	 ( 0 0.2 0.125 0.125 0.15 0.15 0.25 )	%  Active_4=Yes  Transmission_Time=AFew_Seconds
+	 ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_4=Yes  Transmission_Time=AFew_Minutes
+	 ( 0 0 0 0 0.3 0.3 0.4 ))	%  Active_4=Yes  Transmission_Time=Longer
+	(( 1 0 0 0 0 0 0 )	%  Active_4=No  Transmission_Time=LessThan_1_Second
+	 ( 1 0 0 0 0 0 0 )	%  Active_4=No  Transmission_Time=AFew_Seconds
+	 ( 1 0 0 0 0 0 0 )	%  Active_4=No  Transmission_Time=AFew_Minutes
+	 ( 1 0 0 0 0 0 0 )));	%  Active_4=No  Transmission_Time=Longer
+}
+
+potential (Transmission_Time | Bandwidth Message_Size)
+{
+    data
+     = ((( 0.8 0.2 0 0 )	%  Bandwidth=DialUp  Message_Size=LessThan_1K
+	 ( 0.5 0.4 0.1 0 )	%  Bandwidth=DialUp  Message_Size=AFew_KBs
+	 ( 0 0.1 0.2 0.7 )	%  Bandwidth=DialUp  Message_Size=AFew_MBs
+	 ( 0 0 0.2 0.8 ))	%  Bandwidth=DialUp  Message_Size=Larger
+	(( 0.85 0.15 0 0 )	%  Bandwidth=ISP  Message_Size=LessThan_1K
+	 ( 0.5 0.4 0.1 0 )	%  Bandwidth=ISP  Message_Size=AFew_KBs
+	 ( 0 0.1 0.2 0.7 )	%  Bandwidth=ISP  Message_Size=AFew_MBs
+	 ( 0 0 0.222222 0.777778 ))	%  Bandwidth=ISP  Message_Size=Larger
+	(( 1 0 0 0 )	%  Bandwidth=T1  Message_Size=LessThan_1K
+	 ( 0.3 0.7 0 0 )	%  Bandwidth=T1  Message_Size=AFew_KBs
+	 ( 0 0.2 0.7 0.1 )	%  Bandwidth=T1  Message_Size=AFew_MBs
+	 ( 0 0 0.2 0.8 ))	%  Bandwidth=T1  Message_Size=Larger
+	(( 1 0 0 0 )	%  Bandwidth=T3  Message_Size=LessThan_1K
+	 ( 1 0 0 0 )	%  Bandwidth=T3  Message_Size=AFew_KBs
+	 ( 0.2 0.7 0.1 0 )	%  Bandwidth=T3  Message_Size=AFew_MBs
+	 ( 0 0 0.3 0.7 ))	%  Bandwidth=T3  Message_Size=Larger
+	(( 1 0 0 0 )	%  Bandwidth=Larger  Message_Size=LessThan_1K
+	 ( 1 0 0 0 )	%  Bandwidth=Larger  Message_Size=AFew_KBs
+	 ( 0.8 0.2 0 0 )	%  Bandwidth=Larger  Message_Size=AFew_MBs
+	 ( 0.25 0.25 0.25 0.25 )));	%  Bandwidth=Larger  Message_Size=Larger
+}
+
+potential (Decision_3 | Active_3 Response_Time)
+{
+    data
+     = ((( 0 0.05 0.05 0.05 0.25 0.25 0.35 )	%  Active_3=Yes  Response_Time=LessThan_10_Milliseconds
+	 ( 0 0.1 0.1 0.1 0.2 0.2 0.3 )	%  Active_3=Yes  Response_Time=LessThan_1_Second
+	 ( 0 0.2 0.125 0.125 0.15 0.15 0.25 )	%  Active_3=Yes  Response_Time=AFew_Seconds
+	 ( 0 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 ))	%  Active_3=Yes  Response_Time=Not_Important
+	(( 1 0 0 0 0 0 0 )	%  Active_3=No  Response_Time=LessThan_10_Milliseconds
+	 ( 1 0 0 0 0 0 0 )	%  Active_3=No  Response_Time=LessThan_1_Second
+	 ( 1 0 0 0 0 0 0 )	%  Active_3=No  Response_Time=AFew_Seconds
+	 ( 1 0 0 0 0 0 0 )));	%  Active_3=No  Response_Time=Not_Important
+}
+
+potential (Response_Time)
+{
+    data = ( 0.25 0.25 0.25 0.25 );
+}
+
+potential (Cross_Boundaries)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_2 | Active_2 Cross_Boundaries)
+{
+    data
+     = ((( 0 0.2 0.25 0.25 0.15 0.15 0 )	%  Active_2=Yes  Cross_Boundaries=Yes
+	 ( 0 0.175 0.15 0.15 0.175 0.175 0.175 ))	%  Active_2=Yes  Cross_Boundaries=No
+	(( 1 0 0 0 0 0 0 )	%  Active_2=No  Cross_Boundaries=Yes
+	 ( 1 0 0 0 0 0 0 )));	%  Active_2=No  Cross_Boundaries=No
+}
+
+potential (Decision_1 | Active_1 Distributed)
+{
+    data
+     = ((( 0 0.2 0.2 0.2 0.2 0.2 0 )	%  Active_1=Yes  Distributed=Yes
+	 ( 0 0 0 0 0 0 1 ))	%  Active_1=Yes  Distributed=No
+	(( 1 0 0 0 0 0 0 )	%  Active_1=No  Distributed=Yes
+	 ( 1 0 0 0 0 0 0 )));	%  Active_1=No  Distributed=No
+}
+
+potential (Distributed)
+{
+    data = ( 0.5 0.5 );
+}

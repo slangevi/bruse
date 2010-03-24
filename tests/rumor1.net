@@ -1,0 +1,143 @@
+net
+{
+    node_size = (80 40);
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "Arial";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+}
+
+node A_D
+{
+    label = "A,D";
+    position = (216 154);
+    states = ("TT" "TF" "FT" "FF");
+    HR_Group = "0";
+    HR_Desc = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+}
+
+node D
+{
+    label = "";
+    position = (434 103);
+    states = ("T" "F");
+    HR_LinkMode_C2 = "0";
+    HR_LinkMode_B = "0";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[B:0]";
+}
+
+node B
+{
+    label = "";
+    position = (321 91);
+    states = ("T" "F");
+    HR_LinkMode_C1 = "0";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0]";
+}
+
+node A
+{
+    label = "";
+    position = (112 119);
+    states = ("T" "F");
+    HR_LinkMode_C2 = "0";
+    HR_LinkMode_C1 = "0";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0]";
+}
+
+node A_B
+{
+    label = "A,B";
+    position = (206 33);
+    states = ("TT" "TF" "FT" "FF");
+    HR_Desc = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+potential (A_D | D A)
+{
+    data
+     = ((( 1 0 0 0 )	%  D=T  A=T
+	 ( 0 0 1 0 ))	%  D=T  A=F
+	(( 0 1 0 0 )	%  D=F  A=T
+	 ( 0 0 0 1 )));	%  D=F  A=F
+}
+
+potential (D)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (B | D)
+{
+    data
+     = (( 0.8 0.2 )	%  D=T
+	( 0.1 0.9 ));	%  D=F
+}
+
+potential (A)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (A_B | B A)
+{
+    data
+     = ((( 1 0 0 0 )	%  B=T  A=T
+	 ( 0 0 1 0 ))	%  B=T  A=F
+	(( 0 1 0 0 )	%  B=F  A=T
+	 ( 0 0 0 1 )));	%  B=F  A=F
+}

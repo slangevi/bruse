@@ -1,0 +1,105 @@
+Thu Mar 11 17:02:40 2010
+
+
+Moral links:
+
+    Marrying A and B
+
+
+Triangulating prime component with 4 members:
+    A_B_C, C, B, A
+This component is a clique of cost 64
+
+Triangulating prime component with 3 members:
+    A_B, B, A
+This component is a clique of cost 16
+
+Triangulating prime component with 3 members:
+    B, A, X
+This component is a clique of cost 8
+
+
+Total cost of triangulation for all prime components is 88
+
+
+Elimination sequence:
+
+    A_B
+    X
+    C
+    A_B_C
+    A
+    B
+
+
+Cliques:
+
+Clique 3, 4 members, table size = 64:
+    B, A, A_B_C, C
+
+Clique 2, 3 members, table size = 8:
+    B, A, X
+
+Clique 1, 3 members, table size = 16:
+    B, A, A_B
+
+Total clique table size: 88
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 2 members and table size = 4:
+    B, A
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 4:
+    B, A
+
+
+Assignment of potentials to cliques:
+
+    Node A_B assigned to clique 1
+    Node A_B_C assigned to clique 3
+    Node C assigned to clique 3
+    Node B assigned to clique 2
+    Node A assigned to clique 2
+    Node X assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+
+Beliefs for chance nodes:
+
+    A_B:
+	TT         0.599
+	TF         0.111
+	FT         0.251
+	FF         0.039
+
+    A_B_C:
+	TTT        0.4193
+	TTF        0.1797
+	TFT        0.0999
+	TFF        0.0111
+	FTT        0.1506
+	FTF        0.1004
+	FFT        0.0312
+	FFF        0.0078
+
+    C:
+	false      0.299
+	true       0.701
+
+    B:
+	false      0.15
+	true       0.85
+
+    A:
+	false      0.29
+	true       0.71
+
+    X:
+	false      0.1
+	true       0.9

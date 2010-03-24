@@ -1,0 +1,89 @@
+Thu Mar 11 17:03:57 2010
+
+
+Moral links:
+
+    Marrying A and B
+
+
+Triangulating prime component with 4 members:
+    A_B_D, D, B, A
+This component is a clique of cost 64
+
+Triangulating prime component with 3 members:
+    A_B, B, A
+This component is a clique of cost 16
+
+
+Total cost of triangulation for all prime components is 80
+
+
+Elimination sequence:
+
+    A_B
+    D
+    A_B_D
+    A
+    B
+
+
+Cliques:
+
+Clique 2, 4 members, table size = 64:
+    B, A, A_B_D, D
+
+Clique 1, 3 members, table size = 16:
+    B, A, A_B
+
+Total clique table size: 80
+
+
+The junction forest:
+
+Creating junction tree with clique 2 as root ...
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 4:
+    B, A
+
+
+Assignment of potentials to cliques:
+
+    Node A_B assigned to clique 1
+    Node A_B_D assigned to clique 2
+    Node D assigned to clique 2
+    Node B assigned to clique 1
+    Node A assigned to clique 1
+
+
+Checking conditional probability potentials:
+
+
+Beliefs for chance nodes:
+
+    A_B:
+	TT         0.63
+	TF         0.07
+	FT         0.27
+	FF         0.03
+
+    A_B_D:
+	TTT        0.441
+	TTF        0.189
+	TFT        0.042
+	TFF        0.028
+	FTT        0.216
+	FTF        0.054
+	FFT        0.003
+	FFF        0.027
+
+    D:
+	false      0.298
+	true       0.702
+
+    B:
+	false      0.1
+	true       0.9
+
+    A:
+	false      0.3
+	true       0.7

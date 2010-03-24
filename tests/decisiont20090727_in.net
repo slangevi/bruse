@@ -1,0 +1,6539 @@
+net
+{
+    node_size = (80 40);
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "Arial";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+}
+
+node IN
+{
+    label = "";
+    position = (2414 20);
+    states = ("0" "1" "2");
+    HR_LinkMode = "[D:0]";
+    HR_Group = "0";
+    HR_Desc = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+}
+
+node Nu_11_1_1
+{
+    label = "";
+    position = (3019 882);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_10_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_10:0][S_10:0][M_10:0][M_10_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_4_1
+{
+    label = "";
+    position = (2157 894);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_3_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][NuS_3:0][S_3:0][M_3:0][M_3_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_5_1
+{
+    label = "";
+    position = (2236 853);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_4_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_4:0][M_4:0][M_4_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_5_1
+{
+    label = "";
+    position = (2236 924);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_5_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_4_1:0][Nu_5:0][Nu_5_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_4_1
+{
+    label = "";
+    position = (2158 967);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_4_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_4:0][Nu_2_1:0][Nu_4_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_11_2_1
+{
+    label = "";
+    position = (3102 886);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_1_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_10:0][S_10:0][M_10:0][M_11_1:0][M_11_1_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_11_2_1
+{
+    label = "";
+    position = (3102 971);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_11_2_1 = "0";
+    HR_State_6 = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_11:0][Nu_11_2:0][Nu_11_2_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_11_1_1
+{
+    label = "";
+    position = (3019 968);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_11_1_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_11:0][Nu_11_1:0][Nu_11_1_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_10_1
+{
+    label = "";
+    position = (2948 943);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_9_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_9:0][S_9:0][M_9:0][M_9_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_12_1
+{
+    label = "";
+    position = (3179 938);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_2_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_11:0][S_11:0][M_11:0][M_11_2:0][M_11_2_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_12_1
+{
+    label = "";
+    position = (3177 1020);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_12_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_2:0][Nu_12:0][Nu_12_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_10_1
+{
+    label = "";
+    position = (2946 1018);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_10_1 = "0";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_10:0][Nu_10_1:0]";
+    HR_Group = "0";
+}
+
+node Integrated_Con
+{
+    label = "";
+    position = (3422 226);
+    states = ("0" "1");
+    HR_LinkMode_IN = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_1:0][C1:0][SS:0][SC:0][NP:0][IN:0]";
+    HR_Desc = "for a candidate information system, which specific architecture would be best among the following?";
+    HR_State_5 = "Integrated";
+    HR_State_4 = "Non-SOA distributed: Hierarchical";
+    HR_State_3 = "Non-SOA distributed: b.\tPeer-to-peer";
+    HR_State_2 = "One based on the OASIS SOA Reference Model and Reference Architecture: Choreographed or Orchestrated";
+    HR_State_1 = "One based on the OASIS SOA Reference Model and Reference Architecture: Simple market";
+    HR_State_0 = "Non-SOA distributed: b.\tPeer-to-peer";
+    HR_State_6 = "Integrated";
+    HR_Group = "0";
+}
+
+node M_15_1
+{
+    label = "";
+    position = (3351 342);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_16_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_State_61 = "";
+    HR_State_62 = "";
+    HR_State_63 = "";
+    HR_State_64 = "";
+    HR_State_65 = "";
+    HR_State_66 = "";
+    HR_State_67 = "";
+    HR_State_68 = "";
+    HR_State_69 = "";
+    HR_State_70 = "";
+    HR_State_71 = "";
+    HR_State_72 = "";
+    HR_State_73 = "";
+    HR_State_74 = "";
+    HR_State_75 = "";
+    HR_State_76 = "";
+    HR_State_77 = "";
+    HR_State_78 = "";
+    HR_State_79 = "";
+    HR_State_80 = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0][S_15_1:0][S_16:0][M_16:0][M_16_1:0]";
+    HR_Group = "0";
+}
+
+node M_16_1
+{
+    label = "";
+    position = (3422 312);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_Integrated_Con = "0";
+    HR_State_75 = "";
+    HR_State_74 = "";
+    HR_State_73 = "";
+    HR_State_72 = "";
+    HR_State_71 = "";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_76 = "";
+    HR_State_77 = "";
+    HR_State_78 = "";
+    HR_State_79 = "";
+    HR_State_80 = "";
+    HR_State_81 = "";
+    HR_State_82 = "";
+    HR_State_83 = "";
+    HR_State_84 = "";
+    HR_State_85 = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0][SOA_SimpleMarket:0][SOA_SimpleMarket_1:0][SOA_SimpleMarket_Min:0][SOA_SimpleMarket_Con:0][SOA_Choreographed_Orchestrated_Con:0][NotSOA_PeerToPeer_Con:0][Integrated_Con:0]";
+    HR_Group = "0";
+}
+
+node M_14_1
+{
+    label = "";
+    position = (3262 367);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_15_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_State_61 = "";
+    HR_State_62 = "";
+    HR_State_63 = "";
+    HR_State_64 = "";
+    HR_State_65 = "";
+    HR_State_66 = "";
+    HR_State_67 = "";
+    HR_State_68 = "";
+    HR_State_69 = "";
+    HR_State_70 = "";
+    HR_State_71 = "";
+    HR_State_72 = "";
+    HR_State_73 = "";
+    HR_State_74 = "";
+    HR_State_75 = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0][S_15:0][M_15:0][M_15_1:0]";
+    HR_Group = "0";
+}
+
+node M_13_1
+{
+    label = "";
+    position = (3167 389);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_14_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_LinkControlPoints = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_State_61 = "";
+    HR_State_62 = "";
+    HR_State_63 = "";
+    HR_State_64 = "";
+    HR_State_65 = "";
+    HR_State_66 = "";
+    HR_State_67 = "";
+    HR_State_68 = "";
+    HR_State_69 = "";
+    HR_State_70 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][S_14:0][M_14:0][M_14_1:0]";
+    HR_Group = "0";
+}
+
+node M_12_1
+{
+    label = "";
+    position = (3078 414);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_13_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_State_61 = "";
+    HR_State_62 = "";
+    HR_State_63 = "";
+    HR_State_64 = "";
+    HR_State_65 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_13:0][S_13:0][M_13:0][M_13_1:0]";
+    HR_Group = "0";
+}
+
+node M_11_2_1
+{
+    label = "";
+    position = (2992 435);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_12_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_12:0][S_12:0][M_12:0][M_12_1:0]";
+    HR_Group = "0";
+}
+
+node M_11_1_1
+{
+    label = "";
+    position = (2915 458);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_2_1 = "0";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_12:0][S_12:0][M_12:0][M_11:0][M_11_2:0][M_11_2_1:0]";
+    HR_Group = "0";
+}
+
+node M_10_1
+{
+    label = "";
+    position = (2825 482);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_1_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_11:0][S_11:0][M_11_1:0][M_11_1_1:0]";
+    HR_Group = "0";
+}
+
+node M_9_1
+{
+    label = "";
+    position = (2745 509);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_10_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_10:0][S_10:0][M_10:0][M_10_1:0]";
+    HR_Group = "0";
+}
+
+node M_8_1
+{
+    label = "";
+    position = (2668 539);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_9_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_9:0][S_9:0][M_9:0][M_9_1:0]";
+    HR_Group = "0";
+}
+
+node M_7_1
+{
+    label = "";
+    position = (2588 569);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_8_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_8:0][S_8:0][M_8:0][M_8_1:0]";
+    HR_Group = "0";
+}
+
+node M_6_4_1
+{
+    label = "";
+    position = (2510 597);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_7_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0][M_7_1:0]";
+    HR_Group = "0";
+}
+
+node M_6_3_1
+{
+    label = "";
+    position = (2427 622);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_4_1 = "0";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0][M_6_4:0][M_6_4_1:0]";
+    HR_Group = "0";
+}
+
+node M_6_2_1
+{
+    label = "";
+    position = (2350 649);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_3_1 = "0";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_8:0][S_8:0][M_8:0][M_6_4:0][M_6_3:0][M_6_3_1:0]";
+    HR_Group = "0";
+}
+
+node M_6_1_1
+{
+    label = "";
+    position = (2267 672);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_2_1 = "0";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0][M_6_2:0][M_6_2_1:0]";
+    HR_Group = "0";
+}
+
+node M_5_1
+{
+    label = "";
+    position = (2190 704);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_1_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_6:0][S_6:0][M_6_1:0][M_6_1_1:0]";
+    HR_Group = "0";
+}
+
+node M_4_1
+{
+    label = "";
+    position = (2121 735);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_5_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_5_1:0]";
+    HR_Group = "0";
+}
+
+node M_2_1
+{
+    label = "";
+    position = (1991 807);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_3_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][NuS_2_1:0][NuS_3:0][S_3:0][M_3:0][M_3_1:0]";
+    HR_Group = "0";
+}
+
+node M_3_1
+{
+    label = "";
+    position = (2053 768);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_4_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_3_1:0][NuS_4:0][S_4:0][M_4:0][M_4_1:0]";
+    HR_Group = "0";
+}
+
+node M_1_1
+{
+    label = "";
+    position = (1939 850);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_2_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[NuS_1_1:0][NuS_2:0][S_2:0][M_2:0][M_2_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_1_1
+{
+    label = "";
+    position = (1903 911);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_1_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][S_1:0][M_1:0][M_1_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_2_1
+{
+    label = "";
+    position = (1988 909);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_1_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][S_1:0][M_1:0][M_1_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_3_1
+{
+    label = "";
+    position = (2073 907);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_2_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1_1:0][NuS_2:0][S_2:0][M_2:0][M_2_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_1_1
+{
+    label = "";
+    position = (2344 898);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_5_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_5_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_2_1
+{
+    label = "";
+    position = (2431 899);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_1_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_6_1:0][M_6_1_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_3_1
+{
+    label = "";
+    position = (2520 899);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_2_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_6_3:0][M_6_2:0][M_6_2_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_4_1
+{
+    label = "";
+    position = (2607 900);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_3_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_6_4:0][M_6_3:0][M_6_3_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_7_1
+{
+    label = "";
+    position = (2669 939);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_4_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_6:0][S_6:0][M_6:0][M_6_4:0][M_6_4_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_8_1
+{
+    label = "";
+    position = (2763 940);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_7_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_7:0][S_7:0][M_7:0][M_7_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_9_1
+{
+    label = "";
+    position = (2856 941);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_8_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_8:0][S_8:0][M_8:0][M_8_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_13_1
+{
+    label = "";
+    position = (3275 938);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_12_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_12:0][S_12:0][M_12:0][M_12_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_14_1
+{
+    label = "";
+    position = (3363 938);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_13_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_13:0][S_13:0][M_13:0][M_13_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_15_1
+{
+    label = "";
+    position = (3452 941);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_14_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][M_14:0][M_14_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_16_1
+{
+    label = "";
+    position = (3538 940);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_15_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][S_15:0][M_15:0][M_15_1:0]";
+    HR_Group = "0";
+}
+
+node Nu_17_1
+{
+    label = "";
+    position = (3626 891);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_16_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][S_15:0][S_16:0][M_16:0][M_16_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_17_1
+{
+    label = "";
+    position = (3625 978);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_17_1 = "0";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_16:0][Nu_16_1:0][Nu_17:0][Nu_17_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_16_1
+{
+    label = "";
+    position = (3537 1029);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_16_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_16:0][Nu_16_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_15_1
+{
+    label = "";
+    position = (3452 1028);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_15_1 = "0";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_15_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_14_1
+{
+    label = "";
+    position = (3363 1028);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_14_1 = "0";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_14:0][Nu_14_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_13_1
+{
+    label = "";
+    position = (3274 1025);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_13_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_13:0][Nu_13_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_9_1
+{
+    label = "";
+    position = (2856 1014);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_9_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9:0][Nu_9_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_8_1
+{
+    label = "";
+    position = (2763 1011);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_8_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_8:0][Nu_8_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_7_1
+{
+    label = "";
+    position = (2668 1011);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_7_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_7:0][Nu_7_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_4_1
+{
+    label = "";
+    position = (2606 977);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_6_4_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_31:0][Nu_6_4:0][Nu_6_4_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_3_1
+{
+    label = "";
+    position = (2518 975);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_6_3_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_21:0][Nu_6_3:0][Nu_6_3_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_2_1
+{
+    label = "";
+    position = (2430 976);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_6_2_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_2:0][Nu_6_2_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_1_1
+{
+    label = "";
+    position = (2343 975);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_6_1_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_1:0][Nu_6_1_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_3_1
+{
+    label = "";
+    position = (2074 980);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_3_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_2_1:0][Nu_3:0][Nu_3_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_2_1
+{
+    label = "";
+    position = (1988 978);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_2_1 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_2:0][Nu_2_1:0]";
+    HR_Group = "0";
+}
+
+node Decision_1_1
+{
+    label = "";
+    position = (1902 978);
+    states = ("Not" "Con" "Nothing");
+    HR_LinkMode_Nu_1_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_1:0][Nu_1_1:0]";
+    HR_Group = "0";
+}
+
+node M_11_1
+{
+    label = "";
+    position = (1068 393);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_2 = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_12:0][S_12:0][M_12:0][M_11:0][M_11_2:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_Group = "0";
+}
+
+node Decision_11_2
+{
+    label = "";
+    position = (1255 906);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_11_2 = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_11:0][Nu_11_2:0]";
+    HR_Group = "0";
+}
+
+node Nu_11_2
+{
+    label = "";
+    position = (1255 821);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_1 = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_10:0][S_10:0][M_10:0][M_11_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_Group = "0";
+}
+
+node Active_11_2
+{
+    label = "";
+    position = (1292 1576);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_11_2_1 = "0";
+    HR_LinkMode_Decision_11_2 = "0";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_11:0][Decision_11_2:0][Decision_11_2_1:0][Decision_11_2_2:0]";
+    HR_Group = "0";
+}
+
+node M_6_3
+{
+    label = "";
+    position = (580 557);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_4 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0][M_6_4:0]";
+    HR_Group = "0";
+}
+
+node M_6_1
+{
+    label = "";
+    position = (420 607);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_2 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0][M_6_2:0]";
+    HR_Group = "0";
+}
+
+node M_6_2
+{
+    label = "";
+    position = (503 584);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_3 = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_8:0][S_8:0][M_8:0][M_6_4:0][M_6_3:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_Desc = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_Group = "0";
+}
+
+node Active_6_4
+{
+    label = "";
+    position = (769 1576);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6_4_1 = "0";
+    HR_LinkMode_Decision_6_4 = "0";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_6:0][Decision_6_31:0][Decision_6_4:0][Decision_6_4_1:0][Decision_6_4_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_4
+{
+    label = "";
+    position = (759 912);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_6_4 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_31:0][Nu_6_4:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_4
+{
+    label = "";
+    position = (760 835);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_3 = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_6_4:0][M_6_3:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_Group = "0";
+}
+
+node Active_6_3
+{
+    label = "";
+    position = (681 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6_3_1 = "0";
+    HR_LinkMode_Decision_6_3 = "0";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_6:0][Decision_6_21:0][Decision_6_3:0][Decision_6_3_1:0][Decision_6_3_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_3
+{
+    label = "";
+    position = (671 910);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_6_3 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_21:0][Nu_6_3:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_3
+{
+    label = "";
+    position = (673 834);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_2 = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_6_3:0][M_6_2:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_Group = "0";
+}
+
+node Active_6_2
+{
+    label = "";
+    position = (593 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6_2_1 = "0";
+    HR_LinkMode_Decision_6_2 = "0";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_6:0][Decision_6_2:0][Decision_6_2_1:0][Decision_6_2_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_6_2
+{
+    label = "";
+    position = (583 911);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_6_2 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_2:0]";
+    HR_Group = "0";
+}
+
+node Nu_6_2
+{
+    label = "";
+    position = (584 834);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_1 = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0][M_6_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_State_6 = "";
+    HR_Group = "0";
+}
+
+node Active_17
+{
+    label = "";
+    position = (1800 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_17_1 = "0";
+    HR_LinkMode_Decision_17 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_17:0][Decision_17_1:0][Decision_17_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_16
+{
+    label = "";
+    position = (1713 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_16_1 = "0";
+    HR_LinkMode_Decision_16 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_16:0][Decision_16_1:0][Decision_16_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_15
+{
+    label = "";
+    position = (1627 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_15_1 = "0";
+    HR_LinkMode_Decision_15 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_15:0][Decision_15_1:0][Decision_15_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_14
+{
+    label = "";
+    position = (1543 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_14_1 = "0";
+    HR_LinkMode_Decision_14 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_14:0][Decision_14_1:0][Decision_14_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_13
+{
+    label = "";
+    position = (1458 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_13_1 = "0";
+    HR_LinkMode_Decision_13 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_13:0][Decision_13_1:0][Decision_13_2:0]";
+    HR_Group = "0";
+}
+
+node Active_12
+{
+    label = "";
+    position = (1372 1578);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_12_1 = "0";
+    HR_LinkMode_Decision_12 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_12:0][Decision_12_1:0][Decision_12_2:0]";
+    HR_Group = "0";
+}
+
+node Active_11_1
+{
+    label = "";
+    position = (1209 1575);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_11_1_1 = "0";
+    HR_LinkMode_Decision_11_1 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_11:0][Decision_11_1:0][Decision_11_1_1:0][Decision_11_1_2:0]";
+    HR_Group = "0";
+}
+
+node Active_10
+{
+    label = "";
+    position = (1123 1575);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_10_1 = "0";
+    HR_LinkMode_Decision_10 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_10:0][Decision_10_1:0][Decision_10_2:0]";
+    HR_Group = "0";
+}
+
+node Active_9
+{
+    label = "";
+    position = (1036 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_9_1 = "0";
+    HR_LinkMode_Decision_9 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_9:0][Decision_9_1:0][Decision_9_2:0]";
+    HR_Group = "0";
+}
+
+node Active_8
+{
+    label = "";
+    position = (949 1578);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_8_1 = "0";
+    HR_LinkMode_Decision_8 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_8:0][Decision_8_1:0][Decision_8_2:0]";
+    HR_Group = "0";
+}
+
+node Active_7
+{
+    label = "";
+    position = (861 1575);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_7_1 = "0";
+    HR_LinkMode_Decision_7 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_7:0][Decision_7_1:0][Decision_7_2:0]";
+    HR_Group = "0";
+}
+
+node Active_6_1
+{
+    label = "";
+    position = (506 1576);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6_1_1 = "0";
+    HR_LinkMode_Decision_6_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_6:0][Decision_6_1:0][Decision_6_1_1:0][Decision_6_1_2:0]";
+    HR_Group = "0";
+}
+
+node Active_4
+{
+    label = "";
+    position = (330 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_4_1 = "0";
+    HR_LinkMode_Decision_4 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_4_1:0][Decision_4_2:0]";
+    HR_Group = "0";
+}
+
+node Active_5
+{
+    label = "";
+    position = (416 1577);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_5_1 = "0";
+    HR_LinkMode_Decision_5 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_5:0][Decision_5_1:0][Decision_5_2:0]";
+    HR_Group = "0";
+}
+
+node Active_3
+{
+    label = "";
+    position = (242 1576);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_3_1 = "0";
+    HR_LinkMode_Decision_3 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_3:0][Decision_3_1:0][Decision_3_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Active_2
+{
+    label = "";
+    position = (150 1576);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_2_1 = "0";
+    HR_LinkMode_Decision_2 = "0";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_2_1:0][Decision_2_2:0]";
+    HR_Group = "0";
+}
+
+node Active_1
+{
+    label = "";
+    position = (64 1578);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_1_1 = "0";
+    HR_LinkMode_Decision_1 = "0";
+    HR_LinkMode = "[Decision_1:0][Decision_2:0][Decision_1_1:0][Decision_1_2:0]";
+    HR_Desc = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Nu_17
+{
+    label = "";
+    position = (1779 826);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_16 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][S_15:0][S_16:0][M_16:0]";
+    HR_Group = "0";
+}
+
+node Integrated_Pro
+{
+    label = "";
+    position = (1575 161);
+    states = ("0" "1");
+    HR_LinkMode_IN = "0";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "Integrated";
+    HR_State_0 = "Non-SOA distributed: b.\tPeer-to-peer";
+    HR_State_1 = "One based on the OASIS SOA Reference Model and Reference Architecture: Simple market";
+    HR_State_2 = "One based on the OASIS SOA Reference Model and Reference Architecture: Choreographed or Orchestrated";
+    HR_State_3 = "Non-SOA distributed: b.\tPeer-to-peer";
+    HR_State_4 = "Non-SOA distributed: Hierarchical";
+    HR_State_5 = "Integrated";
+    HR_Desc = "for a candidate information system, which specific architecture would be best among the following?";
+    HR_LinkMode = "[Nu_1:0][C1:0][SS:0][SC:0][NP:0][IN:0]";
+    HR_Group = "0";
+}
+
+node M_16
+{
+    label = "";
+    position = (1575 247);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_Integrated_Pro = "0";
+    HR_State_85 = "";
+    HR_State_84 = "";
+    HR_State_83 = "";
+    HR_State_82 = "";
+    HR_State_81 = "";
+    HR_State_80 = "";
+    HR_State_79 = "";
+    HR_State_78 = "";
+    HR_State_77 = "";
+    HR_State_76 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_State_6 = "";
+    HR_State_7 = "";
+    HR_State_8 = "";
+    HR_State_9 = "";
+    HR_State_10 = "";
+    HR_State_11 = "";
+    HR_State_12 = "";
+    HR_State_13 = "";
+    HR_State_14 = "";
+    HR_State_15 = "";
+    HR_State_16 = "";
+    HR_State_17 = "";
+    HR_State_18 = "";
+    HR_State_19 = "";
+    HR_State_20 = "";
+    HR_State_21 = "";
+    HR_State_22 = "";
+    HR_State_23 = "";
+    HR_State_24 = "";
+    HR_State_25 = "";
+    HR_State_26 = "";
+    HR_State_27 = "";
+    HR_State_28 = "";
+    HR_State_29 = "";
+    HR_State_30 = "";
+    HR_State_31 = "";
+    HR_State_32 = "";
+    HR_State_33 = "";
+    HR_State_34 = "";
+    HR_State_35 = "";
+    HR_State_36 = "";
+    HR_State_37 = "";
+    HR_State_38 = "";
+    HR_State_39 = "";
+    HR_State_40 = "";
+    HR_State_41 = "";
+    HR_State_42 = "";
+    HR_State_43 = "";
+    HR_State_44 = "";
+    HR_State_45 = "";
+    HR_State_46 = "";
+    HR_State_47 = "";
+    HR_State_48 = "";
+    HR_State_49 = "";
+    HR_State_50 = "";
+    HR_State_51 = "";
+    HR_State_52 = "";
+    HR_State_53 = "";
+    HR_State_54 = "";
+    HR_State_55 = "";
+    HR_State_56 = "";
+    HR_State_57 = "";
+    HR_State_58 = "";
+    HR_State_59 = "";
+    HR_State_60 = "";
+    HR_State_61 = "";
+    HR_State_62 = "";
+    HR_State_63 = "";
+    HR_State_64 = "";
+    HR_State_65 = "";
+    HR_State_66 = "";
+    HR_State_67 = "";
+    HR_State_68 = "";
+    HR_State_69 = "";
+    HR_State_70 = "";
+    HR_State_71 = "";
+    HR_State_72 = "";
+    HR_State_73 = "";
+    HR_State_74 = "";
+    HR_State_75 = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0][SOA_SimpleMarket:0][SOA_SimpleMarket_Max:0][SOA_SimpleMarket_Pro:0][SOA_Choreographed_Orchestrated_Pro:0][NotSOA_PeerToPeer_Pro:0][Integrated_Pro:0]";
+    HR_Group = "0";
+}
+
+node Decision_17
+{
+    label = "";
+    position = (1778 913);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_17 = "0";
+    HR_State_6 = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_16:0][Nu_16_1:0][Nu_17:0]";
+    HR_Group = "0";
+}
+
+node Federation
+{
+    label = "";
+    position = (1851 1338);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_17_1 = "0";
+    HR_LinkMode_Decision_17 = "0";
+    HR_LinkMode = "[Decision_16_1:0][Decision_17:0][Decision_17_1:0][Decision_17_2:0]";
+    HR_Group = "0";
+    HR_Desc = "Can Federation be used?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+}
+
+node Network_Size
+{
+    label = "";
+    position = (1756 1338);
+    states = ("Very_Large" "Large" "Medium" "Small");
+    HR_LinkMode_Decision_17_1 = "0";
+    HR_LinkMode_Decision_17 = "0";
+    HR_LinkMode_Federation = "0";
+    HR_LinkMode = "[Federation:0][Decision_16_1:0][Decision_17:0][Decision_17_1:0][Decision_17_2:0]";
+    HR_State_3 = "Small";
+    HR_State_2 = "Medium";
+    HR_Group = "0";
+    HR_Desc = "What is the total size of the network?";
+    HR_State_1 = "Large";
+    HR_State_0 = "Very large";
+}
+
+node M_15
+{
+    label = "";
+    position = (1504 277);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_16 = "0";
+    HR_State_80 = "";
+    HR_State_79 = "";
+    HR_State_78 = "";
+    HR_State_77 = "";
+    HR_State_76 = "";
+    HR_State_75 = "";
+    HR_State_74 = "";
+    HR_State_73 = "";
+    HR_State_72 = "";
+    HR_State_71 = "";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_LinkMode = "[Nu_1:0][Decision:0][S_15_1:0][S_16:0][M_16:0]";
+    HR_Group = "0";
+}
+
+node Nu_16
+{
+    label = "";
+    position = (1691 875);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_15 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][S_15:0][M_15:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Decision_16
+{
+    label = "";
+    position = (1690 964);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_16 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0][Nu_16:0]";
+    HR_Group = "0";
+}
+
+node Implication
+{
+    label = "";
+    position = (1686 1387);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_16_1 = "0";
+    HR_LinkMode_Decision_16 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "Others";
+    HR_Desc = "Will the system require fine grained levels of security? Be aware that the security requirements may no longer suffice when the system is exposed as a service.";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_2:0][Decision_15:0][Decision_16:0][Decision_16_1:0][Decision_16_2:0]";
+    HR_Group = "0";
+}
+
+node M_14
+{
+    label = "";
+    position = (1415 302);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_15 = "0";
+    HR_State_75 = "";
+    HR_State_74 = "";
+    HR_State_73 = "";
+    HR_State_72 = "";
+    HR_State_71 = "";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu_1:0][Decision:0][S_15:0][M_15:0]";
+}
+
+node M_13
+{
+    label = "";
+    position = (1320 324);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_14 = "0";
+    HR_State_70 = "";
+    HR_State_69 = "";
+    HR_State_68 = "";
+    HR_State_67 = "";
+    HR_State_66 = "";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][S_14:0][M_14:0]";
+}
+
+node M_12
+{
+    label = "";
+    position = (1231 349);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_13 = "0";
+    HR_State_65 = "";
+    HR_State_64 = "";
+    HR_State_63 = "";
+    HR_State_62 = "";
+    HR_State_61 = "";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_13:0][S_13:0][M_13:0]";
+}
+
+node M_11_2
+{
+    label = "";
+    position = (1145 370);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_12 = "0";
+    HR_State_60 = "";
+    HR_State_59 = "";
+    HR_State_58 = "";
+    HR_State_57 = "";
+    HR_State_56 = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_12:0][S_12:0][M_12:0]";
+}
+
+node M_10
+{
+    label = "";
+    position = (978 417);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_55 = "";
+    HR_State_54 = "";
+    HR_State_53 = "";
+    HR_State_52 = "";
+    HR_State_51 = "";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_11:0][S_11:0][M_11_1:0]";
+}
+
+node M_9
+{
+    label = "";
+    position = (898 444);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_10 = "0";
+    HR_State_50 = "";
+    HR_State_49 = "";
+    HR_State_48 = "";
+    HR_State_47 = "";
+    HR_State_46 = "";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_10:0][S_10:0][M_10:0]";
+}
+
+node M_8
+{
+    label = "";
+    position = (821 474);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_9 = "0";
+    HR_State_45 = "";
+    HR_State_44 = "";
+    HR_State_43 = "";
+    HR_State_42 = "";
+    HR_State_41 = "";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_9:0][S_9:0][M_9:0]";
+}
+
+node M_7
+{
+    label = "";
+    position = (741 504);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_8 = "0";
+    HR_State_40 = "";
+    HR_State_39 = "";
+    HR_State_38 = "";
+    HR_State_37 = "";
+    HR_State_36 = "";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_8:0][S_8:0][M_8:0]";
+}
+
+node M_6_4
+{
+    label = "";
+    position = (663 532);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_7 = "0";
+    HR_State_35 = "";
+    HR_State_34 = "";
+    HR_State_33 = "";
+    HR_State_32 = "";
+    HR_State_31 = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_7:0][S_7:0][M_7:0]";
+}
+
+node M_5
+{
+    label = "";
+    position = (343 639);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_30 = "";
+    HR_State_29 = "";
+    HR_State_28 = "";
+    HR_State_27 = "";
+    HR_State_26 = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_6:0][S_6:0][M_6_1:0]";
+}
+
+node M_4
+{
+    label = "";
+    position = (274 670);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_5 = "0";
+    HR_Desc = "";
+    HR_State_25 = "";
+    HR_State_24 = "";
+    HR_State_23 = "";
+    HR_State_22 = "";
+    HR_State_21 = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0]";
+}
+
+node M_3
+{
+    label = "";
+    position = (206 703);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_4 = "0";
+    HR_Desc = "";
+    HR_State_20 = "";
+    HR_State_19 = "";
+    HR_State_18 = "";
+    HR_State_17 = "";
+    HR_State_16 = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][Decision:0][NuS_3_1:0][NuS_4:0][S_4:0][M_4:0]";
+}
+
+node M_2
+{
+    label = "";
+    position = (144 742);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_3 = "0";
+    HR_Desc = "";
+    HR_State_15 = "";
+    HR_State_14 = "";
+    HR_State_13 = "";
+    HR_State_12 = "";
+    HR_State_11 = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[C1:0][Decision_1_1:0][NuS_2_1:0][NuS_3:0][S_3:0][M_3:0]";
+}
+
+node M_1
+{
+    label = "";
+    position = (92 785);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_2 = "0";
+    HR_Desc = "";
+    HR_State_10 = "";
+    HR_State_9 = "";
+    HR_State_8 = "";
+    HR_State_7 = "";
+    HR_State_6 = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[NuS_1_1:0][NuS_2:0][S_2:0][M_2:0]";
+}
+
+node Nu_15
+{
+    label = "";
+    position = (1605 876);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_14 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_14:0][M_14:0]";
+}
+
+node Nu_14
+{
+    label = "";
+    position = (1516 873);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_13 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_13:0][S_13:0][M_13:0]";
+}
+
+node Nu_13
+{
+    label = "";
+    position = (1428 873);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_12 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_12:0][S_12:0][M_12:0]";
+}
+
+node Nu_12
+{
+    label = "";
+    position = (1332 873);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_11_2 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_11:0][S_11:0][M_11:0][M_11_2:0]";
+}
+
+node Nu_11_1
+{
+    label = "";
+    position = (1172 817);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_10 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_10:0][S_10:0][M_10:0]";
+}
+
+node Nu_10
+{
+    label = "";
+    position = (1101 878);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_9 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_9:0][S_9:0][M_9:0]";
+}
+
+node Nu_9
+{
+    label = "";
+    position = (1009 876);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_8 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_8:0][S_8:0][M_8:0]";
+}
+
+node Nu_8
+{
+    label = "";
+    position = (916 875);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_7 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_7:0][S_7:0][M_7:0]";
+}
+
+node Nu_7
+{
+    label = "";
+    position = (822 874);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_6_4 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_6:0][S_6:0][M_6:0][M_6_4:0]";
+}
+
+node Nu_6_1
+{
+    label = "";
+    position = (497 833);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_5 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][NuS_4_1:0][NuS_5:0][S_5:0][M_5:0]";
+}
+
+node Nu_5
+{
+    label = "";
+    position = (389 788);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_4 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][Decision:0][NuS_2_1:0][NuS_3_1:0][NuS_4:0][S_4:0][M_4:0]";
+}
+
+node Nu_4
+{
+    label = "";
+    position = (310 829);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_3 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][NuS_3:0][S_3:0][M_3:0]";
+}
+
+node Nu_3
+{
+    label = "";
+    position = (226 842);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_2 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1_1:0][NuS_2:0][S_2:0][M_2:0]";
+}
+
+node Nu_2
+{
+    label = "";
+    position = (141 844);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][S_1:0][M_1:0]";
+}
+
+node Nu_1
+{
+    label = "";
+    position = (55 846);
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+    HR_LinkMode_M_1 = "0";
+    HR_State_6 = "";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+    HR_LinkMode = "[Nu:0][NuS_1_2:0][NuS_1:0][S_1:0][M_1:0]";
+}
+
+node Domain_Complexity
+{
+    label = "";
+    position = (1601 1389);
+    states = ("High" "Medium" "Low");
+    HR_LinkMode_Decision_15_1 = "0";
+    HR_LinkMode_Decision_15 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "High";
+    HR_State_1 = "Medium";
+    HR_Desc = "How complex is the domain? ";
+    HR_State_2 = "Low";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_2:0][Decision_15:0][Decision_15_1:0][Decision_15_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_15
+{
+    label = "";
+    position = (1605 963);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_15 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_15:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_Group = "0";
+}
+
+node Deployment_Time
+{
+    label = "";
+    position = (1513 1389);
+    states = ("Immediately" "Later");
+    HR_LinkMode_Decision_14_1 = "0";
+    HR_LinkMode_Decision_14 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Immediately";
+    HR_State_1 = "Later";
+    HR_Desc = "How quickly is the re-engineering of the system needed?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_1:0][Decision_14:0][Decision_14_1:0][Decision_14_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_14
+{
+    label = "";
+    position = (1516 963);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_14 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_14:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_Group = "0";
+}
+
+node Sufficient_Trust
+{
+    label = "";
+    position = (1419 1389);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_13_1 = "0";
+    HR_LinkMode_Decision_13 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Can sufficient trust be established?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_13:0][Decision_13_1:0][Decision_13_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_13
+{
+    label = "";
+    position = (1427 960);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_13 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_13:0]";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Independent_Consumers
+{
+    label = "";
+    position = (1321 1389);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_12_1 = "0";
+    HR_LinkMode_Decision_12 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Are the potential consumers of a service independent?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_12:0][Decision_12_1:0][Decision_12_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_12
+{
+    label = "";
+    position = (1330 955);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_12 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_2:0][Nu_12:0]";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Resource_Allocation_Change_Rate
+{
+    label = "";
+    position = (1258 1359);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_11_2_1 = "0";
+    HR_LinkMode_Decision_11_2 = "0";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_11_1:0][Decision_11_2:0][Decision_11_2_1:0][Decision_11_2_2:0]";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Can the resource allocation be, or is likely to be, changed before the service is complete?";
+    HR_State_1 = "Too fast";
+    HR_State_0 = "Ok";
+    HR_LinkControlPoints = "";
+    HR_Group = "0";
+}
+
+node Decision_11_1
+{
+    label = "";
+    position = (1172 903);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_11_1 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_11:0][Nu_11_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Appropriate_For_Contract
+{
+    label = "";
+    position = (1173 1357);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_11_1_1 = "0";
+    HR_LinkMode_Decision_11_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Is the candidate application appropriate for contracts and service-level agreements?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_11:0][Decision_11_1:0][Decision_11_1_1:0][Decision_11_1_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_10
+{
+    label = "";
+    position = (1099 953);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_10 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_9_1:0][Nu_10:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "how quickly doe the information change";
+    HR_Group = "0";
+}
+
+node Affordable
+{
+    label = "";
+    position = (1097 1387);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_10_1 = "0";
+    HR_LinkMode_Decision_10 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Can the consumers of the service afford it? Basically, is there a good business plan for the proposed system?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_10:0][Decision_10_1:0][Decision_10_2:0]";
+    HR_Group = "0";
+}
+
+node Timeliness
+{
+    label = "";
+    position = (1009 1386);
+    states = ("InTime" "NotInTime");
+    HR_LinkMode_Decision_9_1 = "0";
+    HR_LinkMode_Decision_9 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_Desc = "Timeliness for QoS.  How old is the information? How quickly does it change?";
+    HR_State_1 = "Late";
+    HR_State_0 = "In time";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_9:0][Decision_9_1:0][Decision_9_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_9
+{
+    label = "";
+    position = (1009 949);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_9 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_9:0]";
+    HR_Desc = "how quickly doe the information change";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Decision_8
+{
+    label = "";
+    position = (916 946);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_8 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_8:0][Nu_8_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Accuracy
+{
+    label = "";
+    position = (917 1388);
+    states = ("Sufficient" "Insufficient");
+    HR_LinkMode_Decision_8_1 = "0";
+    HR_LinkMode_Decision_8 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Sufficient";
+    HR_State_1 = "Insufficient";
+    HR_Desc = "Precision and accuracy of services for QoS.  Are they good enough to be used?";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_8:0][Decision_8_1:0][Decision_8_2:0]";
+    HR_Group = "0";
+}
+
+node Reliability
+{
+    label = "";
+    position = (826 1388);
+    states = ("High" "Medium" "Low");
+    HR_LinkMode_Decision_7_1 = "0";
+    HR_LinkMode_Decision_7 = "0";
+    HR_State_3 = "";
+    HR_State_2 = "Low";
+    HR_Desc = "What is the required reliability level? (Availability and support for QoS.)";
+    HR_State_1 = "Medium";
+    HR_State_0 = "High";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_7:0][Decision_7_1:0][Decision_7_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_7
+{
+    label = "";
+    position = (821 946);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_7 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_7:0]";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Decision_6_1
+{
+    label = "";
+    position = (496 910);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_6_1 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_6:0][Nu_6_1:0]";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Duplication
+{
+    label = "";
+    position = (734 1343);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6_4_1 = "0";
+    HR_LinkMode_Decision_6_4 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Can customers duplicate the service to get better response or higher QoS?";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_5_1_1:0][Decision_6_4:0][Decision_6:0][Decision_6_3:0][Decision_6_31:0][Decision_6_4_1:0][Decision_6_4_2:0]";
+    HR_Group = "0";
+}
+
+node Often
+{
+    label = "";
+    position = (644 1343);
+    states = ("Every_Second" "Every_Minute" "Every_Hour" "Every_Day" "Every_Month" "DuringCrises");
+    HR_LinkMode_Decision_6_3_1 = "0";
+    HR_LinkMode_Decision_6_3 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision_5_1:0][Decision_6_3:0][Decision_6:0][Decision_6_21:0][Decision_6_3_1:0][Decision_6_3_2:0]";
+    HR_State_5 = "Only during crises";
+    HR_State_0 = "A few times every second";
+    HR_State_1 = "A few times every minute";
+    HR_State_2 = "A few times every hour";
+    HR_State_3 = "A few times every day";
+    HR_State_4 = "A few times every month";
+    HR_Desc = "How often will the customers access the service?";
+    HR_Group = "0";
+}
+
+node Repaid
+{
+    label = "";
+    position = (559 1344);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_6_2_1 = "0";
+    HR_LinkMode_Decision_6_2 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_5_1:0][Decision_6_2:0][Decision_6:0][Decision_6_11:0][Decision_6_2_1:0][Decision_6_2_2:0]";
+    HR_Desc = "Will documentation and advertisement effort be repaid?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+    HR_Group = "0";
+}
+
+node Customer_Consumer_Base
+{
+    label = "";
+    position = (471 1345);
+    states = ("Ones" "Tens" "Hundreds" "Thousands" "More");
+    HR_LinkMode_Decision_6_1_1 = "0";
+    HR_LinkMode_Decision_6_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision_5_2:0][Decision_6_1:0][Decision_6:0][Decision_6_2:0][Decision_6_3:0][Decision_6_4:0][Decision_6_1_1:0][Decision_6_1_2:0]";
+    HR_Group = "0";
+    HR_Desc = "How large is the customer/consumer base? ";
+    HR_State_4 = "More";
+    HR_State_3 = "Thousands";
+    HR_State_2 = "Hundreds";
+    HR_State_1 = "Tens";
+    HR_State_0 = "Ones";
+}
+
+node Decision_5
+{
+    label = "";
+    position = (389 859);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_5 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_4_1:0][Nu_5:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Translation_Load
+{
+    label = "";
+    position = (384 1317);
+    states = ("None" "Medium" "More");
+    HR_LinkMode_Decision_5_1 = "0";
+    HR_LinkMode_Decision_5 = "0";
+    HR_LinkControlPoints = "";
+    HR_State_0 = "Less";
+    HR_State_1 = "Medium";
+    HR_Desc = "How much translation and/or mediation of the messages must be done to/from XML and to/from the syntax and semantics of the participants in the SOA?  Between the structures at the end-points?";
+    HR_State_2 = "More";
+    HR_State_3 = "";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_5:0][Decision_5_1:0][Decision_5_2:0]";
+    HR_Group = "0";
+}
+
+node Bandwidth
+{
+    label = "";
+    position = (351 1374);
+    states = ("DialUp" "ISP" "T1" "T3" "Larger");
+    HR_LinkMode_Transmission_Time = "0";
+    HR_State_4 = "Larger";
+    HR_State_3 = "T3";
+    HR_LinkMode = "[Transmission_Time:0][Transmission_Time_1:0]";
+    HR_Group = "0";
+    HR_Desc = "What is the bandwidth?";
+    HR_State_2 = "T1";
+    HR_State_1 = "ISP";
+    HR_State_0 = "Dial up";
+}
+
+node Message_Size
+{
+    label = "";
+    position = (267 1376);
+    states = ("LessThan_1K" "AFew_KBs" "AFew_MBs" "Larger");
+    HR_LinkMode_Transmission_Time = "0";
+    HR_LinkMode = "[Transmission_Time:0][Transmission_Time_1:0]";
+    HR_Group = "0";
+    HR_Desc = "What are the sizes of the request and response, or publish and subscribe, messages? ";
+    HR_State_3 = "Larger";
+    HR_State_2 = "A few MBs";
+    HR_State_1 = "A few KBs";
+    HR_State_0 = "Less than 1 KBs";
+}
+
+node Decision_4
+{
+    label = "";
+    position = (311 902);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_4 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_4:0][Nu_2_1:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Transmission_Time
+{
+    label = "";
+    position = (310 1275);
+    states = ("LessThan_1_Second" "AFew_Seconds" "AFew_Minutes" "Longer");
+    HR_LinkMode_Decision_4_1 = "0";
+    HR_LinkMode_Decision_4 = "0";
+    HR_State_0 = "Less than 1 second";
+    HR_State_1 = "A few seconds";
+    HR_Desc = "What will be the transmission times of the messages?";
+    HR_State_2 = "A few minutes";
+    HR_State_3 = "Longer";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_4_1:0][Decision_4_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_3
+{
+    label = "";
+    position = (227 915);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_3 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_2_1:0][Nu_3:0]";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+    HR_Group = "0";
+}
+
+node Response_Time
+{
+    label = "";
+    position = (226 1291);
+    states = ("LessThan_10_Milliseconds" "LessThan_1_Second" "AFew_Seconds" "Not_Important");
+    HR_LinkMode_Decision_3_1 = "0";
+    HR_LinkMode_Decision_3 = "0";
+    HR_State_3 = "Not important";
+    HR_State_2 = "A few seconds";
+    HR_Desc = "What is the required response time?";
+    HR_State_1 = "Less than 1 second";
+    HR_State_0 = "Less than 10 milliseconds";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_3_1:0][Decision_3_2:0]";
+    HR_Group = "0";
+}
+
+node Cross_Boundaries
+{
+    label = "";
+    position = (140 1289);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_2_1 = "0";
+    HR_LinkMode_Decision_2 = "0";
+    HR_State_0 = "Yes";
+    HR_State_1 = "No";
+    HR_Desc = "Does the system cross enterprise or ownership boundaries? Does it extend outside a single area of control, e.g., echelon? For example, parts of the system might be on land, while other parts are at sea.";
+    HR_LinkMode = "[Decision:0][Decision_1:0][Decision_2:0][Decision_3:0][Decision_4:0][Decision_1_1:0][Decision_2_1:0][Decision_2_2:0]";
+    HR_Group = "0";
+}
+
+node Decision_2
+{
+    label = "";
+    position = (141 913);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_2 = "0";
+    HR_State_6 = "";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Nu_2:0]";
+    HR_State_0 = "";
+    HR_State_1 = "";
+    HR_State_2 = "";
+    HR_State_3 = "";
+    HR_State_4 = "";
+    HR_State_5 = "";
+    HR_Desc = "";
+    HR_Group = "0";
+}
+
+node Decision_1
+{
+    label = "";
+    position = (55 913);
+    states = ("Nothing" "Not" "Pro");
+    HR_LinkMode_Nu_1 = "0";
+    HR_State_6 = "";
+    HR_LinkMode = "[Nu_1:0]";
+    HR_Group = "0";
+    HR_Desc = "";
+    HR_State_5 = "";
+    HR_State_4 = "";
+    HR_State_3 = "";
+    HR_State_2 = "";
+    HR_State_1 = "";
+    HR_State_0 = "";
+}
+
+node Distributed
+{
+    label = "";
+    position = (53 1292);
+    states = ("Yes" "No");
+    HR_LinkMode_Decision_1_1 = "0";
+    HR_LinkMode_Decision_1 = "0";
+    HR_LinkControlPoints = "";
+    HR_LinkMode = "[Decision_1:0][Decision_1_1:0][Decision_1_2:0]";
+    HR_Group = "0";
+    HR_Desc = "Is the candidate system (producers and consumers) distributed?";
+    HR_State_1 = "No";
+    HR_State_0 = "Yes";
+}
+
+potential (IN | Integrated_Con Integrated_Pro)
+{
+    data
+     = ((( 0 1 0 )	%  Integrated_Con=0  Integrated_Pro=0
+	 ( 0 0 1 ))	%  Integrated_Con=0  Integrated_Pro=1
+	(( 1 0 0 )	%  Integrated_Con=1  Integrated_Pro=0
+	 ( 0 1 0 )));	%  Integrated_Con=1  Integrated_Pro=1
+}
+
+potential (Nu_11_1_1 | Decision_11_1_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_11_1_1=Not
+	( 0 1 0 )	%  Decision_11_1_1=Con
+	( 0 0 1 ));	%  Decision_11_1_1=Nothing
+}
+
+potential (Nu_4_1 | Decision_4_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_4_1=Not
+	( 0 1 0 )	%  Decision_4_1=Con
+	( 0 0 1 ));	%  Decision_4_1=Nothing
+}
+
+potential (Nu_5_1 | Decision_5_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_5_1=Not
+	( 0 1 0 )	%  Decision_5_1=Con
+	( 0 0 1 ));	%  Decision_5_1=Nothing
+}
+
+potential (Decision_5_1 | Active_5 Translation_Load)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_5=Yes  Translation_Load=None
+	 ( 0.95 0.05 0 )	%  Active_5=Yes  Translation_Load=Medium
+	 ( 0.9 0.1 0 ))	%  Active_5=Yes  Translation_Load=More
+	(( 0 0 1 )	%  Active_5=No  Translation_Load=None
+	 ( 0 0 1 )	%  Active_5=No  Translation_Load=Medium
+	 ( 0 0 1 )));	%  Active_5=No  Translation_Load=More
+}
+
+potential (Decision_4_1 | Active_4 Transmission_Time)
+{
+    data
+     = ((( 0.99 0.01 0 )	%  Active_4=Yes  Transmission_Time=LessThan_1_Second
+	 ( 0.99 0.01 0 )	%  Active_4=Yes  Transmission_Time=AFew_Seconds
+	 ( 0.99 0.01 0 )	%  Active_4=Yes  Transmission_Time=AFew_Minutes
+	 ( 0.99 0.01 0 ))	%  Active_4=Yes  Transmission_Time=Longer
+	(( 0 0 1 )	%  Active_4=No  Transmission_Time=LessThan_1_Second
+	 ( 0 0 1 )	%  Active_4=No  Transmission_Time=AFew_Seconds
+	 ( 0 0 1 )	%  Active_4=No  Transmission_Time=AFew_Minutes
+	 ( 0 0 1 )));	%  Active_4=No  Transmission_Time=Longer
+}
+
+potential (Nu_11_2_1 | Decision_11_2_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_11_2_1=Not
+	( 0 1 0 )	%  Decision_11_2_1=Con
+	( 0 0 1 ));	%  Decision_11_2_1=Nothing
+}
+
+potential (Decision_11_2_1 | Active_11_2 Resource_Allocation_Change_Rate)
+{
+    data
+     = ((( 0.9 0.1 0 )	%  Active_11_2=Yes  Resource_Allocation_Change_Rate=Yes
+	 ( 0.9 0.1 0 ))	%  Active_11_2=Yes  Resource_Allocation_Change_Rate=No
+	(( 0 0 1 )	%  Active_11_2=No  Resource_Allocation_Change_Rate=Yes
+	 ( 0 0 1 )));	%  Active_11_2=No  Resource_Allocation_Change_Rate=No
+}
+
+potential (Decision_11_1_1 | Active_11_1 Appropriate_For_Contract)
+{
+    data
+     = ((( 0.3 0.7 0 )	%  Active_11_1=Yes  Appropriate_For_Contract=Yes
+	 ( 0.95 0.05 0 ))	%  Active_11_1=Yes  Appropriate_For_Contract=No
+	(( 0 0 1 )	%  Active_11_1=No  Appropriate_For_Contract=Yes
+	 ( 0 0 1 )));	%  Active_11_1=No  Appropriate_For_Contract=No
+}
+
+potential (Nu_10_1 | Decision_10_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_10_1=Not
+	( 0 1 0 )	%  Decision_10_1=Con
+	( 0 0 1 ));	%  Decision_10_1=Nothing
+}
+
+potential (Nu_12_1 | Decision_12_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_12_1=Not
+	( 0 1 0 )	%  Decision_12_1=Con
+	( 0 0 1 ));	%  Decision_12_1=Nothing
+}
+
+potential (Decision_12_1 | Active_12 Independent_Consumers)
+{
+    data
+     = ((( 0.7 0.3 0 )	%  Active_12=Yes  Independent_Consumers=Yes
+	 ( 0.7 0.3 0 ))	%  Active_12=Yes  Independent_Consumers=No
+	(( 0 0 1 )	%  Active_12=No  Independent_Consumers=Yes
+	 ( 0 0 1 )));	%  Active_12=No  Independent_Consumers=No
+}
+
+potential (Decision_10_1 | Active_10 Affordable)
+{
+    data
+     = ((( 0.3 0.7 0 )	%  Active_10=Yes  Affordable=Yes
+	 ( 0.95 0.05 0 ))	%  Active_10=Yes  Affordable=No
+	(( 0 0 1 )	%  Active_10=No  Affordable=Yes
+	 ( 0 0 1 )));	%  Active_10=No  Affordable=No
+}
+
+potential (Integrated_Con | M_16_1)
+{
+    data
+     = (( 1 0 )	%  M_16_1=0
+	( 0 1 )	%  M_16_1=1
+	( 0.5 0.5 ));	%  M_16_1=2
+}
+
+potential (M_15_1 | M_14_1 Nu_16_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_14_1, Nu_16_1) );
+    data
+     = ((( 1 0 0 )	%  M_14_1=0  Nu_16_1=0
+	 ( 1 0 0 )	%  M_14_1=0  Nu_16_1=1
+	 ( 1 0 0 ))	%  M_14_1=0  Nu_16_1=2
+	(( 1 0 0 )	%  M_14_1=1  Nu_16_1=0
+	 ( 0 1 0 )	%  M_14_1=1  Nu_16_1=1
+	 ( 0 1 0 ))	%  M_14_1=1  Nu_16_1=2
+	(( 1 0 0 )	%  M_14_1=2  Nu_16_1=0
+	 ( 0 1 0 )	%  M_14_1=2  Nu_16_1=1
+	 ( 0 0 1 )));	%  M_14_1=2  Nu_16_1=2
+}
+
+potential (M_16_1 | M_15_1 Nu_17_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_15_1, Nu_17_1) );
+    data
+     = ((( 1 0 0 )	%  M_15_1=0  Nu_17_1=0
+	 ( 1 0 0 )	%  M_15_1=0  Nu_17_1=1
+	 ( 1 0 0 ))	%  M_15_1=0  Nu_17_1=2
+	(( 1 0 0 )	%  M_15_1=1  Nu_17_1=0
+	 ( 0 1 0 )	%  M_15_1=1  Nu_17_1=1
+	 ( 0 1 0 ))	%  M_15_1=1  Nu_17_1=2
+	(( 1 0 0 )	%  M_15_1=2  Nu_17_1=0
+	 ( 0 1 0 )	%  M_15_1=2  Nu_17_1=1
+	 ( 0 0 1 )));	%  M_15_1=2  Nu_17_1=2
+}
+
+potential (M_14_1 | Nu_15_1 M_13_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_13_1, Nu_15_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_15_1=0  M_13_1=0
+	 ( 1 0 0 )	%  Nu_15_1=0  M_13_1=1
+	 ( 1 0 0 ))	%  Nu_15_1=0  M_13_1=2
+	(( 1 0 0 )	%  Nu_15_1=1  M_13_1=0
+	 ( 0 1 0 )	%  Nu_15_1=1  M_13_1=1
+	 ( 0 1 0 ))	%  Nu_15_1=1  M_13_1=2
+	(( 1 0 0 )	%  Nu_15_1=2  M_13_1=0
+	 ( 0 1 0 )	%  Nu_15_1=2  M_13_1=1
+	 ( 0 0 1 )));	%  Nu_15_1=2  M_13_1=2
+}
+
+potential (M_13_1 | Nu_14_1 M_12_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_12_1, Nu_14_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_14_1=0  M_12_1=0
+	 ( 1 0 0 )	%  Nu_14_1=0  M_12_1=1
+	 ( 1 0 0 ))	%  Nu_14_1=0  M_12_1=2
+	(( 1 0 0 )	%  Nu_14_1=1  M_12_1=0
+	 ( 0 1 0 )	%  Nu_14_1=1  M_12_1=1
+	 ( 0 1 0 ))	%  Nu_14_1=1  M_12_1=2
+	(( 1 0 0 )	%  Nu_14_1=2  M_12_1=0
+	 ( 0 1 0 )	%  Nu_14_1=2  M_12_1=1
+	 ( 0 0 1 )));	%  Nu_14_1=2  M_12_1=2
+}
+
+potential (M_12_1 | Nu_13_1 M_11_2_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_11_2_1, Nu_13_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_13_1=0  M_11_2_1=0
+	 ( 1 0 0 )	%  Nu_13_1=0  M_11_2_1=1
+	 ( 1 0 0 ))	%  Nu_13_1=0  M_11_2_1=2
+	(( 1 0 0 )	%  Nu_13_1=1  M_11_2_1=0
+	 ( 0 1 0 )	%  Nu_13_1=1  M_11_2_1=1
+	 ( 0 1 0 ))	%  Nu_13_1=1  M_11_2_1=2
+	(( 1 0 0 )	%  Nu_13_1=2  M_11_2_1=0
+	 ( 0 1 0 )	%  Nu_13_1=2  M_11_2_1=1
+	 ( 0 0 1 )));	%  Nu_13_1=2  M_11_2_1=2
+}
+
+potential (M_11_2_1 | Nu_12_1 M_11_1_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_11_1_1, Nu_12_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_12_1=0  M_11_1_1=0
+	 ( 1 0 0 )	%  Nu_12_1=0  M_11_1_1=1
+	 ( 1 0 0 ))	%  Nu_12_1=0  M_11_1_1=2
+	(( 1 0 0 )	%  Nu_12_1=1  M_11_1_1=0
+	 ( 0 1 0 )	%  Nu_12_1=1  M_11_1_1=1
+	 ( 0 1 0 ))	%  Nu_12_1=1  M_11_1_1=2
+	(( 1 0 0 )	%  Nu_12_1=2  M_11_1_1=0
+	 ( 0 1 0 )	%  Nu_12_1=2  M_11_1_1=1
+	 ( 0 0 1 )));	%  Nu_12_1=2  M_11_1_1=2
+}
+
+potential (M_11_1_1 | M_10_1 Nu_11_2_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_10_1, Nu_11_2_1) );
+    data
+     = ((( 1 0 0 )	%  M_10_1=0  Nu_11_2_1=0
+	 ( 1 0 0 )	%  M_10_1=0  Nu_11_2_1=1
+	 ( 1 0 0 ))	%  M_10_1=0  Nu_11_2_1=2
+	(( 1 0 0 )	%  M_10_1=1  Nu_11_2_1=0
+	 ( 0 1 0 )	%  M_10_1=1  Nu_11_2_1=1
+	 ( 0 1 0 ))	%  M_10_1=1  Nu_11_2_1=2
+	(( 1 0 0 )	%  M_10_1=2  Nu_11_2_1=0
+	 ( 0 1 0 )	%  M_10_1=2  Nu_11_2_1=1
+	 ( 0 0 1 )));	%  M_10_1=2  Nu_11_2_1=2
+}
+
+potential (M_10_1 | Nu_11_1_1 M_9_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_9_1, Nu_11_1_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_11_1_1=0  M_9_1=0
+	 ( 1 0 0 )	%  Nu_11_1_1=0  M_9_1=1
+	 ( 1 0 0 ))	%  Nu_11_1_1=0  M_9_1=2
+	(( 1 0 0 )	%  Nu_11_1_1=1  M_9_1=0
+	 ( 0 1 0 )	%  Nu_11_1_1=1  M_9_1=1
+	 ( 0 1 0 ))	%  Nu_11_1_1=1  M_9_1=2
+	(( 1 0 0 )	%  Nu_11_1_1=2  M_9_1=0
+	 ( 0 1 0 )	%  Nu_11_1_1=2  M_9_1=1
+	 ( 0 0 1 )));	%  Nu_11_1_1=2  M_9_1=2
+}
+
+potential (M_9_1 | Nu_10_1 M_8_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_8_1, Nu_10_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_10_1=0  M_8_1=0
+	 ( 1 0 0 )	%  Nu_10_1=0  M_8_1=1
+	 ( 1 0 0 ))	%  Nu_10_1=0  M_8_1=2
+	(( 1 0 0 )	%  Nu_10_1=1  M_8_1=0
+	 ( 0 1 0 )	%  Nu_10_1=1  M_8_1=1
+	 ( 0 1 0 ))	%  Nu_10_1=1  M_8_1=2
+	(( 1 0 0 )	%  Nu_10_1=2  M_8_1=0
+	 ( 0 1 0 )	%  Nu_10_1=2  M_8_1=1
+	 ( 0 0 1 )));	%  Nu_10_1=2  M_8_1=2
+}
+
+potential (M_8_1 | Nu_9_1 M_7_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_7_1, Nu_9_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_9_1=0  M_7_1=0
+	 ( 1 0 0 )	%  Nu_9_1=0  M_7_1=1
+	 ( 1 0 0 ))	%  Nu_9_1=0  M_7_1=2
+	(( 1 0 0 )	%  Nu_9_1=1  M_7_1=0
+	 ( 0 1 0 )	%  Nu_9_1=1  M_7_1=1
+	 ( 0 1 0 ))	%  Nu_9_1=1  M_7_1=2
+	(( 1 0 0 )	%  Nu_9_1=2  M_7_1=0
+	 ( 0 1 0 )	%  Nu_9_1=2  M_7_1=1
+	 ( 0 0 1 )));	%  Nu_9_1=2  M_7_1=2
+}
+
+potential (M_7_1 | Nu_8_1 M_6_4_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_6_4_1, Nu_8_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_8_1=0  M_6_4_1=0
+	 ( 1 0 0 )	%  Nu_8_1=0  M_6_4_1=1
+	 ( 1 0 0 ))	%  Nu_8_1=0  M_6_4_1=2
+	(( 1 0 0 )	%  Nu_8_1=1  M_6_4_1=0
+	 ( 0 1 0 )	%  Nu_8_1=1  M_6_4_1=1
+	 ( 0 1 0 ))	%  Nu_8_1=1  M_6_4_1=2
+	(( 1 0 0 )	%  Nu_8_1=2  M_6_4_1=0
+	 ( 0 1 0 )	%  Nu_8_1=2  M_6_4_1=1
+	 ( 0 0 1 )));	%  Nu_8_1=2  M_6_4_1=2
+}
+
+potential (M_6_4_1 | Nu_7_1 M_6_3_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_6_3_1, Nu_7_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_7_1=0  M_6_3_1=0
+	 ( 1 0 0 )	%  Nu_7_1=0  M_6_3_1=1
+	 ( 1 0 0 ))	%  Nu_7_1=0  M_6_3_1=2
+	(( 1 0 0 )	%  Nu_7_1=1  M_6_3_1=0
+	 ( 0 1 0 )	%  Nu_7_1=1  M_6_3_1=1
+	 ( 0 1 0 ))	%  Nu_7_1=1  M_6_3_1=2
+	(( 1 0 0 )	%  Nu_7_1=2  M_6_3_1=0
+	 ( 0 1 0 )	%  Nu_7_1=2  M_6_3_1=1
+	 ( 0 0 1 )));	%  Nu_7_1=2  M_6_3_1=2
+}
+
+potential (M_6_3_1 | Nu_6_4_1 M_6_2_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_6_2_1, Nu_6_4_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_6_4_1=0  M_6_2_1=0
+	 ( 1 0 0 )	%  Nu_6_4_1=0  M_6_2_1=1
+	 ( 1 0 0 ))	%  Nu_6_4_1=0  M_6_2_1=2
+	(( 1 0 0 )	%  Nu_6_4_1=1  M_6_2_1=0
+	 ( 0 1 0 )	%  Nu_6_4_1=1  M_6_2_1=1
+	 ( 0 1 0 ))	%  Nu_6_4_1=1  M_6_2_1=2
+	(( 1 0 0 )	%  Nu_6_4_1=2  M_6_2_1=0
+	 ( 0 1 0 )	%  Nu_6_4_1=2  M_6_2_1=1
+	 ( 0 0 1 )));	%  Nu_6_4_1=2  M_6_2_1=2
+}
+
+potential (M_6_2_1 | Nu_6_3_1 M_6_1_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_6_1_1, Nu_6_3_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_6_3_1=0  M_6_1_1=0
+	 ( 1 0 0 )	%  Nu_6_3_1=0  M_6_1_1=1
+	 ( 1 0 0 ))	%  Nu_6_3_1=0  M_6_1_1=2
+	(( 1 0 0 )	%  Nu_6_3_1=1  M_6_1_1=0
+	 ( 0 1 0 )	%  Nu_6_3_1=1  M_6_1_1=1
+	 ( 0 1 0 ))	%  Nu_6_3_1=1  M_6_1_1=2
+	(( 1 0 0 )	%  Nu_6_3_1=2  M_6_1_1=0
+	 ( 0 1 0 )	%  Nu_6_3_1=2  M_6_1_1=1
+	 ( 0 0 1 )));	%  Nu_6_3_1=2  M_6_1_1=2
+}
+
+potential (M_6_1_1 | M_5_1 Nu_6_2_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_5_1, Nu_6_2_1) );
+    data
+     = ((( 1 0 0 )	%  M_5_1=0  Nu_6_2_1=0
+	 ( 1 0 0 )	%  M_5_1=0  Nu_6_2_1=1
+	 ( 1 0 0 ))	%  M_5_1=0  Nu_6_2_1=2
+	(( 1 0 0 )	%  M_5_1=1  Nu_6_2_1=0
+	 ( 0 1 0 )	%  M_5_1=1  Nu_6_2_1=1
+	 ( 0 1 0 ))	%  M_5_1=1  Nu_6_2_1=2
+	(( 1 0 0 )	%  M_5_1=2  Nu_6_2_1=0
+	 ( 0 1 0 )	%  M_5_1=2  Nu_6_2_1=1
+	 ( 0 0 1 )));	%  M_5_1=2  Nu_6_2_1=2
+}
+
+potential (M_5_1 | Nu_6_1_1 M_4_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_4_1, Nu_6_1_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_6_1_1=0  M_4_1=0
+	 ( 1 0 0 )	%  Nu_6_1_1=0  M_4_1=1
+	 ( 1 0 0 ))	%  Nu_6_1_1=0  M_4_1=2
+	(( 1 0 0 )	%  Nu_6_1_1=1  M_4_1=0
+	 ( 0 1 0 )	%  Nu_6_1_1=1  M_4_1=1
+	 ( 0 1 0 ))	%  Nu_6_1_1=1  M_4_1=2
+	(( 1 0 0 )	%  Nu_6_1_1=2  M_4_1=0
+	 ( 0 1 0 )	%  Nu_6_1_1=2  M_4_1=1
+	 ( 0 0 1 )));	%  Nu_6_1_1=2  M_4_1=2
+}
+
+potential (M_4_1 | Nu_5_1 M_3_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_3_1, Nu_5_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_5_1=0  M_3_1=0
+	 ( 1 0 0 )	%  Nu_5_1=0  M_3_1=1
+	 ( 1 0 0 ))	%  Nu_5_1=0  M_3_1=2
+	(( 1 0 0 )	%  Nu_5_1=1  M_3_1=0
+	 ( 0 1 0 )	%  Nu_5_1=1  M_3_1=1
+	 ( 0 1 0 ))	%  Nu_5_1=1  M_3_1=2
+	(( 1 0 0 )	%  Nu_5_1=2  M_3_1=0
+	 ( 0 1 0 )	%  Nu_5_1=2  M_3_1=1
+	 ( 0 0 1 )));	%  Nu_5_1=2  M_3_1=2
+}
+
+potential (M_2_1 | Nu_3_1 M_1_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_1_1, Nu_3_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_3_1=0  M_1_1=0
+	 ( 1 0 0 )	%  Nu_3_1=0  M_1_1=1
+	 ( 1 0 0 ))	%  Nu_3_1=0  M_1_1=2
+	(( 1 0 0 )	%  Nu_3_1=1  M_1_1=0
+	 ( 0 1 0 )	%  Nu_3_1=1  M_1_1=1
+	 ( 0 1 0 ))	%  Nu_3_1=1  M_1_1=2
+	(( 1 0 0 )	%  Nu_3_1=2  M_1_1=0
+	 ( 0 1 0 )	%  Nu_3_1=2  M_1_1=1
+	 ( 0 0 1 )));	%  Nu_3_1=2  M_1_1=2
+}
+
+potential (M_3_1 | Nu_4_1 M_2_1)
+{
+    model_nodes = ();
+    model_data = ( min (M_2_1, Nu_4_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_4_1=0  M_2_1=0
+	 ( 1 0 0 )	%  Nu_4_1=0  M_2_1=1
+	 ( 1 0 0 ))	%  Nu_4_1=0  M_2_1=2
+	(( 1 0 0 )	%  Nu_4_1=1  M_2_1=0
+	 ( 0 1 0 )	%  Nu_4_1=1  M_2_1=1
+	 ( 0 1 0 ))	%  Nu_4_1=1  M_2_1=2
+	(( 1 0 0 )	%  Nu_4_1=2  M_2_1=0
+	 ( 0 1 0 )	%  Nu_4_1=2  M_2_1=1
+	 ( 0 0 1 )));	%  Nu_4_1=2  M_2_1=2
+}
+
+potential (M_1_1 | Nu_1_1 Nu_2_1)
+{
+    model_nodes = ();
+    model_data = ( min (Nu_1_1, Nu_2_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_1_1=0  Nu_2_1=0
+	 ( 1 0 0 )	%  Nu_1_1=0  Nu_2_1=1
+	 ( 1 0 0 ))	%  Nu_1_1=0  Nu_2_1=2
+	(( 1 0 0 )	%  Nu_1_1=1  Nu_2_1=0
+	 ( 0 1 0 )	%  Nu_1_1=1  Nu_2_1=1
+	 ( 0 1 0 ))	%  Nu_1_1=1  Nu_2_1=2
+	(( 1 0 0 )	%  Nu_1_1=2  Nu_2_1=0
+	 ( 0 1 0 )	%  Nu_1_1=2  Nu_2_1=1
+	 ( 0 0 1 )));	%  Nu_1_1=2  Nu_2_1=2
+}
+
+potential (Nu_1_1 | Decision_1_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_1_1=Not
+	( 0 1 0 )	%  Decision_1_1=Con
+	( 0 0 1 ));	%  Decision_1_1=Nothing
+}
+
+potential (Nu_2_1 | Decision_2_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_2_1=Not
+	( 0 1 0 )	%  Decision_2_1=Con
+	( 0 0 1 ));	%  Decision_2_1=Nothing
+}
+
+potential (Nu_3_1 | Decision_3_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_3_1=Not
+	( 0 1 0 )	%  Decision_3_1=Con
+	( 0 0 1 ));	%  Decision_3_1=Nothing
+}
+
+potential (Nu_6_1_1 | Decision_6_1_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_1_1=Not
+	( 0 1 0 )	%  Decision_6_1_1=Con
+	( 0 0 1 ));	%  Decision_6_1_1=Nothing
+}
+
+potential (Nu_6_2_1 | Decision_6_2_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_2_1=Not
+	( 0 1 0 )	%  Decision_6_2_1=Con
+	( 0 0 1 ));	%  Decision_6_2_1=Nothing
+}
+
+potential (Nu_6_3_1 | Decision_6_3_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_3_1=Not
+	( 0 1 0 )	%  Decision_6_3_1=Con
+	( 0 0 1 ));	%  Decision_6_3_1=Nothing
+}
+
+potential (Nu_6_4_1 | Decision_6_4_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_4_1=Not
+	( 0 1 0 )	%  Decision_6_4_1=Con
+	( 0 0 1 ));	%  Decision_6_4_1=Nothing
+}
+
+potential (Nu_7_1 | Decision_7_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_7_1=Not
+	( 0 1 0 )	%  Decision_7_1=Con
+	( 0 0 1 ));	%  Decision_7_1=Nothing
+}
+
+potential (Nu_8_1 | Decision_8_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_8_1=Not
+	( 0 1 0 )	%  Decision_8_1=Con
+	( 0 0 1 ));	%  Decision_8_1=Nothing
+}
+
+potential (Nu_9_1 | Decision_9_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_9_1=Not
+	( 0 1 0 )	%  Decision_9_1=Con
+	( 0 0 1 ));	%  Decision_9_1=Nothing
+}
+
+potential (Nu_13_1 | Decision_13_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_13_1=Not
+	( 0 1 0 )	%  Decision_13_1=Con
+	( 0 0 1 ));	%  Decision_13_1=Nothing
+}
+
+potential (Nu_14_1 | Decision_14_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_14_1=Not
+	( 0 1 0 )	%  Decision_14_1=Con
+	( 0 0 1 ));	%  Decision_14_1=Nothing
+}
+
+potential (Nu_15_1 | Decision_15_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_15_1=Not
+	( 0 1 0 )	%  Decision_15_1=Con
+	( 0 0 1 ));	%  Decision_15_1=Nothing
+}
+
+potential (Nu_16_1 | Decision_16_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_16_1=Not
+	( 0 1 0 )	%  Decision_16_1=Con
+	( 0 0 1 ));	%  Decision_16_1=Nothing
+}
+
+potential (Nu_17_1 | Decision_17_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_17_1=Not
+	( 0 1 0 )	%  Decision_17_1=Con
+	( 0 0 1 ));	%  Decision_17_1=Nothing
+}
+
+potential (Decision_17_1 | Active_17 Federation Network_Size)
+{
+    data
+     = (((( 0.05 0.95 0 )	%  Active_17=Yes  Federation=Yes  Network_Size=Very_Large
+	  ( 0.1 0.9 0 )	%  Active_17=Yes  Federation=Yes  Network_Size=Large
+	  ( 0.8 0.2 0 )	%  Active_17=Yes  Federation=Yes  Network_Size=Medium
+	  ( 0.95 0.05 0 ))	%  Active_17=Yes  Federation=Yes  Network_Size=Small
+	 (( 0.05 0.95 0 )	%  Active_17=Yes  Federation=No  Network_Size=Very_Large
+	  ( 0.1 0.9 0 )	%  Active_17=Yes  Federation=No  Network_Size=Large
+	  ( 0.8 0.2 0 )	%  Active_17=Yes  Federation=No  Network_Size=Medium
+	  ( 0.95 0.05 0 )))	%  Active_17=Yes  Federation=No  Network_Size=Small
+	((( 0 0 1 )	%  Active_17=No  Federation=Yes  Network_Size=Very_Large
+	  ( 0 0 1 )	%  Active_17=No  Federation=Yes  Network_Size=Large
+	  ( 0 0 1 )	%  Active_17=No  Federation=Yes  Network_Size=Medium
+	  ( 0 0 1 ))	%  Active_17=No  Federation=Yes  Network_Size=Small
+	 (( 0 0 1 )	%  Active_17=No  Federation=No  Network_Size=Very_Large
+	  ( 0 0 1 )	%  Active_17=No  Federation=No  Network_Size=Large
+	  ( 0 0 1 )	%  Active_17=No  Federation=No  Network_Size=Medium
+	  ( 0 0 1 ))));	%  Active_17=No  Federation=No  Network_Size=Small
+}
+
+potential (Decision_16_1 | Active_16 Implication)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_16=Yes  Implication=Yes
+	 ( 0.95 0.05 0 ))	%  Active_16=Yes  Implication=No
+	(( 0 0 1 )	%  Active_16=No  Implication=Yes
+	 ( 0 0 1 )));	%  Active_16=No  Implication=No
+}
+
+potential (Decision_15_1 | Active_15 Domain_Complexity)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_15=Yes  Domain_Complexity=High
+	 ( 0.95 0.05 0 )	%  Active_15=Yes  Domain_Complexity=Medium
+	 ( 0.95 0.05 0 ))	%  Active_15=Yes  Domain_Complexity=Low
+	(( 0 0 1 )	%  Active_15=No  Domain_Complexity=High
+	 ( 0 0 1 )	%  Active_15=No  Domain_Complexity=Medium
+	 ( 0 0 1 )));	%  Active_15=No  Domain_Complexity=Low
+}
+
+potential (Decision_14_1 | Active_14 Deployment_Time)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_14=Yes  Deployment_Time=Immediately
+	 ( 0.95 0.05 0 ))	%  Active_14=Yes  Deployment_Time=Later
+	(( 0 0 1 )	%  Active_14=No  Deployment_Time=Immediately
+	 ( 0 0 1 )));	%  Active_14=No  Deployment_Time=Later
+}
+
+potential (Decision_13_1 | Active_13 Sufficient_Trust)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_13=Yes  Sufficient_Trust=Yes
+	 ( 0.95 0.05 0 ))	%  Active_13=Yes  Sufficient_Trust=No
+	(( 0 0 1 )	%  Active_13=No  Sufficient_Trust=Yes
+	 ( 0 0 1 )));	%  Active_13=No  Sufficient_Trust=No
+}
+
+potential (Decision_9_1 | Active_9 Timeliness)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_9=Yes  Timeliness=InTime
+	 ( 0.95 0.05 0 ))	%  Active_9=Yes  Timeliness=NotInTime
+	(( 0 0 1 )	%  Active_9=No  Timeliness=InTime
+	 ( 0 0 1 )));	%  Active_9=No  Timeliness=NotInTime
+}
+
+potential (Decision_8_1 | Active_8 Accuracy)
+{
+    data
+     = ((( 0.5 0.5 0 )	%  Active_8=Yes  Accuracy=Sufficient
+	 ( 0.9 0.1 0 ))	%  Active_8=Yes  Accuracy=Insufficient
+	(( 0 0 1 )	%  Active_8=No  Accuracy=Sufficient
+	 ( 0 0 1 )));	%  Active_8=No  Accuracy=Insufficient
+}
+
+potential (Decision_7_1 | Active_7 Reliability)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_7=Yes  Reliability=High
+	 ( 0.95 0.05 0 )	%  Active_7=Yes  Reliability=Medium
+	 ( 0.95 0.05 0 ))	%  Active_7=Yes  Reliability=Low
+	(( 0 0 1 )	%  Active_7=No  Reliability=High
+	 ( 0 0 1 )	%  Active_7=No  Reliability=Medium
+	 ( 0 0 1 )));	%  Active_7=No  Reliability=Low
+}
+
+potential (Decision_6_4_1 | Active_6_4 Duplication)
+{
+    data
+     = ((( 0.9 0.1 0 )	%  Active_6_4=Yes  Duplication=Yes
+	 ( 0.2 0.8 0 ))	%  Active_6_4=Yes  Duplication=No
+	(( 0 0 1 )	%  Active_6_4=No  Duplication=Yes
+	 ( 0 0 1 )));	%  Active_6_4=No  Duplication=No
+}
+
+potential (Decision_6_3_1 | Active_6_3 Often)
+{
+    data
+     = ((( 0.95 0.05 0 )	%  Active_6_3=Yes  Often=Every_Second
+	 ( 0.9 0.1 0 )	%  Active_6_3=Yes  Often=Every_Minute
+	 ( 0.9 0.1 0 )	%  Active_6_3=Yes  Often=Every_Hour
+	 ( 0.9 0.1 0 )	%  Active_6_3=Yes  Often=Every_Day
+	 ( 0.95 0.05 0 )	%  Active_6_3=Yes  Often=Every_Month
+	 ( 0.99 0.01 0 ))	%  Active_6_3=Yes  Often=DuringCrises
+	(( 0 0 1 )	%  Active_6_3=No  Often=Every_Second
+	 ( 0 0 1 )	%  Active_6_3=No  Often=Every_Minute
+	 ( 0 0 1 )	%  Active_6_3=No  Often=Every_Hour
+	 ( 0 0 1 )	%  Active_6_3=No  Often=Every_Day
+	 ( 0 0 1 )	%  Active_6_3=No  Often=Every_Month
+	 ( 0 0 1 )));	%  Active_6_3=No  Often=DuringCrises
+}
+
+potential (Decision_6_2_1 | Active_6_2 Repaid)
+{
+    data
+     = ((( 0.99 0.01 0 )	%  Active_6_2=Yes  Repaid=Yes
+	 ( 0.99 0.01 0 ))	%  Active_6_2=Yes  Repaid=No
+	(( 0 0 1 )	%  Active_6_2=No  Repaid=Yes
+	 ( 0 0 1 )));	%  Active_6_2=No  Repaid=No
+}
+
+potential (Decision_6_1_1 | Active_6_1 Customer_Consumer_Base)
+{
+    data
+     = ((( 1 0 0 )	%  Active_6_1=Yes  Customer_Consumer_Base=Ones
+	 ( 0.95 0.05 0 )	%  Active_6_1=Yes  Customer_Consumer_Base=Tens
+	 ( 0.5 0.5 0 )	%  Active_6_1=Yes  Customer_Consumer_Base=Hundreds
+	 ( 0.2 0.8 0 )	%  Active_6_1=Yes  Customer_Consumer_Base=Thousands
+	 ( 0 1 0 ))	%  Active_6_1=Yes  Customer_Consumer_Base=More
+	(( 0 0 1 )	%  Active_6_1=No  Customer_Consumer_Base=Ones
+	 ( 0 0 1 )	%  Active_6_1=No  Customer_Consumer_Base=Tens
+	 ( 0 0 1 )	%  Active_6_1=No  Customer_Consumer_Base=Hundreds
+	 ( 0 0 1 )	%  Active_6_1=No  Customer_Consumer_Base=Thousands
+	 ( 0 0 1 )));	%  Active_6_1=No  Customer_Consumer_Base=More
+}
+
+potential (Decision_3_1 | Active_3 Response_Time)
+{
+    data
+     = ((( 0.99 0.01 0 )	%  Active_3=Yes  Response_Time=LessThan_10_Milliseconds
+	 ( 0.99 0.01 0 )	%  Active_3=Yes  Response_Time=LessThan_1_Second
+	 ( 0.99 0.01 0 )	%  Active_3=Yes  Response_Time=AFew_Seconds
+	 ( 0.99 0.01 0 ))	%  Active_3=Yes  Response_Time=Not_Important
+	(( 0 0 1 )	%  Active_3=No  Response_Time=LessThan_10_Milliseconds
+	 ( 0 0 1 )	%  Active_3=No  Response_Time=LessThan_1_Second
+	 ( 0 0 1 )	%  Active_3=No  Response_Time=AFew_Seconds
+	 ( 0 0 1 )));	%  Active_3=No  Response_Time=Not_Important
+}
+
+potential (Decision_2_1 | Active_2 Cross_Boundaries)
+{
+    data
+     = ((( 0.05 0.95 0 )	%  Active_2=Yes  Cross_Boundaries=Yes
+	 ( 0.95 0.05 0 ))	%  Active_2=Yes  Cross_Boundaries=No
+	(( 0 0 1 )	%  Active_2=No  Cross_Boundaries=Yes
+	 ( 0 0 1 )));	%  Active_2=No  Cross_Boundaries=No
+}
+
+potential (Decision_1_1 | Active_1 Distributed)
+{
+    data
+     = ((( 0.05 0.95 0 )	%  Active_1=Yes  Distributed=Yes
+	 ( 0.99 0.01 0 ))	%  Active_1=Yes  Distributed=No
+	(( 0 0 1 )	%  Active_1=No  Distributed=Yes
+	 ( 0 0 1 )));	%  Active_1=No  Distributed=No
+}
+
+potential (M_11_1 | Nu_11_2 M_10)
+{
+    model_nodes = ();
+    model_data = ( max (M_10, Nu_11_2) );
+    data
+     = ((( 1 0 0 )	%  Nu_11_2=0  M_10=0
+	 ( 0 1 0 )	%  Nu_11_2=0  M_10=1
+	 ( 0 0 1 ))	%  Nu_11_2=0  M_10=2
+	(( 0 1 0 )	%  Nu_11_2=1  M_10=0
+	 ( 0 1 0 )	%  Nu_11_2=1  M_10=1
+	 ( 0 0 1 ))	%  Nu_11_2=1  M_10=2
+	(( 0 0 1 )	%  Nu_11_2=2  M_10=0
+	 ( 0 0 1 )	%  Nu_11_2=2  M_10=1
+	 ( 0 0 1 )));	%  Nu_11_2=2  M_10=2
+}
+
+potential (Decision_11_2 | Active_11_2 Resource_Allocation_Change_Rate)
+{
+    data
+     = ((( 0 0.05 0.95 )	%  Active_11_2=Yes  Resource_Allocation_Change_Rate=Yes
+	 ( 0 0.9 0.1 ))	%  Active_11_2=Yes  Resource_Allocation_Change_Rate=No
+	(( 1 0 0 )	%  Active_11_2=No  Resource_Allocation_Change_Rate=Yes
+	 ( 1 0 0 )));	%  Active_11_2=No  Resource_Allocation_Change_Rate=No
+}
+
+potential (Nu_11_2 | Decision_11_2)
+{
+    data
+     = (( 1 0 0 )	%  Decision_11_2=Nothing
+	( 0 1 0 )	%  Decision_11_2=Not
+	( 0 0 1 ));	%  Decision_11_2=Pro
+}
+
+potential (Active_11_2)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (M_6_3 | Nu_6_4 M_6_2)
+{
+    model_nodes = ();
+    model_data = ( max (M_6_2, Nu_6_4) );
+    data
+     = ((( 1 0 0 )	%  Nu_6_4=0  M_6_2=0
+	 ( 0 1 0 )	%  Nu_6_4=0  M_6_2=1
+	 ( 0 0 1 ))	%  Nu_6_4=0  M_6_2=2
+	(( 0 1 0 )	%  Nu_6_4=1  M_6_2=0
+	 ( 0 1 0 )	%  Nu_6_4=1  M_6_2=1
+	 ( 0 0 1 ))	%  Nu_6_4=1  M_6_2=2
+	(( 0 0 1 )	%  Nu_6_4=2  M_6_2=0
+	 ( 0 0 1 )	%  Nu_6_4=2  M_6_2=1
+	 ( 0 0 1 )));	%  Nu_6_4=2  M_6_2=2
+}
+
+potential (M_6_1 | Nu_6_2 M_5)
+{
+    model_nodes = ();
+    model_data = ( max (M_5, Nu_6_2) );
+    data
+     = ((( 1 0 0 )	%  Nu_6_2=0  M_5=0
+	 ( 0 1 0 )	%  Nu_6_2=0  M_5=1
+	 ( 0 0 1 ))	%  Nu_6_2=0  M_5=2
+	(( 0 1 0 )	%  Nu_6_2=1  M_5=0
+	 ( 0 1 0 )	%  Nu_6_2=1  M_5=1
+	 ( 0 0 1 ))	%  Nu_6_2=1  M_5=2
+	(( 0 0 1 )	%  Nu_6_2=2  M_5=0
+	 ( 0 0 1 )	%  Nu_6_2=2  M_5=1
+	 ( 0 0 1 )));	%  Nu_6_2=2  M_5=2
+}
+
+potential (M_6_2 | Nu_6_3 M_6_1)
+{
+    model_nodes = ();
+    model_data = ( max (M_6_1, Nu_6_3) );
+    data
+     = ((( 1 0 0 )	%  Nu_6_3=0  M_6_1=0
+	 ( 0 1 0 )	%  Nu_6_3=0  M_6_1=1
+	 ( 0 0 1 ))	%  Nu_6_3=0  M_6_1=2
+	(( 0 1 0 )	%  Nu_6_3=1  M_6_1=0
+	 ( 0 1 0 )	%  Nu_6_3=1  M_6_1=1
+	 ( 0 0 1 ))	%  Nu_6_3=1  M_6_1=2
+	(( 0 0 1 )	%  Nu_6_3=2  M_6_1=0
+	 ( 0 0 1 )	%  Nu_6_3=2  M_6_1=1
+	 ( 0 0 1 )));	%  Nu_6_3=2  M_6_1=2
+}
+
+potential (Active_6_4)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Decision_6_4 | Active_6_4 Duplication)
+{
+    data
+     = ((( 0 0.95 0.05 )	%  Active_6_4=Yes  Duplication=Yes
+	 ( 0 0.99 0.01 ))	%  Active_6_4=Yes  Duplication=No
+	(( 1 0 0 )	%  Active_6_4=No  Duplication=Yes
+	 ( 1 0 0 )));	%  Active_6_4=No  Duplication=No
+}
+
+potential (Nu_6_4 | Decision_6_4)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_4=Nothing
+	( 0 1 0 )	%  Decision_6_4=Not
+	( 0 0 1 ));	%  Decision_6_4=Pro
+}
+
+potential (Active_6_3)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Decision_6_3 | Active_6_3 Often)
+{
+    data
+     = ((( 0 0.3 0.7 )	%  Active_6_3=Yes  Often=Every_Second
+	 ( 0 0.3 0.7 )	%  Active_6_3=Yes  Often=Every_Minute
+	 ( 0 0.3 0.7 )	%  Active_6_3=Yes  Often=Every_Hour
+	 ( 0 0.3 0.7 )	%  Active_6_3=Yes  Often=Every_Day
+	 ( 0 0.3 0.7 )	%  Active_6_3=Yes  Often=Every_Month
+	 ( 0 0.3 0.7 ))	%  Active_6_3=Yes  Often=DuringCrises
+	(( 1 0 0 )	%  Active_6_3=No  Often=Every_Second
+	 ( 1 0 0 )	%  Active_6_3=No  Often=Every_Minute
+	 ( 1 0 0 )	%  Active_6_3=No  Often=Every_Hour
+	 ( 1 0 0 )	%  Active_6_3=No  Often=Every_Day
+	 ( 1 0 0 )	%  Active_6_3=No  Often=Every_Month
+	 ( 1 0 0 )));	%  Active_6_3=No  Often=DuringCrises
+}
+
+potential (Nu_6_3 | Decision_6_3)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_3=Nothing
+	( 0 1 0 )	%  Decision_6_3=Not
+	( 0 0 1 ));	%  Decision_6_3=Pro
+}
+
+potential (Active_6_2)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Decision_6_2 | Active_6_2 Repaid)
+{
+    data
+     = ((( 0 0.99 0.01 )	%  Active_6_2=Yes  Repaid=Yes
+	 ( 0 0.99 0.01 ))	%  Active_6_2=Yes  Repaid=No
+	(( 1 0 0 )	%  Active_6_2=No  Repaid=Yes
+	 ( 1 0 0 )));	%  Active_6_2=No  Repaid=No
+}
+
+potential (Nu_6_2 | Decision_6_2)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_2=Nothing
+	( 0 1 0 )	%  Decision_6_2=Not
+	( 0 0 1 ));	%  Decision_6_2=Pro
+}
+
+potential (Active_17)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_16)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_15)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_14)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_13)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_12)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_11_1)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_10)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_9)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_8)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_7)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_6_1)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_4)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_5)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_3)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_2)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Active_1)
+{
+    data = ( 1E-006 0.999999 );
+}
+
+potential (Nu_17 | Decision_17)
+{
+    data
+     = (( 1 0 0 )	%  Decision_17=Nothing
+	( 0 1 0 )	%  Decision_17=Not
+	( 0 0 1 ));	%  Decision_17=Pro
+}
+
+potential (Integrated_Pro | M_16)
+{
+    data
+     = (( 0.5 0.5 )	%  M_16=0
+	( 1 0 )	%  M_16=1
+	( 0 1 ));	%  M_16=2
+}
+
+potential (M_16 | Nu_17 M_15)
+{
+    model_nodes = ();
+    model_data = ( max (M_15, Nu_17) );
+    data
+     = ((( 1 0 0 )	%  Nu_17=0  M_15=0
+	 ( 0 1 0 )	%  Nu_17=0  M_15=1
+	 ( 0 0 1 ))	%  Nu_17=0  M_15=2
+	(( 0 1 0 )	%  Nu_17=1  M_15=0
+	 ( 0 1 0 )	%  Nu_17=1  M_15=1
+	 ( 0 0 1 ))	%  Nu_17=1  M_15=2
+	(( 0 0 1 )	%  Nu_17=2  M_15=0
+	 ( 0 0 1 )	%  Nu_17=2  M_15=1
+	 ( 0 0 1 )));	%  Nu_17=2  M_15=2
+}
+
+potential (Decision_17 | Active_17 Federation Network_Size)
+{
+    data
+     = (((( 0 0.95 0.05 )	%  Active_17=Yes  Federation=Yes  Network_Size=Very_Large
+	  ( 0 0.95 0.05 )	%  Active_17=Yes  Federation=Yes  Network_Size=Large
+	  ( 0 0.6 0.4 )	%  Active_17=Yes  Federation=Yes  Network_Size=Medium
+	  ( 0 0.55 0.45 ))	%  Active_17=Yes  Federation=Yes  Network_Size=Small
+	 (( 0 0.95 0.05 )	%  Active_17=Yes  Federation=No  Network_Size=Very_Large
+	  ( 0 0.95 0.05 )	%  Active_17=Yes  Federation=No  Network_Size=Large
+	  ( 0 0.6 0.4 )	%  Active_17=Yes  Federation=No  Network_Size=Medium
+	  ( 0 0.55 0.45 )))	%  Active_17=Yes  Federation=No  Network_Size=Small
+	((( 1 0 0 )	%  Active_17=No  Federation=Yes  Network_Size=Very_Large
+	  ( 1 0 0 )	%  Active_17=No  Federation=Yes  Network_Size=Large
+	  ( 1 0 0 )	%  Active_17=No  Federation=Yes  Network_Size=Medium
+	  ( 1 0 0 ))	%  Active_17=No  Federation=Yes  Network_Size=Small
+	 (( 1 0 0 )	%  Active_17=No  Federation=No  Network_Size=Very_Large
+	  ( 1 0 0 )	%  Active_17=No  Federation=No  Network_Size=Large
+	  ( 1 0 0 )	%  Active_17=No  Federation=No  Network_Size=Medium
+	  ( 1 0 0 ))));	%  Active_17=No  Federation=No  Network_Size=Small
+}
+
+potential (Federation | Network_Size)
+{
+    data
+     = (( 0.9999 0.0001 )	%  Network_Size=Very_Large
+	( 0.9 0.1 )	%  Network_Size=Large
+	( 0.5 0.5 )	%  Network_Size=Medium
+	( 0.0001 0.9999 ));	%  Network_Size=Small
+}
+
+potential (Network_Size)
+{
+    data = ( 0.25 0.25 0.25 0.25 );
+}
+
+potential (M_15 | Nu_16 M_14)
+{
+    model_nodes = ();
+    model_data = ( max (M_14, Nu_16) );
+    data
+     = ((( 1 0 0 )	%  Nu_16=0  M_14=0
+	 ( 0 1 0 )	%  Nu_16=0  M_14=1
+	 ( 0 0 1 ))	%  Nu_16=0  M_14=2
+	(( 0 1 0 )	%  Nu_16=1  M_14=0
+	 ( 0 1 0 )	%  Nu_16=1  M_14=1
+	 ( 0 0 1 ))	%  Nu_16=1  M_14=2
+	(( 0 0 1 )	%  Nu_16=2  M_14=0
+	 ( 0 0 1 )	%  Nu_16=2  M_14=1
+	 ( 0 0 1 )));	%  Nu_16=2  M_14=2
+}
+
+potential (Nu_16 | Decision_16)
+{
+    data
+     = (( 1 0 0 )	%  Decision_16=Nothing
+	( 0 1 0 )	%  Decision_16=Not
+	( 0 0 1 ));	%  Decision_16=Pro
+}
+
+potential (Decision_16 | Active_16 Implication)
+{
+    data
+     = ((( 0 0.7 0.3 )	%  Active_16=Yes  Implication=Yes
+	 ( 0 0.7 0.3 ))	%  Active_16=Yes  Implication=No
+	(( 1 0 0 )	%  Active_16=No  Implication=Yes
+	 ( 1 0 0 )));	%  Active_16=No  Implication=No
+}
+
+potential (Implication)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (M_14 | Nu_15 M_13)
+{
+    model_nodes = ();
+    model_data = ( max (M_13, Nu_15) );
+    data
+     = ((( 1 0 0 )	%  Nu_15=0  M_13=0
+	 ( 0 1 0 )	%  Nu_15=0  M_13=1
+	 ( 0 0 1 ))	%  Nu_15=0  M_13=2
+	(( 0 1 0 )	%  Nu_15=1  M_13=0
+	 ( 0 1 0 )	%  Nu_15=1  M_13=1
+	 ( 0 0 1 ))	%  Nu_15=1  M_13=2
+	(( 0 0 1 )	%  Nu_15=2  M_13=0
+	 ( 0 0 1 )	%  Nu_15=2  M_13=1
+	 ( 0 0 1 )));	%  Nu_15=2  M_13=2
+}
+
+potential (M_13 | Nu_14 M_12)
+{
+    model_nodes = ();
+    model_data = ( max (M_12, Nu_14) );
+    data
+     = ((( 1 0 0 )	%  Nu_14=0  M_12=0
+	 ( 0 1 0 )	%  Nu_14=0  M_12=1
+	 ( 0 0 1 ))	%  Nu_14=0  M_12=2
+	(( 0 1 0 )	%  Nu_14=1  M_12=0
+	 ( 0 1 0 )	%  Nu_14=1  M_12=1
+	 ( 0 0 1 ))	%  Nu_14=1  M_12=2
+	(( 0 0 1 )	%  Nu_14=2  M_12=0
+	 ( 0 0 1 )	%  Nu_14=2  M_12=1
+	 ( 0 0 1 )));	%  Nu_14=2  M_12=2
+}
+
+potential (M_12 | Nu_13 M_11_2)
+{
+    model_nodes = ();
+    model_data = ( max (M_11_2, Nu_13) );
+    data
+     = ((( 1 0 0 )	%  Nu_13=0  M_11_2=0
+	 ( 0 1 0 )	%  Nu_13=0  M_11_2=1
+	 ( 0 0 1 ))	%  Nu_13=0  M_11_2=2
+	(( 0 1 0 )	%  Nu_13=1  M_11_2=0
+	 ( 0 1 0 )	%  Nu_13=1  M_11_2=1
+	 ( 0 0 1 ))	%  Nu_13=1  M_11_2=2
+	(( 0 0 1 )	%  Nu_13=2  M_11_2=0
+	 ( 0 0 1 )	%  Nu_13=2  M_11_2=1
+	 ( 0 0 1 )));	%  Nu_13=2  M_11_2=2
+}
+
+potential (M_11_2 | M_11_1 Nu_12)
+{
+    model_nodes = ();
+    model_data = ( max (M_11_1, Nu_12) );
+    data
+     = ((( 1 0 0 )	%  M_11_1=0  Nu_12=0
+	 ( 0 1 0 )	%  M_11_1=0  Nu_12=1
+	 ( 0 0 1 ))	%  M_11_1=0  Nu_12=2
+	(( 0 1 0 )	%  M_11_1=1  Nu_12=0
+	 ( 0 1 0 )	%  M_11_1=1  Nu_12=1
+	 ( 0 0 1 ))	%  M_11_1=1  Nu_12=2
+	(( 0 0 1 )	%  M_11_1=2  Nu_12=0
+	 ( 0 0 1 )	%  M_11_1=2  Nu_12=1
+	 ( 0 0 1 )));	%  M_11_1=2  Nu_12=2
+}
+
+potential (M_10 | Nu_11_1 M_9)
+{
+    model_nodes = ();
+    model_data = ( max (M_9, Nu_11_1) );
+    data
+     = ((( 1 0 0 )	%  Nu_11_1=0  M_9=0
+	 ( 0 1 0 )	%  Nu_11_1=0  M_9=1
+	 ( 0 0 1 ))	%  Nu_11_1=0  M_9=2
+	(( 0 1 0 )	%  Nu_11_1=1  M_9=0
+	 ( 0 1 0 )	%  Nu_11_1=1  M_9=1
+	 ( 0 0 1 ))	%  Nu_11_1=1  M_9=2
+	(( 0 0 1 )	%  Nu_11_1=2  M_9=0
+	 ( 0 0 1 )	%  Nu_11_1=2  M_9=1
+	 ( 0 0 1 )));	%  Nu_11_1=2  M_9=2
+}
+
+potential (M_9 | Nu_10 M_8)
+{
+    model_nodes = ();
+    model_data = ( max (M_8, Nu_10) );
+    data
+     = ((( 1 0 0 )	%  Nu_10=0  M_8=0
+	 ( 0 1 0 )	%  Nu_10=0  M_8=1
+	 ( 0 0 1 ))	%  Nu_10=0  M_8=2
+	(( 0 1 0 )	%  Nu_10=1  M_8=0
+	 ( 0 1 0 )	%  Nu_10=1  M_8=1
+	 ( 0 0 1 ))	%  Nu_10=1  M_8=2
+	(( 0 0 1 )	%  Nu_10=2  M_8=0
+	 ( 0 0 1 )	%  Nu_10=2  M_8=1
+	 ( 0 0 1 )));	%  Nu_10=2  M_8=2
+}
+
+potential (M_8 | Nu_9 M_7)
+{
+    model_nodes = ();
+    model_data = ( max (M_7, Nu_9) );
+    data
+     = ((( 1 0 0 )	%  Nu_9=0  M_7=0
+	 ( 0 1 0 )	%  Nu_9=0  M_7=1
+	 ( 0 0 1 ))	%  Nu_9=0  M_7=2
+	(( 0 1 0 )	%  Nu_9=1  M_7=0
+	 ( 0 1 0 )	%  Nu_9=1  M_7=1
+	 ( 0 0 1 ))	%  Nu_9=1  M_7=2
+	(( 0 0 1 )	%  Nu_9=2  M_7=0
+	 ( 0 0 1 )	%  Nu_9=2  M_7=1
+	 ( 0 0 1 )));	%  Nu_9=2  M_7=2
+}
+
+potential (M_7 | Nu_8 M_6_4)
+{
+    model_nodes = ();
+    model_data = ( max (M_6_4, Nu_8) );
+    data
+     = ((( 1 0 0 )	%  Nu_8=0  M_6_4=0
+	 ( 0 1 0 )	%  Nu_8=0  M_6_4=1
+	 ( 0 0 1 ))	%  Nu_8=0  M_6_4=2
+	(( 0 1 0 )	%  Nu_8=1  M_6_4=0
+	 ( 0 1 0 )	%  Nu_8=1  M_6_4=1
+	 ( 0 0 1 ))	%  Nu_8=1  M_6_4=2
+	(( 0 0 1 )	%  Nu_8=2  M_6_4=0
+	 ( 0 0 1 )	%  Nu_8=2  M_6_4=1
+	 ( 0 0 1 )));	%  Nu_8=2  M_6_4=2
+}
+
+potential (M_6_4 | M_6_3 Nu_7)
+{
+    model_nodes = ();
+    model_data = ( max (M_6_3, Nu_7) );
+    data
+     = ((( 1 0 0 )	%  M_6_3=0  Nu_7=0
+	 ( 0 1 0 )	%  M_6_3=0  Nu_7=1
+	 ( 0 0 1 ))	%  M_6_3=0  Nu_7=2
+	(( 0 1 0 )	%  M_6_3=1  Nu_7=0
+	 ( 0 1 0 )	%  M_6_3=1  Nu_7=1
+	 ( 0 0 1 ))	%  M_6_3=1  Nu_7=2
+	(( 0 0 1 )	%  M_6_3=2  Nu_7=0
+	 ( 0 0 1 )	%  M_6_3=2  Nu_7=1
+	 ( 0 0 1 )));	%  M_6_3=2  Nu_7=2
+}
+
+potential (M_5 | M_4 Nu_6_1)
+{
+    model_nodes = ();
+    model_data = ( max (M_4, Nu_6_1) );
+    data
+     = ((( 1 0 0 )	%  M_4=0  Nu_6_1=0
+	 ( 0 1 0 )	%  M_4=0  Nu_6_1=1
+	 ( 0 0 1 ))	%  M_4=0  Nu_6_1=2
+	(( 0 1 0 )	%  M_4=1  Nu_6_1=0
+	 ( 0 1 0 )	%  M_4=1  Nu_6_1=1
+	 ( 0 0 1 ))	%  M_4=1  Nu_6_1=2
+	(( 0 0 1 )	%  M_4=2  Nu_6_1=0
+	 ( 0 0 1 )	%  M_4=2  Nu_6_1=1
+	 ( 0 0 1 )));	%  M_4=2  Nu_6_1=2
+}
+
+potential (M_4 | Nu_5 M_3)
+{
+    model_nodes = ();
+    model_data = ( max (M_3, Nu_5) );
+    data
+     = ((( 1 0 0 )	%  Nu_5=0  M_3=0
+	 ( 0 1 0 )	%  Nu_5=0  M_3=1
+	 ( 0 0 1 ))	%  Nu_5=0  M_3=2
+	(( 0 1 0 )	%  Nu_5=1  M_3=0
+	 ( 0 1 0 )	%  Nu_5=1  M_3=1
+	 ( 0 0 1 ))	%  Nu_5=1  M_3=2
+	(( 0 0 1 )	%  Nu_5=2  M_3=0
+	 ( 0 0 1 )	%  Nu_5=2  M_3=1
+	 ( 0 0 1 )));	%  Nu_5=2  M_3=2
+}
+
+potential (M_3 | Nu_4 M_2)
+{
+    model_nodes = ();
+    model_data = ( max (M_2, Nu_4) );
+    data
+     = ((( 1 0 0 )	%  Nu_4=0  M_2=0
+	 ( 0 1 0 )	%  Nu_4=0  M_2=1
+	 ( 0 0 1 ))	%  Nu_4=0  M_2=2
+	(( 0 1 0 )	%  Nu_4=1  M_2=0
+	 ( 0 1 0 )	%  Nu_4=1  M_2=1
+	 ( 0 0 1 ))	%  Nu_4=1  M_2=2
+	(( 0 0 1 )	%  Nu_4=2  M_2=0
+	 ( 0 0 1 )	%  Nu_4=2  M_2=1
+	 ( 0 0 1 )));	%  Nu_4=2  M_2=2
+}
+
+potential (M_2 | Nu_3 M_1)
+{
+    model_nodes = ();
+    model_data = ( max (M_1, Nu_3) );
+    data
+     = ((( 1 0 0 )	%  Nu_3=0  M_1=0
+	 ( 0 1 0 )	%  Nu_3=0  M_1=1
+	 ( 0 0 1 ))	%  Nu_3=0  M_1=2
+	(( 0 1 0 )	%  Nu_3=1  M_1=0
+	 ( 0 1 0 )	%  Nu_3=1  M_1=1
+	 ( 0 0 1 ))	%  Nu_3=1  M_1=2
+	(( 0 0 1 )	%  Nu_3=2  M_1=0
+	 ( 0 0 1 )	%  Nu_3=2  M_1=1
+	 ( 0 0 1 )));	%  Nu_3=2  M_1=2
+}
+
+potential (M_1 | Nu_2 Nu_1)
+{
+    model_nodes = ();
+    model_data = ( max (Nu_1, Nu_2) );
+    data
+     = ((( 1 0 0 )	%  Nu_2=0  Nu_1=0
+	 ( 0 1 0 )	%  Nu_2=0  Nu_1=1
+	 ( 0 0 1 ))	%  Nu_2=0  Nu_1=2
+	(( 0 1 0 )	%  Nu_2=1  Nu_1=0
+	 ( 0 1 0 )	%  Nu_2=1  Nu_1=1
+	 ( 0 0 1 ))	%  Nu_2=1  Nu_1=2
+	(( 0 0 1 )	%  Nu_2=2  Nu_1=0
+	 ( 0 0 1 )	%  Nu_2=2  Nu_1=1
+	 ( 0 0 1 )));	%  Nu_2=2  Nu_1=2
+}
+
+potential (Nu_15 | Decision_15)
+{
+    data
+     = (( 1 0 0 )	%  Decision_15=Nothing
+	( 0 1 0 )	%  Decision_15=Not
+	( 0 0 1 ));	%  Decision_15=Pro
+}
+
+potential (Nu_14 | Decision_14)
+{
+    data
+     = (( 1 0 0 )	%  Decision_14=Nothing
+	( 0 1 0 )	%  Decision_14=Not
+	( 0 0 1 ));	%  Decision_14=Pro
+}
+
+potential (Nu_13 | Decision_13)
+{
+    data
+     = (( 1 0 0 )	%  Decision_13=Nothing
+	( 0 1 0 )	%  Decision_13=Not
+	( 0 0 1 ));	%  Decision_13=Pro
+}
+
+potential (Nu_12 | Decision_12)
+{
+    data
+     = (( 1 0 0 )	%  Decision_12=Nothing
+	( 0 1 0 )	%  Decision_12=Not
+	( 0 0 1 ));	%  Decision_12=Pro
+}
+
+potential (Nu_11_1 | Decision_11_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_11_1=Nothing
+	( 0 1 0 )	%  Decision_11_1=Not
+	( 0 0 1 ));	%  Decision_11_1=Pro
+}
+
+potential (Nu_10 | Decision_10)
+{
+    data
+     = (( 1 0 0 )	%  Decision_10=Nothing
+	( 0 1 0 )	%  Decision_10=Not
+	( 0 0 1 ));	%  Decision_10=Pro
+}
+
+potential (Nu_9 | Decision_9)
+{
+    data
+     = (( 1 0 0 )	%  Decision_9=Nothing
+	( 0 1 0 )	%  Decision_9=Not
+	( 0 0 1 ));	%  Decision_9=Pro
+}
+
+potential (Nu_8 | Decision_8)
+{
+    data
+     = (( 1 0 0 )	%  Decision_8=Nothing
+	( 0 1 0 )	%  Decision_8=Not
+	( 0 0 1 ));	%  Decision_8=Pro
+}
+
+potential (Nu_7 | Decision_7)
+{
+    data
+     = (( 1 0 0 )	%  Decision_7=Nothing
+	( 0 1 0 )	%  Decision_7=Not
+	( 0 0 1 ));	%  Decision_7=Pro
+}
+
+potential (Nu_6_1 | Decision_6_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_6_1=Nothing
+	( 0 1 0 )	%  Decision_6_1=Not
+	( 0 0 1 ));	%  Decision_6_1=Pro
+}
+
+potential (Nu_5 | Decision_5)
+{
+    data
+     = (( 1 0 0 )	%  Decision_5=Nothing
+	( 0 1 0 )	%  Decision_5=Not
+	( 0 0 1 ));	%  Decision_5=Pro
+}
+
+potential (Nu_4 | Decision_4)
+{
+    data
+     = (( 1 0 0 )	%  Decision_4=Nothing
+	( 0 1 0 )	%  Decision_4=Not
+	( 0 0 1 ));	%  Decision_4=Pro
+}
+
+potential (Nu_3 | Decision_3)
+{
+    data
+     = (( 1 0 0 )	%  Decision_3=Nothing
+	( 0 1 0 )	%  Decision_3=Not
+	( 0 0 1 ));	%  Decision_3=Pro
+}
+
+potential (Nu_2 | Decision_2)
+{
+    data
+     = (( 1 0 0 )	%  Decision_2=Nothing
+	( 0 1 0 )	%  Decision_2=Not
+	( 0 0 1 ));	%  Decision_2=Pro
+}
+
+potential (Nu_1 | Decision_1)
+{
+    data
+     = (( 1 0 0 )	%  Decision_1=Nothing
+	( 0 1 0 )	%  Decision_1=Not
+	( 0 0 1 ));	%  Decision_1=Pro
+}
+
+potential (Domain_Complexity)
+{
+    data = ( 0.333333 0.333333 0.333333 );
+}
+
+potential (Decision_15 | Active_15 Domain_Complexity)
+{
+    data
+     = ((( 0 0.7 0.3 )	%  Active_15=Yes  Domain_Complexity=High
+	 ( 0 0.7 0.3 )	%  Active_15=Yes  Domain_Complexity=Medium
+	 ( 0 0.65 0.35 ))	%  Active_15=Yes  Domain_Complexity=Low
+	(( 1 0 0 )	%  Active_15=No  Domain_Complexity=High
+	 ( 1 0 0 )	%  Active_15=No  Domain_Complexity=Medium
+	 ( 1 0 0 )));	%  Active_15=No  Domain_Complexity=Low
+}
+
+potential (Deployment_Time)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_14 | Active_14 Deployment_Time)
+{
+    data
+     = ((( 0 0.2 0.8 )	%  Active_14=Yes  Deployment_Time=Immediately
+	 ( 0 0.7 0.3 ))	%  Active_14=Yes  Deployment_Time=Later
+	(( 1 0 0 )	%  Active_14=No  Deployment_Time=Immediately
+	 ( 1 0 0 )));	%  Active_14=No  Deployment_Time=Later
+}
+
+potential (Sufficient_Trust)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_13 | Active_13 Sufficient_Trust)
+{
+    data
+     = ((( 0 0.2 0.8 )	%  Active_13=Yes  Sufficient_Trust=Yes
+	 ( 0 0.2 0.8 ))	%  Active_13=Yes  Sufficient_Trust=No
+	(( 1 0 0 )	%  Active_13=No  Sufficient_Trust=Yes
+	 ( 1 0 0 )));	%  Active_13=No  Sufficient_Trust=No
+}
+
+potential (Independent_Consumers)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_12 | Active_12 Independent_Consumers)
+{
+    data
+     = ((( 0 0.7 0.3 )	%  Active_12=Yes  Independent_Consumers=Yes
+	 ( 0 0.2 0.8 ))	%  Active_12=Yes  Independent_Consumers=No
+	(( 1 0 0 )	%  Active_12=No  Independent_Consumers=Yes
+	 ( 1 0 0 )));	%  Active_12=No  Independent_Consumers=No
+}
+
+potential (Resource_Allocation_Change_Rate)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_11_1 | Active_11_1 Appropriate_For_Contract)
+{
+    data
+     = ((( 0 0.9 0.1 )	%  Active_11_1=Yes  Appropriate_For_Contract=Yes
+	 ( 0 0.3 0.7 ))	%  Active_11_1=Yes  Appropriate_For_Contract=No
+	(( 1 0 0 )	%  Active_11_1=No  Appropriate_For_Contract=Yes
+	 ( 1 0 0 )));	%  Active_11_1=No  Appropriate_For_Contract=No
+}
+
+potential (Appropriate_For_Contract)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_10 | Active_10 Affordable)
+{
+    data
+     = ((( 0 0.95 0.05 )	%  Active_10=Yes  Affordable=Yes
+	 ( 0 0.1 0.9 ))	%  Active_10=Yes  Affordable=No
+	(( 1 0 0 )	%  Active_10=No  Affordable=Yes
+	 ( 1 0 0 )));	%  Active_10=No  Affordable=No
+}
+
+potential (Affordable)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Timeliness)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_9 | Active_9 Timeliness)
+{
+    data
+     = ((( 0 0.2 0.8 )	%  Active_9=Yes  Timeliness=InTime
+	 ( 0 0.7 0.3 ))	%  Active_9=Yes  Timeliness=NotInTime
+	(( 1 0 0 )	%  Active_9=No  Timeliness=InTime
+	 ( 1 0 0 )));	%  Active_9=No  Timeliness=NotInTime
+}
+
+potential (Decision_8 | Active_8 Accuracy)
+{
+    data
+     = ((( 0 0.9 0.1 )	%  Active_8=Yes  Accuracy=Sufficient
+	 ( 0 0.1 0.9 ))	%  Active_8=Yes  Accuracy=Insufficient
+	(( 1 0 0 )	%  Active_8=No  Accuracy=Sufficient
+	 ( 1 0 0 )));	%  Active_8=No  Accuracy=Insufficient
+}
+
+potential (Accuracy)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Reliability)
+{
+    data = ( 0.333333 0.333333 0.333333 );
+}
+
+potential (Decision_7 | Active_7 Reliability)
+{
+    data
+     = ((( 0 0.05 0.95 )	%  Active_7=Yes  Reliability=High
+	 ( 0 0.05 0.95 )	%  Active_7=Yes  Reliability=Medium
+	 ( 0 0.05 0.95 ))	%  Active_7=Yes  Reliability=Low
+	(( 1 0 0 )	%  Active_7=No  Reliability=High
+	 ( 1 0 0 )	%  Active_7=No  Reliability=Medium
+	 ( 1 0 0 )));	%  Active_7=No  Reliability=Low
+}
+
+potential (Decision_6_1 | Active_6_1 Customer_Consumer_Base)
+{
+    data
+     = ((( 0 0.05 0.95 )	%  Active_6_1=Yes  Customer_Consumer_Base=Ones
+	 ( 0 0.3 0.7 )	%  Active_6_1=Yes  Customer_Consumer_Base=Tens
+	 ( 0 0.8 0.2 )	%  Active_6_1=Yes  Customer_Consumer_Base=Hundreds
+	 ( 0 0.95 0.05 )	%  Active_6_1=Yes  Customer_Consumer_Base=Thousands
+	 ( 0 1 0 ))	%  Active_6_1=Yes  Customer_Consumer_Base=More
+	(( 1 0 0 )	%  Active_6_1=No  Customer_Consumer_Base=Ones
+	 ( 1 0 0 )	%  Active_6_1=No  Customer_Consumer_Base=Tens
+	 ( 1 0 0 )	%  Active_6_1=No  Customer_Consumer_Base=Hundreds
+	 ( 1 0 0 )	%  Active_6_1=No  Customer_Consumer_Base=Thousands
+	 ( 1 0 0 )));	%  Active_6_1=No  Customer_Consumer_Base=More
+}
+
+potential (Duplication)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Often)
+{
+    data = ( 0.166667 0.166667 0.166667 0.166667 0.166667 0.166667 );
+}
+
+potential (Repaid)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Customer_Consumer_Base)
+{
+    data = ( 0.2 0.2 0.2 0.2 0.2 );
+}
+
+potential (Decision_5 | Active_5 Translation_Load)
+{
+    data
+     = ((( 0 0.5 0.5 )	%  Active_5=Yes  Translation_Load=None
+	 ( 0 0.5 0.5 )	%  Active_5=Yes  Translation_Load=Medium
+	 ( 0 0.6 0.4 ))	%  Active_5=Yes  Translation_Load=More
+	(( 1 0 0 )	%  Active_5=No  Translation_Load=None
+	 ( 1 0 0 )	%  Active_5=No  Translation_Load=Medium
+	 ( 1 0 0 )));	%  Active_5=No  Translation_Load=More
+}
+
+potential (Translation_Load)
+{
+    data = ( 0.333333 0.333333 0.333333 );
+}
+
+potential (Bandwidth)
+{
+    data = ( 0.2 0.2 0.2 0.2 0.2 );
+}
+
+potential (Message_Size)
+{
+    data = ( 0.25 0.25 0.25 0.25 );
+}
+
+potential (Decision_4 | Active_4 Transmission_Time)
+{
+    data
+     = ((( 0 0.01 0.99 )	%  Active_4=Yes  Transmission_Time=LessThan_1_Second
+	 ( 0 0.01 0.99 )	%  Active_4=Yes  Transmission_Time=AFew_Seconds
+	 ( 0 0.01 0.99 )	%  Active_4=Yes  Transmission_Time=AFew_Minutes
+	 ( 0 0.01 0.99 ))	%  Active_4=Yes  Transmission_Time=Longer
+	(( 1 0 0 )	%  Active_4=No  Transmission_Time=LessThan_1_Second
+	 ( 1 0 0 )	%  Active_4=No  Transmission_Time=AFew_Seconds
+	 ( 1 0 0 )	%  Active_4=No  Transmission_Time=AFew_Minutes
+	 ( 1 0 0 )));	%  Active_4=No  Transmission_Time=Longer
+}
+
+potential (Transmission_Time | Bandwidth Message_Size)
+{
+    data
+     = ((( 0.8 0.1998 0.0001 0.0001 )	%  Bandwidth=DialUp  Message_Size=LessThan_1K
+	 ( 0.5 0.4 0.0999 0.0001 )	%  Bandwidth=DialUp  Message_Size=AFew_KBs
+	 ( 0.0001 0.0999 0.2 0.7 )	%  Bandwidth=DialUp  Message_Size=AFew_MBs
+	 ( 9.999E-005 9.999E-005 0.19988 0.79992 ))	%  Bandwidth=DialUp  Message_Size=Larger
+	(( 0.85 0.1498 0.0001 0.0001 )	%  Bandwidth=ISP  Message_Size=LessThan_1K
+	 ( 0.5 0.4 0.0999 0.0001 )	%  Bandwidth=ISP  Message_Size=AFew_KBs
+	 ( 0.0001 0.0999 0.2 0.7 )	%  Bandwidth=ISP  Message_Size=AFew_MBs
+	 ( 0.0001 0.0001 0.1998 0.8 ))	%  Bandwidth=ISP  Message_Size=Larger
+	(( 0.9997 0.0001 0.0001 0.0001 )	%  Bandwidth=T1  Message_Size=LessThan_1K
+	 ( 0.3 0.6998 0.0001 0.0001 )	%  Bandwidth=T1  Message_Size=AFew_KBs
+	 ( 0.0001 0.1999 0.7 0.1 )	%  Bandwidth=T1  Message_Size=AFew_MBs
+	 ( 0.0001 0.0001 0.1998 0.8 ))	%  Bandwidth=T1  Message_Size=Larger
+	(( 0.9997 0.0001 0.0001 0.0001 )	%  Bandwidth=T3  Message_Size=LessThan_1K
+	 ( 0.9997 0.0001 0.0001 0.0001 )	%  Bandwidth=T3  Message_Size=AFew_KBs
+	 ( 0.2 0.7998 0.0001 0.0001 )	%  Bandwidth=T3  Message_Size=AFew_MBs
+	 ( 0.0001 0.0001 0.2998 0.7 ))	%  Bandwidth=T3  Message_Size=Larger
+	(( 0.9997 0.0001 0.0001 0.0001 )	%  Bandwidth=Larger  Message_Size=LessThan_1K
+	 ( 0.9997 0.0001 0.0001 0.0001 )	%  Bandwidth=Larger  Message_Size=AFew_KBs
+	 ( 0.8 0.1998 0.0001 0.0001 )	%  Bandwidth=Larger  Message_Size=AFew_MBs
+	 ( 0.25 0.25 0.25 0.25 )));	%  Bandwidth=Larger  Message_Size=Larger
+}
+
+potential (Decision_3 | Active_3 Response_Time)
+{
+    data
+     = ((( 0 0.01 0.99 )	%  Active_3=Yes  Response_Time=LessThan_10_Milliseconds
+	 ( 0 0.01 0.99 )	%  Active_3=Yes  Response_Time=LessThan_1_Second
+	 ( 0 0.01 0.99 )	%  Active_3=Yes  Response_Time=AFew_Seconds
+	 ( 0 0 1 ))	%  Active_3=Yes  Response_Time=Not_Important
+	(( 1 0 0 )	%  Active_3=No  Response_Time=LessThan_10_Milliseconds
+	 ( 1 0 0 )	%  Active_3=No  Response_Time=LessThan_1_Second
+	 ( 1 0 0 )	%  Active_3=No  Response_Time=AFew_Seconds
+	 ( 1 0 0 )));	%  Active_3=No  Response_Time=Not_Important
+}
+
+potential (Response_Time)
+{
+    data = ( 0.25 0.25 0.25 0.25 );
+}
+
+potential (Cross_Boundaries)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Decision_2 | Active_2 Cross_Boundaries)
+{
+    data
+     = ((( 0 0.9 0.1 )	%  Active_2=Yes  Cross_Boundaries=Yes
+	 ( 0 0.05 0.95 ))	%  Active_2=Yes  Cross_Boundaries=No
+	(( 1 0 0 )	%  Active_2=No  Cross_Boundaries=Yes
+	 ( 1 0 0 )));	%  Active_2=No  Cross_Boundaries=No
+}
+
+potential (Decision_1 | Active_1 Distributed)
+{
+    data
+     = ((( 0 0.99 0.01 )	%  Active_1=Yes  Distributed=Yes
+	 ( 0 0.02 0.98 ))	%  Active_1=Yes  Distributed=No
+	(( 1 0 0 )	%  Active_1=No  Distributed=Yes
+	 ( 1 0 0 )));	%  Active_1=No  Distributed=No
+}
+
+potential (Distributed)
+{
+    data = ( 0.5 0.5 );
+}

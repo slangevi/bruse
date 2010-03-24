@@ -1,0 +1,80 @@
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: Hypovolemia,
+r = 4, p = 27, m = 5, it = 1, e = 1
+Max Ops = 140292
+Total Ops = 5273
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: FiO2,VentTube,
+r = 4, p = 27, m = 5, it = 2, e = 2
+Max Ops = 146448
+Total Ops = 7979
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: LVEDVolume,HRSat,Catechol,
+r = 4, p = 27, m = 5, it = 9, e = 3
+Max Ops = 193644
+Total Ops = 8578
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: Disconnect,VentAlv,VentTube,TPR,
+r = 4, p = 29, m = 5, it = 98, e = 4
+Max Ops = 952864
+Total Ops = 58014
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: Disconnect,HR,ArtCO2,Shunt,PVSat,
+r = 4, p = 29, m = 5, it = 75, e = 5
+Max Ops = 917980
+Total Ops = 51630
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: PVSat,CO,VentAlv,FiO2,Shunt,InsuffAnesth,
+r = 4, p = 26, m = 6, it = 63, e = 6
+Max Ops = 3630568
+Total Ops = 91852
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: CO,BP,HRSat,HREKG,VentTube,ErrLowOutput,HR,
+r = 4, p = 27, m = 7, it = 234, e = 7
+Max Ops = 55892376
+Total Ops = 2293046
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: VentAlv,Intubation,LVFailure,StrokeVolume,ArtCO2,MinVol,HRBP,PulmEmbolus,
+r = 4, p = 27, m = 8, it = 145, e = 8
+Max Ops = 160895520
+Total Ops = 3683744
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: Press,Anaphylaxis,ErrLowOutput,VentLung,Intubation,History,ArtCO2,FiO2,PulmEmbolus,
+r = 4, p = 26, m = 9, it = 130, e = 9
+Max Ops = 647500360
+Total Ops = 3116770
+
+
+Algorithm: Hugin
+Network: tests/alarm.net (37 nodes)
+Evidence: BP,CO,VentMach,StrokeVolume,PVSat,History,VentTube,Disconnect,VentLung,HRBP,
+r = 4, p = 27, m = 10, it = 379, e = 10
+Max Ops = 8089779000
+Total Ops = 152740936
+
