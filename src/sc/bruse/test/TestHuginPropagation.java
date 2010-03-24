@@ -28,7 +28,7 @@ public class TestHuginPropagation {
 		return (Math.abs( d1 - d2 ) < epsilon );
 	}
 	
-	private void dumpNetwork(BruseNetwork network) {
+	public static void dumpNetwork(BruseNetwork network) {
 		DecimalFormat formatter = new DecimalFormat("#0.0000000000");
 		
 		for (int i=0; i < network.getAllNodes().size(); i++) {

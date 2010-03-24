@@ -90,11 +90,17 @@ public class Graph {
 		
 		for (int i=0; i < m_nodes.size(); i++) {
 			node = m_nodes.get(i);
-			cloneNode = new GraphNode(node.getName());
-			cloneGraph.addNode(cloneNode);
 			
-			// map original node to cloned node
-			index.put(node, cloneNode);
+			if (index.containsKey(node)) {
+				cloneNode = index.get(node);
+			}
+			else {
+				cloneNode = new GraphNode(node.getName());
+				cloneGraph.addNode(cloneNode);
+			
+				// map original node to cloned node
+				index.put(node, cloneNode);
+			}
 			
 			// clone neighbors
 			for (int j=0; j < node.getNeighbors().size(); j++) {

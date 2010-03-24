@@ -37,24 +37,35 @@ public class NETParser extends BNParser {
 	private int m_curRowIdx;
 	private int m_curColIdx;
 	private int m_curColSize;
+	private BufferedReader m_reader = null;
 
 	public NETParser(String filename) {
 		super(filename);
 		m_curState = STATE.NODE;
 	}
 	
+	public NETParser(BufferedReader reader) {
+		super("Stream");
+		m_curState = STATE.NODE;
+		m_reader = reader;
+	}
+	
 	public void parse() throws BruseAPIException {
 		try {
 			String line = "";
-			BufferedReader reader = new BufferedReader(new FileReader(m_filename));
+			if (m_reader == null) m_reader = new BufferedReader(new FileReader(m_filename));
 			
 			// read file line by line and process each line
-			while (reader.ready()) {
-				line = reader.readLine();
+			while (m_reader.ready()) {
+				line = m_reader.readLine();
 				line.trim();
 				if (line != "\n") { // ignore blank lines
 					processLine(line);
 				}
+			}
+			
+			for (Variable var: this.getVariables()) {
+				var.normalizeTable();
 			}
 		}
 		catch (FileNotFoundException e) {
@@ -95,14 +106,34 @@ public class NETParser extends BNParser {
 			m_curState = STATE.PARENTS; // transition to parents state - we are done reading nodes
 			createParents(line);
 		}
+		else if (m_curVar != null) {
+			String l = line.trim();
+			if (l.startsWith("HR_Desc")) {
+				String desc = l.substring(11, l.length()-2);
+				m_curVar.setDesc(desc);
+			}
+			else if (l.startsWith("HR_State")) {
+				try {
+					int idx = l.indexOf("=");
+					int stateIdx = Integer.parseInt(l.substring(9, idx-1));
+					String stateDesc = l.substring(idx+3, l.length()-2);
+					m_curVar.addStateDesc(m_curVar.getStates().get(stateIdx), stateDesc);
+				}
+				catch (Exception e) {
+					System.err.println("Unable to parse state description: " + l);
+				}
+			}
+		}
 	}
 	
 	private void createStates(String line) {
 		String states = line.trim();
 
-		if (states.startsWith("states")) {
+		if (states.startsWith("states") || states.startsWith("state_values")) {
 			StringBuffer buf = new StringBuffer();
-			states = states.substring(10, states.length()-2);  // strip out "states = (" and trailing ");"
+			int idx = states.indexOf("="); //10
+			states = states.substring(idx+3, states.length()-2);  // strip out "states = (" and trailing ");"
+			states += " "; // HACK: quick fix for state_values parsing so the last state is processed
 			char c;
 			
 			for (int i=0; i < states.length(); i++) {
@@ -110,14 +141,16 @@ public class NETParser extends BNParser {
 				if (c != '"' && c != ' ' && c != '\n') {
 					buf.append(c);
 				}
-				else if (c != ' ') {
+				else {//if (c != ' ') {
 					if (buf.length() > 0) {
 						m_curVar.addState(buf.toString());
 						buf = new StringBuffer();
 					}
 				}
 			}
-			m_curState = STATE.NODE; // move to reading nodes
+			// if states were read then move to reading nodes state, otherwise we are looking for state_values
+			if (m_curVar.getStates().size() > 0) 
+				m_curState = STATE.NODE; // move to reading nodes
 		}
 	}
 	
@@ -171,6 +204,8 @@ public class NETParser extends BNParser {
 			if (pot.length() == 6) return; // if the line only contains "data =" then return
 			pot = pot.substring(idx+2); // strip out "= " and everything left of
 		}
+		else if (pot.startsWith("model_nodes")) return; // skip over model_nodes field (not supported)
+		else if (pot.startsWith("model_data")) return; // skip over model_data field (not supported)
 		else if (pot.startsWith("data")) return; // if the line only contains "data" then return
 		
 		StringBuffer buf = new StringBuffer();

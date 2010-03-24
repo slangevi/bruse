@@ -24,6 +24,8 @@ package sc.bruse.parser;
  *
  */
 
+import java.io.BufferedReader;
+
 import sc.bruse.network.*;
 
 public class BNParserFactory {
@@ -38,6 +40,15 @@ public class BNParserFactory {
 			System.err.print("Bayesian Network file format not supported.");
 			throw new BruseAPIException("Invalid file format");
 		}
+		
+		return parser;
+	}
+	
+	public static BNParser create(BufferedReader reader) throws BruseAPIException {
+		BNParser parser = null;
+		
+		// Quick Hack:  Assumes reader is a net file - should check somehow
+		parser = new NETParser(reader);
 		
 		return parser;
 	}

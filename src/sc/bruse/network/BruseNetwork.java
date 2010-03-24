@@ -43,15 +43,26 @@ public class BruseNetwork {
 	// Keeps a name index of nodes in the Graph
 	protected Hashtable<String, BruseNode> 	m_index;
 	protected ArrayList<BruseNode> 			m_nodes;
+	protected String						m_name;
 	
 	/***
 	 * BruseNetwork constructor
 	 * 
 	 */
-	public BruseNetwork() {
+	public BruseNetwork(String name) {
 		// init anything here
+		m_name = name;
 		m_nodes = new ArrayList<BruseNode>();
 		m_index = new Hashtable<String, BruseNode>();
+	}
+	
+	/***
+	 * Return the name for this Bayesian network
+	 * 
+	 * @return the network name
+	 */
+	public String getName() {
+		return m_name;
 	}
 	
 	/***

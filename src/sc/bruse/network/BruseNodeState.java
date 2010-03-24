@@ -32,6 +32,7 @@ package sc.bruse.network;
 public class BruseNodeState {
 
 	private String m_stateName;
+	private String m_stateDesc;
 	private int m_stateId;
 	private double m_value;
 		
@@ -44,6 +45,22 @@ public class BruseNodeState {
 	 */
 	public BruseNodeState(int stateId, String stateName, double value) {
 		m_stateId = stateId;
+		m_stateDesc = new String();
+		m_stateName = stateName;
+		m_value = value;
+	}
+	
+	/***
+	 * BruseNodeState constructor
+	 * 
+	 * @param stateId is the id of the state
+	 * @param stateName is the name of the state
+	 * @param stateDesc is the long description of the state
+	 * @param value is the value of the state
+	 */
+	public BruseNodeState(int stateId, String stateName, String stateDesc, double value) {
+		m_stateId = stateId;
+		m_stateDesc = stateDesc;
 		m_stateName = stateName;
 		m_value = value;
 	}
@@ -63,6 +80,14 @@ public class BruseNodeState {
 	 */
 	public String getStateName() {
 		return m_stateName;
+	}
+	
+	/***
+	 * 
+	 * @return the long description of the state
+	 */
+	public String getStateDesc() {
+		return m_stateDesc;
 	}
 		
 	/***

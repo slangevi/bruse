@@ -24,22 +24,21 @@ package sc.bruse.engine.propagation.wrapper;
  *
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
 
-import sc.bruse.engine.BookKeepingMgr;
-import sc.bruse.engine.Clique;
-import sc.bruse.engine.IPFP;
-import sc.bruse.engine.StateIterator;
+import sc.bruse.engine.*;
 import sc.bruse.engine.propagation.IPropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngine;
 import sc.bruse.engine.propagation.PropagationEngineFactory;
 import sc.bruse.engine.propagation.hugin.HuginPropagationEngine;
+import sc.bruse.engine.propagation.lazy.LazyPropagationEngine;
 import sc.bruse.network.BruseEvidence;
 import sc.bruse.network.BruseNode;
 import sc.bruse.network.BruseTable;
 
-public class WrapperPropagationEngine2 extends HuginPropagationEngine {
-
+public class WrapperPropagationEngine2 extends LazyPropagationEngine {
 	private ArrayList<BruseEvidence> m_softEvidence;
 	private double m_prevEntropy[];
 	
@@ -49,25 +48,11 @@ public class WrapperPropagationEngine2 extends HuginPropagationEngine {
 	}
 	
 	public void init() {
+		// Ensure all soft evidence nodes are put in one clique so we can calculate their joint
+		// This relies on the Big Clique implementation for the HuginPropagationEngine
+		m_sEvidence.addAll(m_softEvidence);
 		super.init();
-	}
-	
-	public BruseTable getMarginal(String var) {
-		BruseTable table = null;
-		BruseNode node = null;
-		
-		try {
-			node = m_network.getNode(var);
-			table = new BruseTable(node);
-			//TODO make sure this is correct
-			table.setTableValues(node.getStateValues());
-		}
-		catch (Exception e) {
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
-		
-		return table;
+		m_sEvidence.clear();  // Remove the soft evidence so the HuginPropagationEngine does not use Big Clique algo
 	}
 	
 	private void removeNode(BruseNode node) {
@@ -82,18 +67,19 @@ public class WrapperPropagationEngine2 extends HuginPropagationEngine {
 		}
 	}
 	
-	private BruseNode createVirtualNode(String name, BruseTable seTable) {
+	private BruseNode createVirtualNode(BruseTable seTable) {
 		try {
 			// create virtual node
-			BruseNode vnode = new BruseNode(name);
+			BruseNode vnode = new BruseNode("__VE__");
 			vnode.addState("false", 0);
 			vnode.addState("true", 0);
 			
 			// create the domain for the table
 			ArrayList<BruseNode> domain = new ArrayList<BruseNode>();
 			
-			// add soft evidence node as a parent
+			// add each soft evidence node as a parent			
 			for (int j=0; j < seTable.getVariables().length; j++) {
+				BruseEvidence ev = m_softEvidence.get(j);
 				BruseNode parent = seTable.getVariables()[j];
 				vnode.addParent(parent);
 				parent.addChild(vnode);
@@ -126,139 +112,43 @@ public class WrapperPropagationEngine2 extends HuginPropagationEngine {
 		}
 	}
 	
-	private boolean converged() {
-		BruseTable seTable, curTable;
-		double curEntropy, diff;
+	private ArrayList<String> getSoftEvidenceNames() {
+		ArrayList<String> senames = new ArrayList<String>();
 		
-		try {
+		for (int i=0; i < m_softEvidence.size(); i++) {
+			senames.add(m_softEvidence.get(i).getNodeName());
+		}
 		
-			for (int i=0; i < m_softEvidence.size(); i++) {
-				seTable = m_softEvidence.get(i).getTable(m_network);
-				curTable = getMarginal(m_softEvidence.get(i).getNodeName());
+		return senames;
+	}
+	
+	private BruseTable getJointTable() {
+		BruseTable joint = null;
 			
-				curEntropy = IPFP.getCrossEntropy(curTable, seTable);
-				
-				/*diff = Math.abs(curEntropy - m_prevEntropy[i]);
-				
-				m_prevEntropy[i] = curEntropy;
-				
-				// If entropy measure is within IPFP_DELTA threshold then we have converged
-				if (diff > 0.0001) return false;*/
-				if (curEntropy > 0.0001) return false;
-			}
-			return true;
-		}
-		catch (Exception e) {
-			return false;
-		}
+		// Lazy propagation engine needs to combine potentials
+		m_cliques.get(0).combinePotentials();
+
+		// Hugin propagation engine does not need to combine potentials they already are
+		joint = m_cliques.get(0).getTable();
+		
+		joint = joint.getMarginal(getSoftEvidenceNames());
+		
+		return joint;
 	}
 
 	@Override
 	public void propagate() {
 		long StartTime = System.currentTimeMillis();
 		
-		m_prevEntropy = new double[m_softEvidence.size()];
+		// Propagate normally on hard evidence
+		super.propagate();
 		
-		// if there is no soft evidence then do a normal propagation and return
-		if (m_softEvidence.size() == 0) {
-			super.propagate();
-			return;
-		}
+		// if there is no soft evidence then do a normal propagate and return
+		if (m_softEvidence.size() == 0) return;
 		
-		int k = 1, i = 0, j = 0, m = m_softEvidence.size();
-		
-		String sename;
-		BruseNode vnode;
-		BruseEvidence se;
-		BruseTable seTable, curTable, vTable;
-		
-		while ( true ) {
-			super.propagate();
-			
-			if (converged()) break;
-			
-			i = (1 + (k - 1)) % m;
-			j = 1 + (int)Math.floor((k - 1) / m);
-		
-			se = m_softEvidence.get(i);
-			seTable = se.getTable(m_network);
-			curTable = getMarginal(se.getNodeName());
-			
-			vTable = seTable.divideBy(curTable);
-			vTable.normalize();
-			
-			// TEST
-			sename = "__VE_" + se.getNodeName();
-			try {
-				vnode = m_network.getNode(sename);
-				
-				vTable = vnode.getTable().multiplyBy(vTable);
-				vnode.getTable().setTableValues(vTable.getTableValues());
-			}
-			catch (Exception e) {
-				vnode = createVirtualNode(sename, vTable);
-				
-				// Add the vnode as a potential to a clique that contains the se node	
-				for (int n=0; n < m_cliques.size(); n++) {
-					Clique c = m_cliques.get(n);
-					
-					if (c.containsNode(se.getNodeName())) {
-						c.resetPotentials();
-						c.addNode(vnode); //test
-						c.addPotential(vnode.getTable());
-						c.setInitPotentials();
-						c.rebuildTable();
-						break;
-					}
-				}
-				
-				// Add hard evidence for the virtual node
-				BruseEvidence ev = new BruseEvidence(sename);
-				ev.setHardEvidence("true");
-				this.addEvidence(ev);
-			}
-			
-			// OLD
-			/*sename = "__VE_" + se.getNodeName() + "_" + Integer.toString(j) + "__";
-			vnode = createVirtualNode(sename, vTable);
-			
-			// Add the vnode as a potential to a clique that contains the se node	
-			for (int n=0; n < m_cliques.size(); n++) {
-				Clique c = m_cliques.get(n);
-				
-				if (c.containsNode(se.getNodeName())) {
-					c.resetPotentials();
-					c.addNode(vnode); //test
-					c.addPotential(vnode.getTable());
-					c.setInitPotentials();
-					break;
-				}
-			}*/
-			
-			/*// Add hard evidence for the virtual node
-			BruseEvidence ev = new BruseEvidence(sename);
-			ev.setHardEvidence("true");
-			this.addEvidence(ev);*/
-			
-			// set that the engine is now dirty
-			m_isDirty = true;
-			
-			k++;
-		}
-		
-		BookKeepingMgr.NumIPFPIterations = k - 1;
-		
-		long EndTime = System.currentTimeMillis();
-		BookKeepingMgr.TimeApplySoftEvidence = (EndTime - StartTime);
-		BookKeepingMgr.TimePropagation = (EndTime - StartTime);
-		
-		/*
-		////////
 		// calculate the P(S) where S is the soft evidence
-		BruseTable margtable = null; //getJointTable();
-		
+		BruseTable margtable = getJointTable();
 			
-		//BruseTable.dumpTable(margtable, false);
 		BruseEvidence finding = null;
 		BruseTable softFinding = null;
 		ArrayList<BruseTable> evidence = new ArrayList<BruseTable>();
@@ -284,28 +174,13 @@ public class WrapperPropagationEngine2 extends HuginPropagationEngine {
 			// create virtual evidence node
 			BruseNode vnode = createVirtualNode(setable);
 			
-			// Add the vnode as a potential to a clique that contains the joint node		
-			for (int i=0; i < m_cliques.size(); i++) {
-				Clique c = m_cliques.get(i);
-				
-				if (c.containsNode("__JT__")) {
-					
-					// Remove the JT potential from clique - no longer needed
-					for (int j=0; j < c.getPotentials().size(); j++) {
-						if (c.getPotentials().get(j).containsVariable("__JT__")) {
-							c.getPotentials().remove(c.getPotentials().get(j));
-							c.setInitPotentials();
-							break;
-						}
-					}
-				//if (c.containsNode(m_softEvidence.get(0).getNodeName())) {
-					c.resetPotentials();
-					c.addNode(vnode); //test
-					c.addPotential(vnode.getTable());
-					c.setInitPotentials();
-					break;
-				}
-			}
+			// Add the vnode as a potential to a clique that contains an se node	
+			Clique c = m_cliques.get(0);
+			c.resetPotentials();
+			c.addNode(vnode); //test
+			c.addPotential(vnode.getTable());
+			c.setInitPotentials();
+			c.rebuildTable();
 			
 			// Add hard evidence for the virtual node
 			BruseEvidence ev = new BruseEvidence(vnode);
@@ -327,7 +202,7 @@ public class WrapperPropagationEngine2 extends HuginPropagationEngine {
 		catch (Exception e) {
 			System.err.println(e.getMessage());
 			e.printStackTrace();
-		}*/
+		}
 
 	}
 	

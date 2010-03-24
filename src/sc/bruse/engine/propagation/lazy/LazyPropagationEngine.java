@@ -48,27 +48,10 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 	public void init() {
 		long StartTime = System.currentTimeMillis();
 		
-		/*// gen moral graph - do we need to keep this around?
-		MoralGraph moralGraph = new MoralGraph(m_network);
-		
-		// add edges between each pair of soft evidence nodes
-		BigCliqueFactory.connectSENodes(moralGraph, m_sEvidence);
-		
-		long StartTime = System.currentTimeMillis();
-		
-		// triangulate graph
-		Triangulation.triangulate(moralGraph);
-		
-		long EndTime = System.currentTimeMillis();
-		BookKeepingMgr.TimeTriangulation = (EndTime - StartTime);
-		
-		StartTime = System.currentTimeMillis();
-		
 		// gen cliques using the big clique 
-		m_cliques = BigCliqueFactory.createCliques(moralGraph, m_sEvidence);*/
 		m_cliques = BigCliqueFactory.createCliques(m_network, m_sEvidence);
+		
 		long EndTime = System.currentTimeMillis();
-		//EndTime = System.currentTimeMillis();
 		BookKeepingMgr.TimeCreateCliques = (EndTime - StartTime);
 		
 		StartTime = System.currentTimeMillis();
@@ -79,14 +62,14 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		EndTime = System.currentTimeMillis();		
 		BookKeepingMgr.TimeCreateJunctionTree = (EndTime - StartTime);
 		
-		//TEST
-		//JunctionTree.dumpJunctionTree(m_junctionTree);
-		
 		// set the root to the big clique in the junction tree
 		// the BigCliqueFactory sets the first element in the list
 		// to the Big Clique, if none is found whatever is the first element
 		// is chosen
-		m_junctionTree.setRoot(0);
+		m_junctionTree.setRoot(0); //1);
+		
+		//TEST
+		//JunctionTree.dumpJunctionTree(m_junctionTree);
 		
 		// propagation is needed since we have rebuilt the junction tree
 		m_isDirty = true;
@@ -122,13 +105,41 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		// next collect evidence to root
 		collectEvidence(m_junctionTree.getRoot(), null);
 	
+//		m_junctionTree.getRoot().getClique().combinePotentials();
+//		m_junctionTree.getRoot().getClique().getTable().normalize();
+//		BruseTable.dumpTable(m_junctionTree.getRoot().getClique().getTable(), false);
+		
 		//JunctionTree.dumpJunctionTree(m_junctionTree);
 		
 		// apply the soft evidence to the big clique
 		applySoftEvidence();
 		
+//		m_junctionTree.getRoot().getClique().getTable().normalize();
+//		BruseTable.dumpTable(m_junctionTree.getRoot().getClique().getTable(), false);
+		
+		// TEST
+//		BruseTable t = m_junctionTree.getRoot().getClique().getTable().getMarginal("BP");
+//		t.normalize();
+//		BruseTable.dumpTable(t, false);
+//		t = m_junctionTree.getRoot().getClique().getTable().getMarginal("VentAlv");
+//		t.normalize();
+//		BruseTable.dumpTable(t, false);
+//		t = m_junctionTree.getRoot().getClique().getTable().getMarginal("Shunt");
+//		t.normalize();
+//		BruseTable.dumpTable(t, false);
+		
 		// next distribute evidence from root
 		distributeEvidence(m_junctionTree.getRoot(), null);
+		
+//		for (Clique c: m_cliques) {
+//			if (c != m_junctionTree.getRoot().getClique()) {
+//				c.combinePotentials();
+//			}
+//			
+//			c.getTable().normalize();
+//		}
+//		System.out.println("After distribute evidence:");
+//		JunctionTree.dumpJunctionTree(m_junctionTree);
 		
 		//JunctionTree.dumpJunctionTree(m_junctionTree);
 		
@@ -145,21 +156,30 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 	protected void applyHardEvidence() {
 		BruseEvidence finding = null;
 		Clique clique = null;
-		ArrayList<BruseTable> potentials = null;
-		BruseTable potential = null;
-		BruseNode node = null;
 		
-		// associate hard evidence with every clique that contains var
+		// associate hard evidence with every clique that contains variable
 		for (int i=0; i < m_cliques.size(); i++) {
 			clique = m_cliques.get(i);
-			potentials = clique.getPotentials();
 			
 			for (int j=0; j < m_hEvidence.size(); j++) {
 				finding = m_hEvidence.get(j);
 				
 				if (clique.containsNode(finding.getNodeName())) {
 					//TODO this should reduce the domain of each potential by the evidence
-					clique.addPotential(finding.getTable(m_network));
+					for (int k=0; k < clique.getPotentials().size(); k++) {
+						BruseTable pot = clique.getPotentials().get(k);
+						if (pot.containsVariable(finding.getNodeName())) {
+							
+							pot.absorb(finding.getTable(m_network));
+							
+							// TEST
+							ArrayList<String> names = pot.getVariableNames();
+							names.remove(finding.getNodeName());
+							clique.getPotentials().set(k, pot.getMarginal(names));
+						}
+					}
+					
+					//clique.addPotential(finding.getTable(m_network));
 					//clique.reducePotentialDomain(finding.getTable(m_network));
 				}
 			}
@@ -174,6 +194,8 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		// first combine the potentials in the big clique so we can perform IPFP 
 		m_junctionTree.getRoot().getClique().combinePotentials();
+//		m_junctionTree.getRoot().getClique().getTable().normalize();
+//		BruseTable.dumpTable(m_junctionTree.getRoot().getClique().getTable(), false);
 		
 		// apply the soft evidence (same as Hugin)
 		super.applySoftEvidence();
@@ -207,13 +229,33 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		// after all neighbors have returned evidence send message to separator
 
 		if (caller != null) {
+			
+			//System.out.println("Clique " + node.getName() + " calculating message to Clique " + caller.getName() + "...");
+			
 			separator = node.getSeparator(caller);
 			// Set the message to the list of relevant potentials
 			msg = findRelPots(pot, separator.getVariables());
 		
+			/*System.out.println("Clique " + node.getName() + " sending message to Clique " + caller.getName() + ": ");
+			for (BruseTable m: msg) {
+				System.out.println(m + ", ");
+			}*/
 			// set separator inner message
 			separator.setInnerMsg(msg);
 		}
+	}
+	
+	private ArrayList<BruseNode> getDConnected2(ArrayList<String> query) {
+		DConnected dcon = new DConnected(m_network);
+		
+		// create list of all evidence
+		ArrayList<String> evidence = new ArrayList<String>();
+		evidence.addAll(getEvidenceVarNames(m_hEvidence));
+		evidence.addAll(getEvidenceVarNames(m_sEvidence));
+		
+		dcon.setEvidence(evidence);
+		
+		return dcon.getConnected((query));
 	}
 	
 	private ArrayList<BruseNode> getDConnected(ArrayList<String> query) {
@@ -237,12 +279,15 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		if (reqQuery.size() > 0) {
 			// Create a dseparation analyzer - it can calculate dconnection
-			DSeparationAnalyzer dsepAnalyzer = new DSeparationAnalyzer(m_network);
+			//DSeparationAnalyzer dsepAnalyzer = new DSeparationAnalyzer(m_network);
+			DConnected dcon = new DConnected(m_network);
 		
 			// create list of all evidence
 			ArrayList<String> evidence = new ArrayList<String>();
 			evidence.addAll(getEvidenceVarNames(m_hEvidence));
 			evidence.addAll(getEvidenceVarNames(m_sEvidence));
+			
+			dcon.setEvidence(evidence);
 			
 			String qName = null;
 			ArrayList<String> q = null;
@@ -257,7 +302,9 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 				//nodes = dsepAnalyzer.getDseparation(q, evidence);
 				//System.out.println(getVarNames(nodes));
 				
-				nodes = dsepAnalyzer.getDconnection(q, evidence);
+				//nodes = dsepAnalyzer.getDconnection(q, evidence);
+				nodes = dcon.getConnected(q);
+				
 				//System.out.println(getVarNames(nodes));
 				
 				
@@ -293,6 +340,7 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 	private ArrayList<BruseTable> findRelPots(ArrayList<BruseTable> potentials, BruseNode node) {
 		ArrayList<BruseNode> nodes = new ArrayList<BruseNode>(1);
 		nodes.add(node);
+		//return VariableElimination.query(potentials, nodes); 
 		return findRelPots(potentials, nodes);
 	}
 	
@@ -303,18 +351,102 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		ArrayList<BruseTable> relPots = new ArrayList<BruseTable>();
 		
+		// TODO switch back to older method of mulitplication
+		
+		// TODO rewrite using ancestral graph method?
 		relPots = findConnectedPots(potentials, nodes);
-		relPots = removeBarrenVars(potentials, nodes);
-		relPots = getMarginal(potentials, nodes);
+		//relPots.addAll(potentials);
+//		if (potentials.size() != relPots.size()) System.err.println("Removed: " + (potentials.size() - relPots.size()));
+		
+		// TODO rewrite barren var to check if descendents have evidence
+		relPots = removeBarrenVars2(relPots, nodes);
+		
+//		
+//		// TEST
+//		relPots.clear();
+//		relPots.addAll(potentials);
+		
+		//long StartTime = System.currentTimeMillis();
+		//elPots = getMarginal(potentials, nodes);
+		relPots = VariableElimination.query(relPots, nodes);
+		
+//		long EndTime = System.currentTimeMillis();
+//		BookKeepingMgr.TMP += (EndTime - StartTime);
 		
 		return relPots;
 	}
 
+	private boolean isVarInBigClique(BruseTable pot) {
+		for (BruseNode node: pot.getVariables()) {
+			if (m_junctionTree.getRoot().getClique().containsNode(node.getName())) return true;
+		}
+		
+		return false;
+	}
+	
+	private ArrayList<BruseTable> findConnectedPots2(ArrayList<BruseTable> potentials, ArrayList<BruseNode> nodes) {
+		ArrayList<BruseTable> relPots = new ArrayList<BruseTable>();
+		ArrayList<BruseTable> workingSet = new ArrayList<BruseTable>();
+		Set<String> domain = new HashSet<String>();
+		
+		workingSet.addAll(potentials);
+		
+		// create initial domain
+		for (BruseNode node: nodes) {
+			domain.add(node.getName());
+		}
+		
+		for (BruseTable pot: potentials) {
+			if (pot.getVariables().length == 0) {
+				relPots.add(pot);
+				workingSet.remove(pot);
+			}
+			else {
+				for (String var: domain) {
+					if (pot.containsVariable(var)) {
+						relPots.add(pot);
+						workingSet.remove(pot);
+						domain.addAll(pot.getVariableNames());
+						break;
+					}
+				}
+			}
+		}
+		
+		int oldSize = 0;
+		
+		while (relPots.size() != oldSize) {
+			oldSize = relPots.size();
+			
+			for (int i=workingSet.size()-1; i >= 0; i--) { //(BruseTable pot: workingSet) {
+				BruseTable pot = workingSet.get(i);
+
+				for (String var: domain) {
+					if (pot.containsVariable(var)) {
+						relPots.add(pot);
+						workingSet.remove(pot);
+						domain.addAll(pot.getVariableNames());
+						break;
+					}
+				}
+			}
+		}
+		
+		/*for (BruseTable pot: workingSet) {
+			System.out.println("D-sep: " + pot);
+		}*/
+		
+		return relPots;
+	}
+	
 	private ArrayList<BruseTable> findConnectedPots(ArrayList<BruseTable> potentials, ArrayList<BruseNode> nodes) {
 		BruseTable pot = null;
+		ArrayList<BruseTable> workingSet = new ArrayList<BruseTable>();
 		ArrayList<BruseTable> relPots = new ArrayList<BruseTable>();
 		ArrayList<String> varNames = getVarNames(nodes);
-		ArrayList<BruseNode> conVarNames = getDConnected(varNames);
+		ArrayList<BruseNode> conVarNames = getDConnected2(varNames);
+		
+		workingSet.addAll(potentials);
 		
 		// for each potential check if it contains at least one connected variable
 		// if it does add to the rel potentials list, also any potential that is a normalization constant (domain of 0)
@@ -322,13 +454,91 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 			pot = potentials.get(i);
 			for (int j=0; j < conVarNames.size(); j++) {
 				if ( pot.containsVariable( conVarNames.get(j).getName() ) || pot.getVariables().length == 0) {
+				//if ( pot.containsVariable( conVarNames.get(j).getName() ) || pot.getVariables().length == 0 || isVarInBigClique(pot)) {
 					relPots.add(pot);
+					workingSet.remove(pot);
 					break;
 				}
 			}
 		}
 		
+		/*for (BruseTable p: potentials) {
+			if (!relPots.contains(p)) {
+				System.out.println("D-sep potential: " + p);
+			}
+		}*/
+		
+		/*
+		int oldSize = 0;
+		while (relPots.size() != oldSize) {
+			oldSize = relPots.size();
+			for (int i=0; i < relPots.size(); i++) {
+				pot = relPots.get(i);
+				for (int j=workingSet.size()-1; j >= 0; j--) {
+					for (int k=0; k < pot.getVariables().length; k++) {
+						if ( workingSet.get(j).containsVariable(pot.getVariables()[k].getName())) {
+							relPots.add(workingSet.get(j));
+							workingSet.remove(j);
+							break;
+						}
+					}
+				}
+			}
+		}*/
+		
 		return relPots;
+	}
+	
+	private boolean isBarren(BruseTable test, Collection<BruseTable> potentials, ArrayList<BruseNode> domain) {
+		// Only conditional potentials can be barren
+		if (test.getType() != BruseTable.PotentialType.Conditional) return false;
+		
+		for (BruseNode node: domain) {
+			// If the head variable is a member of the domain then not considered barren
+			if (test.getHeadVar().getName().equalsIgnoreCase(node.getName())) return false;
+		}
+		
+		for (BruseTable pot: potentials) {
+			// Not considered barren if another potentials has head var in domain
+			if (pot != test && pot.containsVariable(test.getHeadVar().getName())) return false;
+		}
+		
+		// No other potentials has head var in domain so test is considered barren
+		return true;
+	}
+	
+	private ArrayList<BruseTable> removeBarrenVars2(ArrayList<BruseTable> potentials, ArrayList<BruseNode> nodes) {
+		//ArrayList<BruseTable> relPots = new ArrayList<BruseTable>();
+		HashSet<BruseTable> relPots = new HashSet<BruseTable>();
+
+		// initially all potentials are considered relevant
+		for (BruseTable pot: potentials) {
+			relPots.add(pot);
+		}
+		
+		int oldSize = 0;
+		
+		// repeat until the relPots collection has not changed
+		while (oldSize != relPots.size()) {
+			oldSize = relPots.size();
+			BruseTable barren = null;
+			
+			for (BruseTable pot: relPots) {
+				if (isBarren(pot, relPots, nodes)) {
+					barren = pot;
+					break;
+				}
+			}
+			
+			/*if (barren != null) {
+				System.out.println("Barren pot: " + barren);
+				relPots.remove(barren);
+			}*/
+		}
+		
+		ArrayList<BruseTable> result = new ArrayList<BruseTable>(relPots);
+		
+		return result;
 	}
 	
 	private ArrayList<BruseTable> removeBarrenVars(ArrayList<BruseTable> potentials, ArrayList<BruseNode> nodes) {
@@ -339,7 +549,7 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		for (int i=0; i < potentials.size(); i++) {
 			pot = potentials.get(i);
-			if (pot.getType() == BruseTable.PotentialType.Conditional) {
+			if (pot.getType() == BruseTable.PotentialType.Conditional && pot.getVariables().length > 0) {
 				head = pot.getVariables()[pot.getVariables().length-1].getName();
 				if (!varNames.contains(head)) {
 					for (int j=0; j < potentials.size(); j++) {
@@ -349,13 +559,26 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 						}
 					}
 				}
+				else {
+					relPots.add(pot);
+				}
+			}
+			else {
+				relPots.add(pot);
 			}
 		}
+		
+		/*for (BruseTable p: potentials) {
+			if (!relPots.contains(p)) {
+				System.out.println("Barren variable: " + p);
+			}
+		}*/
 		
 		return relPots;
 	}
 	
-	private ArrayList<BruseTable> getMarginal(ArrayList<BruseTable> potentials, ArrayList<BruseNode> nodes) {
+	// No longer needed
+	/*private ArrayList<BruseTable> getMarginal(ArrayList<BruseTable> potentials, ArrayList<BruseNode> nodes) {
 		BruseTable pot = null, marg = null;
 		ArrayList<String> varNames = getVarNames(nodes), domain = null;
 		ArrayList<BruseTable> relPots = new ArrayList<BruseTable>();
@@ -382,7 +605,7 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		if (marg != null) relPots.add(marg.getMarginal(varNames));
 		
 		return relPots;
-	}
+	}*/
 		
 	protected void distributeEvidence(JunctionNode node, JunctionNode caller) {
 		JunctionSeparator separator;
@@ -429,7 +652,7 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		}
 	}
 	
-	//TODO this needs rewriting - needs to take advantage of serparators
+	//TODO this needs rewriting - needs to take advantage of separators
 	protected BruseTable calculateMarginal(BruseNode node) {
 		ArrayList<JunctionSeparator> separators = m_junctionTree.getSeparators();
 		ArrayList<BruseTable> potentials = null, relPots = null;
@@ -456,14 +679,23 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 			if (minDom == 1) break;
 		}*/
 		
+		for (BruseEvidence ev: m_hEvidence) {
+			if (node.getName().equalsIgnoreCase(ev.getNodeName())) {
+				// hard evidence node do not need to be calculated
+				node.updateStates(ev.getTable(m_network));
+				return ev.getTable(m_network);
+			}
+		}
+		
 		if (potentials == null) {
 			for (int i=0; i < m_cliques.size(); i++) {
 				Clique clique = m_cliques.get(i);
 				
-				if (clique.getMembers().contains(node)) {
+				if (clique.getMembers().contains(node)) {				
 					if (potentials == null) {
 						minDom = clique.getMembers().size();
 						potentials = clique.getPotentials();
+						
 					}
 					else if (clique.getMembers().size() < minDom){
 						minDom = clique.getMembers().size();
@@ -475,6 +707,12 @@ public class LazyPropagationEngine extends HuginPropagationEngine {
 		
 		// find the relevant potentials
 		relPots = findRelPots(potentials, node);
+		
+//		//TEST
+//		ArrayList<BruseNode> nodes = new ArrayList<BruseNode>();
+//		nodes.add(node);
+//		relPots = VariableElimination.query(potentials, nodes);
+		
 		BruseTable result = relPots.get(0);
 		
 		// combine the potentials

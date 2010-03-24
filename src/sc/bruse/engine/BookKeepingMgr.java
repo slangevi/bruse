@@ -35,6 +35,7 @@ public class BookKeepingMgr {
 
 	public static int NumTableAbsoptions = 0;
 	public static int NumTableMults = 0;
+	public static int NumTableDivs = 0;
 	public static int NumTableMarginals = 0;
 	public static int NumTableAdds = 0;
 	public static int NumIPFPIterations = 0;
@@ -42,6 +43,7 @@ public class BookKeepingMgr {
 	public static long TriangulationSize = 0;
 	public static long NumCliques = 0;
 	public static long MaxCliqueSize = 0;
+	public static long MaxVarsInClique = 0;
 	public static long TimeNetworkLoad = 0;
 	public static long TimeCreateCliques = 0;
 	public static long TimeCreateJunctionTree = 0;
@@ -56,6 +58,7 @@ public class BookKeepingMgr {
 	public static void reset() {
 		NumTableAbsoptions = 0;
 		NumTableMults = 0;
+		NumTableDivs = 0;
 		NumTableMarginals = 0;
 		NumTableAdds = 0;
 		NumIPFPIterations = 0;
@@ -69,6 +72,7 @@ public class BookKeepingMgr {
 		TriangulationSize = 0;
 		NumCliques = 0;
 		MaxCliqueSize = 0;
+		MaxVarsInClique = 0;
 		TMP = 0;
 	}
 	
@@ -79,12 +83,15 @@ public class BookKeepingMgr {
 		System.out.println("************************************************");
 		System.out.println("* Number of Table Absorptions: " + NumTableAbsoptions);
 		System.out.println("* Number of Table Multiplies: " + NumTableMults);
+		System.out.println("* Number of Table Divides: " + NumTableDivs);
 		System.out.println("* Number of Table Marginalizations: " + NumTableMarginals);
 		System.out.println("* Number of Table Additions: " + NumTableAdds);
+		System.out.println("* Total Number of Table Operations: " + (NumTableMults + NumTableAdds + NumTableDivs));
 		System.out.println("* Number of IPFP Iterations: " + NumIPFPIterations);
 		System.out.println("* Triangulation Size: " + TriangulationSize);
 		System.out.println("* Number of Cliques:" + NumCliques);
 		System.out.println("* Max Clique Size: " + MaxCliqueSize);		
+		System.out.println("* Max Vars in Clique: " + MaxVarsInClique);	
 		System.out.println("* IPFP Table Size: " + IPFPTableSize);
 		System.out.println("* Time to load Network: " + TimeNetworkLoad);
 		System.out.println("* Time to Triangulate: " + TimeTriangulation);

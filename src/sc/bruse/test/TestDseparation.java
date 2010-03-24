@@ -17,7 +17,7 @@ public class TestDseparation {
 	@Test
 	public void testDseparation() {
 		try {
-			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
+			BruseNetwork network = BruseNetworkFactory.create("tests/studfarm.net");
 			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
@@ -47,7 +47,7 @@ public class TestDseparation {
 	@Test
 	public void testDseparation2() {
 		try {
-			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
+			BruseNetwork network = BruseNetworkFactory.create("tests/studfarm.net");
 			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
@@ -73,7 +73,7 @@ public class TestDseparation {
 	@Test
 	public void testDseparation3() {
 		try {
-			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
+			BruseNetwork network = BruseNetworkFactory.create("tests/studfarm.net");
 			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
@@ -102,7 +102,7 @@ public class TestDseparation {
 	@Test
 	public void testDseparation4() {
 		try {
-			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
+			BruseNetwork network = BruseNetworkFactory.create("tests/studfarm.net");
 			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();
@@ -138,7 +138,7 @@ public class TestDseparation {
 	@Test
 	public void testDseparation5() {
 		try {
-			BruseNetwork network = BruseNetworkFactory.create("/Users/scott/studfarm.net");
+			BruseNetwork network = BruseNetworkFactory.create("tests/studfarm.net");
 			DSeparationAnalyzer dsep = new DSeparationAnalyzer(network);
 			
 			ArrayList<String> query = new ArrayList<String>();

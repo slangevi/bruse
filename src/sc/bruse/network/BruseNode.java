@@ -40,6 +40,7 @@ public class BruseNode {
 	private LinkedList<BruseNodeState> 	m_states;
 	private BruseTable 					m_table;
 	private String 						m_name;
+	private String						m_desc;
 	
 	/***
 	 * BruseNode constructor
@@ -48,10 +49,29 @@ public class BruseNode {
 	 */
 	public BruseNode(String name) {
 		m_name = name;
+		m_desc = new String();
 		m_parents = new LinkedList<BruseNode>();
 		m_children = new LinkedList<BruseNode>();
 		m_states = new LinkedList<BruseNodeState>();
 		m_attributes = new Hashtable<String, String>();
+	}
+	
+	/***
+	 * Sets the long description of this node
+	 * 
+	 * @param desc is the long description
+	 */
+	public void setDesc(String desc) {
+		m_desc = desc;
+	}
+	
+	/***
+	 * Retrieves the long description of this node
+	 * 
+	 * @return the description of the node
+	 */
+	public String getDesc() {
+		return m_desc;
 	}
 	
 	/***
@@ -145,6 +165,18 @@ public class BruseNode {
 	public void addState(String name, double val) {
 		//TODO should check for duplicate states first
 		m_states.add(new BruseNodeState(m_states.size(), name, val));
+	}
+	
+	/***
+	 * Add a new outcome state to this BruseNode.
+	 * 
+	 * @param name is the outcome state name
+	 * @param desc is the long description for the state
+	 * @param val is the probability associated with this state
+	 */
+	public void addState(String name, String desc, double val) {
+		//TODO should check for duplicate states first
+		m_states.add(new BruseNodeState(m_states.size(), name, desc, val));
 	}
 	
 	/***

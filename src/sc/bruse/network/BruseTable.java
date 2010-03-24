@@ -231,6 +231,16 @@ public class BruseTable {
 		return m_offsets[i];
 	}
 	
+	public BruseNode getHeadVar() {
+		BruseNode head = null;
+		
+		if (m_type == PotentialType.Conditional) {
+			head = m_variables[m_variables.length-1];
+		}
+		
+		return head;
+	}
+	
 	public int getIndex(Map<String, Integer> state) {
 		// compute the index in the values array
 		int index = 0;
@@ -290,7 +300,7 @@ public class BruseTable {
 		while (it.hasMoreStates()) {
 			state = it.nextState();
 			int idx = this.getIndex(state);
-			value = m_values[idx] * table.getValue(state);
+			//value = m_values[idx] * table.getValue(state);
 			
 			denom = table.getValue(state);
 			value = 0;
@@ -306,7 +316,7 @@ public class BruseTable {
 		// set the resulting table as a joint table type
 		this.setType(PotentialType.Joint);
 		
-		BookKeepingMgr.NumTableMults += this.getTableValues().length;
+		BookKeepingMgr.NumTableDivs += this.getTableValues().length;
 		BookKeepingMgr.NumTableAbsoptions++;
 		
 		return this;
@@ -326,6 +336,7 @@ public class BruseTable {
 				variables.add(vars[i]);
 			}
 		}
+		
 		// Calculate offsets for arg table
 		int offsets[] = new int[variables.size()];
 		int idx = 0;
@@ -333,7 +344,7 @@ public class BruseTable {
 			idx = variables.indexOf(table.getVariables()[i]);
 			if (idx >= 0) offsets[idx] = table.getOffset(i);
 		}
-		
+
 		BruseTable result = new BruseTable(variables);
 		
 		// Key idea is to run through result table values and for each value:
@@ -345,18 +356,20 @@ public class BruseTable {
 		int idx1 = 0, idx2 = 0;
 		int offset = 0;
 		BruseNode node = null;
+		double[] values = result.getTableValues();
+		BruseNode[] tablevars = result.getVariables();
 		
-		for (int i=0; i < result.getTableValues().length; i++) {
+		for (int i=0; i < values.length; i++) {
 			idx1 = 0;
 			idx2 = 0;
-			for (int j=0; j < result.getVariables().length; j++) {
-				node = result.getVariables()[j];
+			for (int j=0; j < tablevars.length; j++) {
+				node = tablevars[j];
 				offset = (i/result.getOffset(j) % node.getStates().size());
 				idx1 += offset * this.getOffset(j);
 				idx2 += offset * offsets[j]; //table.getOffset(j);  //TODO: fix this offset
 			}
 			
-			result.getTableValues()[i] = m_values[idx1] * table.getTableValues()[idx2];
+			values[i] = m_values[idx1] * table.getTableValues()[idx2];
 		}
 		
 		// set the resulting table as a joint table type
@@ -369,8 +382,8 @@ public class BruseTable {
 	}
 	
 
-	/* Old method of multiplying - too slow
-	public BruseTable multiplyBy(BruseTable table) {
+	// Old method of multiplying - too slow
+	public BruseTable multiplyBy2(BruseTable table) {
 		// multiply this table by param table and return result
 		Map<String, Integer> state = null;
 		double value = 0;
@@ -392,7 +405,7 @@ public class BruseTable {
 		BookKeepingMgr.NumTableMults += result.getTableValues().length;
 		BookKeepingMgr.NumTableAbsoptions++;
 		return result;
-	}*/
+	}
 	
 	private ArrayList<BruseNode> mergeTableVariables(BruseTable table) {
 		// First add this tables variables
@@ -459,6 +472,9 @@ public class BruseTable {
 		
 		// set the resulting table as a joint table type
 		result.setType(PotentialType.Joint);
+		
+		BookKeepingMgr.NumTableDivs += result.getTableValues().length;
+		BookKeepingMgr.NumTableAbsoptions++;
 		
 		return result;
 	}
@@ -674,4 +690,32 @@ public class BruseTable {
 			System.out.println("\n");
 		}
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder str = new StringBuilder();
+		
+		if (m_type == PotentialType.Conditional) {
+			str.append("P(");
+			if (m_variables.length > 0) {
+				str.append(m_variables[m_variables.length-1].getName());
+				str.append(" | ");
+			}
+			for (int i=0; i < m_variables.length-1; i++) {
+				str.append(m_variables[i].getName() + ", ");
+			}
+			str.append(")");
+		}
+		else {
+			str.append("pot(");
+			for (int i=0; i < m_variables.length; i++) {
+				str.append(m_variables[i].getName() + ", ");
+			}
+			str.append(")");
+		}
+	
+		return str.toString();
+	}
+	
+	
 }

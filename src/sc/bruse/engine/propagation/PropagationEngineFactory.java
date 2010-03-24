@@ -28,10 +28,11 @@ import sc.bruse.engine.*;
 // Import all the propagation engine packages
 import sc.bruse.engine.propagation.hugin.HuginPropagationEngine;
 import sc.bruse.engine.propagation.lazy.LazyPropagationEngine;
-import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine;
+import sc.bruse.engine.propagation.spacesaving.SpaceSavingPropagationEngine;
+import sc.bruse.engine.propagation.wrapper.OldWrapperPropagationEngine;
+import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine1;
+import sc.bruse.engine.propagation.wrapper.OldWrapperPropagationEngine3;
 import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine2;
-import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine3;
-import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine4;
 
 /***
  * Creates a propagation engine using the specified propagation type
@@ -41,7 +42,7 @@ import sc.bruse.engine.propagation.wrapper.WrapperPropagationEngine4;
  */
 public class PropagationEngineFactory {
 	
-	public enum PropagationType { Hugin, Lazy, Wrapper, Wrapper2, Wrapper3, Wrapper4 };
+	public enum PropagationType { Hugin, Lazy, Wrapper1, Wrapper2, SpaceSaving };
 	
 	/***
 	 * Creates a propagation engine based on the specified propagation type
@@ -57,17 +58,14 @@ public class PropagationEngineFactory {
 		else if (type == PropagationType.Lazy) {
 			return new LazyPropagationEngine();
 		}
-		else if (type == PropagationType.Wrapper) {
-			return new WrapperPropagationEngine();
+		else if (type == PropagationType.Wrapper1) {
+			return new WrapperPropagationEngine1();
 		}
 		else if (type == PropagationType.Wrapper2) {
 			return new WrapperPropagationEngine2();
 		}
-		else if (type == PropagationType.Wrapper3) {
-			return new WrapperPropagationEngine3();
-		}
-		else if (type == PropagationType.Wrapper4) {
-			return new WrapperPropagationEngine4();
+		else if (type == PropagationType.SpaceSaving) {
+			return new SpaceSavingPropagationEngine();
 		}
 		
 		throw new BruseEngineException("Unsupported propagation type.");

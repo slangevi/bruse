@@ -47,7 +47,7 @@ public class TestWrapper {
 			BruseNetwork network = BruseNetworkFactory.create("tests/studfarm.net");
 			assertTrue(network != null);
 			
-			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Wrapper);
+			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Wrapper1);
 			engine.setNetwork(network);
 			
 			// test adding evidence
@@ -134,7 +134,7 @@ public class TestWrapper {
 			
 			assertTrue(network != null);
 			
-			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Wrapper);
+			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Wrapper1);
 			engine.setNetwork(network);
 
 			// test adding multiple evidence */
@@ -229,7 +229,7 @@ public class TestWrapper {
 			
 			assertTrue(network != null);
 			
-			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Wrapper);
+			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Wrapper1);
 			engine.setNetwork(network);
 
 			// test adding multiple evidence */

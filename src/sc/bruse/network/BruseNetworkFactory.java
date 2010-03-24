@@ -28,6 +28,7 @@ import sc.bruse.engine.BookKeepingMgr;
 import sc.bruse.engine.MoralGraphNode;
 import sc.bruse.parser.*;
 
+import java.io.BufferedReader;
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -53,7 +54,34 @@ public class BruseNetworkFactory {
 		BNParser parser = BNParserFactory.create(filename);
 		parser.parse();
 		
-		BruseNetwork net = new BruseNetwork();
+		BruseNetwork net = new BruseNetwork(filename);
+		
+		createNetwork(net, parser);
+		
+		long EndTime = System.currentTimeMillis();
+		BookKeepingMgr.TimeNetworkLoad = (EndTime - StartTime);
+		
+		//dumpNetwork(net);
+	
+		return net;
+	}
+	
+	/***
+	 * Creates BruseNetwork objects that load in the Bayesian network file
+	 * 
+	 *  The BruseNetwork can load the following file types:
+	 *  XMLBIF (.xml), NET (.net) files
+	 * 
+	 * @param filename the Bayesian network file
+	 * @return a BruseNetwork 
+	 */
+	public static BruseNetwork create(BufferedReader reader) throws BruseAPIException {
+		// load the network from the file
+		long StartTime = System.currentTimeMillis();
+		BNParser parser = BNParserFactory.create(reader);
+		parser.parse();
+		
+		BruseNetwork net = new BruseNetwork("Stream");
 		
 		createNetwork(net, parser);
 		
@@ -104,8 +132,9 @@ public class BruseNetworkFactory {
 				node = net.getNode(var.getName());
 				if (node == null) {	// node hasn't already been created and add to net
 					node = new BruseNode(var.getName());
+					node.setDesc(var.getDesc());
 					net.addNode(node);
-					createNodeStates(node, var.getStates());
+					createNodeStates(node, var);
 				}
 				
 				// create parents and children
@@ -140,8 +169,9 @@ public class BruseNetworkFactory {
 			parent = net.getNode(v.getName());
 			if (parent == null) { // parent hasn't been created and add to net
 				parent = new BruseNode(v.getName());
+				parent.setDesc(v.getDesc());
 				net.addNode(parent);
-				createNodeStates(parent, v.getStates());
+				createNodeStates(parent, v);
 			}
 			
 			// create edges
@@ -150,11 +180,13 @@ public class BruseNetworkFactory {
 		}
 	}
 	
-	private static void createNodeStates(BruseNode node, LinkedList<String> stateNames) {
+	private static void createNodeStates(BruseNode node, Variable var) {
+		LinkedList<String> stateNames = var.getStates();
 		ListIterator<String> it = stateNames.listIterator();
 
 		while (it.hasNext()) {
-			node.addState(it.next(), 0);
+			String state = it.next();
+			node.addState(state, var.getStateDesc(state), 0);
 		}
 	}
 	

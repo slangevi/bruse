@@ -55,17 +55,23 @@ public class CliqueFactory {
 		long max = 0;
 		long size = 0;
 		long sum = 0;
+		long numvars = 0;
 		
 		for (int i=0; i < cliques.size(); i++) {
 			size = cliques.get(i).getTable().getTableValues().length;
 			sum += size;
 			
 			if (size > max) max = size;
+			
+			size = cliques.get(i).getMembers().size();
+			
+			if (size > numvars) numvars = size;
 		}
 		
 		BookKeepingMgr.NumCliques = cliques.size();
 		BookKeepingMgr.TriangulationSize = sum;
 		BookKeepingMgr.MaxCliqueSize = max;
+		BookKeepingMgr.MaxVarsInClique = numvars;
 	}
 	
 	static protected void dumpSize(ArrayList<Clique> cliques) {

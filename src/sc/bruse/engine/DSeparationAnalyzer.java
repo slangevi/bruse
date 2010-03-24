@@ -97,7 +97,18 @@ public class DSeparationAnalyzer {
 			
 			for (int i=0; i < query.size(); i++) {
 				node = m_network.getNode(query.get(i));
+				
 				visitFromChild(node);
+				
+				// TEST
+//				if (hasEvidence(node)) {
+//					for (BruseNode parent: node.getParents()) {
+//						visitFromChild(parent);
+//					}
+//					for (BruseNode child: node.getChildren()) {
+//						visitFromParent(child);
+//					}
+//				}
 			}
 			
 			return m_dsNodes;

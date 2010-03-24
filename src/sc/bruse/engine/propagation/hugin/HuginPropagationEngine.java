@@ -32,7 +32,7 @@ import sc.bruse.engine.propagation.*;
 import sc.bruse.network.*;
 
 /***
- * Lazy Hugin Propagation
+ * Hugin Propagation
  * 
  * @author langevin
  *
@@ -49,45 +49,10 @@ public class HuginPropagationEngine extends PropagationEngine {
 	public void init() {
 		long StartTime = System.currentTimeMillis();
 		
-		/*// gen moral graph - do we need to keep this around?
-		MoralGraph moralGraph = new MoralGraph(m_network);
-		
-		// add edges between each pair of soft evidence nodes
-		BigCliqueFactory.connectSENodes(moralGraph, m_sEvidence);
-		
-		long StartTime = System.currentTimeMillis();
-		
-		// triangulate graph
-		Triangulation.triangulate(moralGraph);
-		
-		long EndTime = System.currentTimeMillis();
-		BookKeepingMgr.TimeTriangulation = (EndTime - StartTime);
-		
-		StartTime = System.currentTimeMillis();
-		
-		// gen cliques using the big clique 
-		m_cliques = BigCliqueFactory.createCliques(moralGraph, m_sEvidence);
-		
-		long sum = 0;
-		
-		for (int i=0; i < m_cliques.size(); i++) {
-			sum += m_cliques.get(i).getTable().getTableValues().length;
-		}
-		
-		System.out.println("Triangulation size: " + sum);*/
-		
 		m_cliques = BigCliqueFactory.createCliques(m_network, m_sEvidence);
 		
-		//EndTime = System.currentTimeMillis();
 		long EndTime = System.currentTimeMillis();
 		BookKeepingMgr.TimeCreateCliques = (EndTime - StartTime);
-		
-		// TEST
-		/*BruseTable.dumpTable(m_cliques.firstElement().getTable(), true);
-		ArrayList<String> names = new ArrayList<String>();
-		names.add("K");
-		BruseTable.dumpTable(m_cliques.firstElement().getTable().getMarginal(names), true);
-		*/
 		
 		StartTime = System.currentTimeMillis();
 		
@@ -96,7 +61,6 @@ public class HuginPropagationEngine extends PropagationEngine {
 		
 		EndTime = System.currentTimeMillis();		
 		BookKeepingMgr.TimeCreateJunctionTree = (EndTime - StartTime);
-
 		
 		//TEST
 		//JunctionTree.dumpJunctionTree(m_junctionTree);
@@ -119,7 +83,7 @@ public class HuginPropagationEngine extends PropagationEngine {
 		if (m_isDirty == false) return;
 		
 		long StartTime = System.currentTimeMillis();
-
+		
 		// Init the cliques - remove previous propagation values from cliques
 		initCliques();
 
@@ -132,19 +96,11 @@ public class HuginPropagationEngine extends PropagationEngine {
 		// next collect evidence to root
 		collectEvidence(m_junctionTree.getRoot(), null);
 		
-		// TEST
-		//System.out.println("After collect evidence:");
-		//JunctionTree.dumpJunctionTree(m_junctionTree);
-		
 		// apply the soft evidence to the big clique
 		applySoftEvidence();
 		
 		// next distribute evidence from root
 		distributeEvidence(m_junctionTree.getRoot(), null);
-		
-		// TEST
-		//System.out.println("After distribute evidence:");
-		//JunctionTree.dumpJunctionTree(m_junctionTree);
 		
 		// calculate the posterior marginals for each variable in the BN
 		calculateMarginals();
@@ -155,62 +111,6 @@ public class HuginPropagationEngine extends PropagationEngine {
 		// no longer dirty
 		m_isDirty = false;
 	}
-	
-	/*public BruseTable getMarginal(ArrayList<String> vars) {
-		BruseTable minDomTable = null;
-		
-		//TODO should first search separators
-		
-		for (int i=0; i < m_cliques.size(); i++) {
-			BruseTable table = m_cliques.get(i).getTable();
-			
-			if (table.containsVariables(vars)) {
-				if (minDomTable == null) {
-					minDomTable = table;
-				}
-				else if (table.getVariables().size() < minDomTable.getVariables().size()){
-					minDomTable = table;
-				}
-			}
-		}
-		
-		// marginalize the minDomTable on variables
-		minDomTable = minDomTable.getMarginal(vars);
-		
-		// normalize the marginal table
-		minDomTable.normalize();
-		
-		return minDomTable;
-	}*/
-	/*
-	public BruseTable getMarginal(ArrayList<String> vars) {
-		BruseTable table = null, marg = null;
-		String var = null;
-		BruseNode node = null;
-		
-		try {
-			for (int i=0; i < vars.size(); i++) {
-				for (int j=0; j < m_cliques.size(); j++) {
-					Clique clique = m_cliques.get(j);
-					if (clique.containsNode(vars.get(i))) {
-						if (marg == null) {
-							marg = clique.getTable().getMarginal(vars);
-						}
-						else {
-							marg = marg.multiplyBy(clique.getTable().getMarginal(vars));
-						}
-						break;
-					}
-				}
-			}
-		}
-		catch (Exception e) {
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
-		
-		return marg;
-	}*/
 	
 	public ArrayList<Clique> getCliques() {
 		return m_cliques;
@@ -283,9 +183,6 @@ public class HuginPropagationEngine extends PropagationEngine {
 			nodeTable = node.getClique().getTable();
 			// divide outer msg by inner msg of separator and mulitply node table by result
 			msg = separator.getOuterMsg().divideBy(separator.getInnerMsg());
-			//WARNING: Althought this is more efficient it destroys outer message and is dangerous
-			//msg = separator.getOuterMsg().div(separator.getInnerMsg());
-			//nodeTable.absorb(msg);
 			node.getClique().setTable(nodeTable.multiplyBy(msg));
 		}
 		
@@ -394,7 +291,10 @@ public class HuginPropagationEngine extends PropagationEngine {
 		BruseTable softFinding = null;
 		ArrayList<BruseTable> evidence = new ArrayList<BruseTable>();
 		BruseTable table = m_junctionTree.getRoot().getClique().getTable();
-		//BruseTable.dumpTable(table, false);
+		
+//		table.normalize();
+//		BruseTable.dumpTable(table, false);
+		
 		if (m_sEvidence.size() == 0) return;
 		
 		for (int i=0; i < m_sEvidence.size(); i++) {
@@ -416,6 +316,16 @@ public class HuginPropagationEngine extends PropagationEngine {
 		}
 		catch (BruseAPIException e) {
 			// TODO this will happen when IPFP fails to converge
+		}
+		
+//		BruseTable.dumpTable(m_junctionTree.getRoot().getClique().getTable(), false);
+	}
+	
+	protected void dumpCliques() {
+		for (Clique clique: m_cliques) {
+			clique.combinePotentials();
+			clique.getTable().normalize();
+			BruseTable.dumpTable(clique.getTable(), false);
 		}
 	}
 	

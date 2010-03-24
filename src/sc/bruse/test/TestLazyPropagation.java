@@ -588,5 +588,39 @@ public class TestLazyPropagation {
 			fail();
 		}
 	}
+	
+	@Test
+	public void testSoftEvidence6() {
+		try {
+			BruseNetwork network = BruseNetworkFactory.create("tests/example1.net");
+			
+			assertTrue(network != null);
+			
+			IPropagationEngine engine = PropagationEngineFactory.create(PropagationEngineFactory.PropagationType.Lazy);
+			engine.setNetwork(network);
+
+			// test adding multiple evidence */
+			ArrayList<BruseEvidence> evidence = new ArrayList<BruseEvidence>();
+			BruseEvidence ev = new BruseEvidence("D");
+			ev.setHardEvidence("true");
+			evidence.add(ev);
+			
+			engine.addEvidence(evidence);
+			
+			engine.init();
+			
+			engine.propagate();
+			
+			BookKeepingMgr.dumpBookKeeping();
+			BookKeepingMgr.reset();
+			
+			dumpNetwork(network);			
+		}
+		catch (Exception e) {
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+			fail();
+		}
+	}
 
 }

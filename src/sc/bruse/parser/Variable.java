@@ -29,15 +29,27 @@ import java.util.*;
 public class Variable {
 
 	private String m_name;
+	private String m_desc;
 	private LinkedList<String> m_states;
+	private Hashtable<String, String> m_stateDesc;
 	private LinkedList<Variable> m_parents;
 	private double m_table[];
 	private int m_rowSize = 1;
 	
 	public Variable(String name) {
 		m_name = name;
+		m_desc = new String();
 		m_states = new LinkedList<String>();
+		m_stateDesc = new Hashtable<String, String>();
 		m_parents = new LinkedList<Variable>();
+	}
+	
+	public void setDesc(String desc) {
+		m_desc = desc;
+	}
+	
+	public String getDesc() {
+		return m_desc;
 	}
 	
 	public String getName() {
@@ -58,6 +70,14 @@ public class Variable {
 	
 	public void addState(String state) {
 		m_states.add(state);
+	}
+	
+	public void addStateDesc(String state, String desc) {
+		m_stateDesc.put(state, desc);
+	}
+	
+	public String getStateDesc(String state) {
+		return m_stateDesc.get(state);
 	}
 	
 	public void createTable() {
@@ -84,5 +104,25 @@ public class Variable {
 	
 	public int getRowSize() {
 		return m_rowSize;
+	}
+	
+	public void normalizeTable() {
+		// Make sure each column in table adds to 1
+		int numCols = m_table.length/m_states.size();
+		double[] colSum = new double[m_rowSize];
+		
+		// Sum each column
+		for (int i=0; i < numCols; i++) {
+			for (int j=0; j < m_states.size(); j++) {
+				colSum[i] += m_table[i*m_states.size() + j];
+			}
+		}
+		
+		// normalize each column
+		for (int i=0; i < numCols; i++) {
+			for (int j=0; j < m_states.size(); j++) {
+				m_table[i*m_states.size() +j] /= colSum[i];
+			}
+		}
 	}
 }

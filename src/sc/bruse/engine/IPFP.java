@@ -29,7 +29,7 @@ import sc.bruse.network.*;
 import java.util.*;
 
 public class IPFP {
-	private static double IPFP_DELTA = 0.0001;	// convergence stopping condition for IPFP
+	private static double IPFP_DELTA = 0.00000001;	// convergence stopping condition for IPFP
 	
 	public static BruseTable absorb(BruseTable table, ArrayList<BruseTable> evidence) throws BruseAPIException {
 		String varName = null;
@@ -55,10 +55,10 @@ public class IPFP {
 			// check if IPFP has converged by checking if the prev table 
 			// and the cur table are within IPFP_DELTA of each other
 		
-			//if (converged(curTable, evidence)) return curTable;
+			if (converged(curTable, evidence)) return curTable;
 			
 			/* TEMP REMOVED */
-			
+			/*
 			curEntropy = getCrossEntropy(curTable, prevTable);
 			
 			// If entropy measure has not changed from previous iteration then we have converged
@@ -72,7 +72,7 @@ public class IPFP {
 			// If entropy measure is within IPFP_DELTA threshold then we have converged
 			if (diff <= IPFP_DELTA) return curTable;
 			
-			
+			*/
 			
 			// update previous table
 			prevTable = curTable;
@@ -95,9 +95,14 @@ public class IPFP {
 				seTable = constraints.get(i);
 				curTable = table.getMarginal(seTable.getVariables()[0].getName());
 			
+//				// TEST
+//				for (int j=0; j < curTable.getTableValues().length; j++) {
+//					if (Math.abs(curTable.getTableValues()[j] - seTable.getTableValues()[j]) > IPFP_DELTA) return false;
+//				}
+				
 				curEntropy = IPFP.getCrossEntropy(curTable, seTable);
 				
-				if (curEntropy > 0.0001) return false;
+				if (curEntropy > IPFP_DELTA) return false;
 			}
 			return true;
 		}
